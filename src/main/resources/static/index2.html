@@ -29,7 +29,7 @@
 	<div id="fullpage">		
 		<div id="bg1" class="section">
 			<div>
-				<div id="schs-logo" class="l-show">
+				<div id="schs-logo">
 					<img src="imgs/schs-logo.png" width="200px">
 				</div>
 			</div>
@@ -62,12 +62,13 @@
 
 	<script type="text/javascript">
 		var myFullpage = new fullpage('#fullpage', {
-			licenseKey: null
-			//sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+			licenseKey: null,
 			//anchors: ['firstPage', 'secondPage', '3rdPage']
-			,
+			navigation: true,
+        	navigationPosition: 'right',
 			beforeLeave:function(origin, destination, direction, trigger){
 				//console.log();
+
 				if(origin.index == 0){
 					$("#schs-logo").removeClass("l-show");
 					$("#schs-logo").addClass("l-hide");

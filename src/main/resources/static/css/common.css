@@ -37,6 +37,7 @@ a:-webkit-any-link{
 	}
 }
 
+
 #header{
 	width: 100%;
     height: 85px;
@@ -140,6 +141,9 @@ a:-webkit-any-link{
     z-index: 1;
 }
 
+#fp-nav ul li a span{
+	background: #ffffff;
+}
 
 .home .l-show{
 	animation: fadein 1s;
@@ -149,6 +153,17 @@ a:-webkit-any-link{
 .home .l-hide{
 	animation: fadeout 1s;
 }
+
+
+.home .lb-show{
+	animation: b_fadein 1s;
+
+}
+
+.home .lb-hide{
+	animation: b_fadeout 1s;
+}
+
 
 .home #bg1, #bg2, #bg3, #bg4, #bg5 {
 	top:0;

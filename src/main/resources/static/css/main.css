@@ -149,7 +149,7 @@ h4 {
 	text-align:center;
 	font-size:150%;
 
-	.transform-origin(50%, 50%);
+	transform-origin:50% 50%;
 }
 
 #properties {
