@@ -1,29 +1,198 @@
+body {
+    overflow-x: hidden;
+    font-family: 'NotoSansKR', sans-serif;
+    word-break: keep-all;
+}
 
-#bg1, #bg2, #bg3, #bg4, #bg5 {
-	z-index:50;
+ul, ol{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:-webkit-any-link{
+	cursor: pointer;
+}
+
+@keyframes fadein {
+/* 효과를 동작시간 동안 0 ~ 1까지 */
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+@keyframes fadeout {
+/* 효과를 동작시간 동안 0 ~ 1까지 */
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+#header{
+	width: 100%;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #e4e4e4;
+    background: transparent;
+    -webkit-box-shadow: 0 0 0 1px rgb(255 255 255 / 20%);
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 20%);
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: height .3s, -webkit-box-shadow .4s;
+    transition: opacity .3s, height .3s, -webkit-box-shadow .4s;
+    -webkit-transition: opacity .3s, height .3s, -webkit-box-shadow .4s;
+    transition: opacity .3s, height .3s, box-shadow .4s;
+    transition: opacity .3s, height .3s, box-shadow .4s, -webkit-box-shadow .4s;
+    z-index: 500;
+}
+
+
+#header-logo{
+    position: absolute;
+	display: block;
+	transition: all .3s;
+	left: 60px;
+}
+
+#menu{
+	width: 100%;
+    padding-left: 262px;
+    padding-right: 281px;
+    vertical-align: top;
+    position: relative;
+    z-index: 500;
+}
+
+
+@media (max-width: 1380px){
+	#header-logo{
+		left: 60px;
+	}
+	
+	#menu{
+		padding-left: 262px;
+	}
+	
+	#menu > li > a{
+		padding: 27px 20px 29px;
+	}
+}
+
+@media (max-width: 1800px){	
+	#header-logo{
+		left : 3%;
+	}
+
+	#menu{
+		padding-left: 170px;
+	}
+	#menu > li > a{
+		padding: 27px 10px 28px;
+	}
+}
+
+#header a{
+	color: #ffffff;
+}
+
+
+#menu > li{
+	display: inline-block;
+    vertical-align: top;
+}
+
+#menu > li > a{
+	color: #ffffff;
+	padding: 27px 20px 29px;
+    margin-right: 27px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+	display: block;
+    line-height: 1.7;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.header_wrap{
+	height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.menu_container{
+	display: block;
+    width: 100%;
+    position: relative;
+    font-size: 0;
+    line-height: 1;
+    z-index: 1;
+}
+
+
+.home .l-show{
+	animation: fadein 1s;
+
+}
+
+.home .l-hide{
+	animation: fadeout 1s;
+}
+
+.home #bg1, #bg2, #bg3, #bg4, #bg5 {
 	top:0;
 	left:0;
 	width:100%;
 	height:100%;
-	background:url(../imgs/bg6.png) repeat 0 0;
+	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../imgs/bg6.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-#bg2 {
-	z-index:49;
-	background-image:url(../imgs/bg1.png);
+.home #bg2 {
+	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../imgs/bg1.png) no-repeat center center fixed;
 }
 
-#bg3 {
-	z-index:48;
-	background-image:url(../imgs/bg3.png);
+.home #bg3 {
+	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../imgs/bg3.png) no-repeat center center fixed;
 }
 
-#bg4 {
-	z-index:48;
-	background-image:url(../imgs/bg2.png);
+.home #bg4 {
+	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../imgs/bg2.png) no-repeat center center fixed;
 }
 
-#bg5 {
-	z-index:48;
-	background-image:url(../imgs/bg5.png);
+.home #bg5 {
+	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../imgs/bg5.png) no-repeat center center fixed;
+}
+
+.home #schs-logo{
+	width: 200px;
+	height:240px;
+	z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.home #schs-logo > img{
+	display: block; margin: 0px auto;
+}
+
+.home .footer-section{
+	height : 320px;
+	background-color: black;
 }

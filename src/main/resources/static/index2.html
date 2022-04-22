@@ -7,11 +7,31 @@
     
     <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
-<body>
+<body class="home">
+	<header id="header">
+		<div class="header_wrap">
+			<h1 id="header-logo">
+				<a href="#">SCHS</a>
+			</h1>
+			<nav class="menu_container">
+				<ul id="menu" class="menu">
+					<li><a href="#"><span>학교소개</span></a></li>
+					<li><a href="#"><span>교육과정</span></a></li>
+					<li><a href="#"><span>학교생활</span></a></li>
+					<li><a href="#"><span>입학안내</span></a></li>
+					<li><a href="#"><span>학교소식</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 	<div id="fullpage">		
 		<div id="bg1" class="section">
 			<div>
+				<div id="schs-logo" class="l-show">
+					<img src="imgs/schs-logo.png" width="200px">
+				</div>
 			</div>
 		</div>
 		<div id="bg2" class="section">
@@ -30,6 +50,11 @@
 			<div>
 			</div>
 		</div>
+		<div class="footer-section section fp-auto-height">
+			<div>
+				<h1>Section 3</h1>
+			</div>
+		</div>
 	</div>
 
    
@@ -37,8 +62,20 @@
 
 	<script type="text/javascript">
 		var myFullpage = new fullpage('#fullpage', {
+			licenseKey: null
 			//sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
 			//anchors: ['firstPage', 'secondPage', '3rdPage']
+			,
+			beforeLeave:function(origin, destination, direction, trigger){
+				//console.log();
+				if(origin.index == 0){
+					$("#schs-logo").removeClass("l-show");
+					$("#schs-logo").addClass("l-hide");
+				}else if(destination.index == 0){
+					$("#schs-logo").addClass("l-show");
+					$("#schs-logo").removeClass("l-hide");
+				}
+			}
 		});
 	</script>
 </body>
