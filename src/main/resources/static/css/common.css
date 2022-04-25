@@ -10,6 +10,7 @@ ul, ol{
 
 a{
 	text-decoration: none;
+	cursor: default;
 }
 
 a:-webkit-any-link{
@@ -96,6 +97,7 @@ a:-webkit-any-link{
 }
 
 
+
 @media (max-width: 1380px){
 	#header-logo{
 		left: 420px;
@@ -118,12 +120,13 @@ a:-webkit-any-link{
 	#menu{
 		padding-left: 170px;
 	}
+
 	#menu > li > a{
 		padding: 27px 10px 28px;
 	}
 }
 
-#header a{
+#header-logo a, #header #menu li a{
 	color: #ffffff;
 }
 
@@ -171,6 +174,7 @@ a:-webkit-any-link{
     background: #ab0101;
     -webkit-transition: top .3s;
     transition: top .3s;
+	z-index: 151;
 }
 
 
@@ -179,5 +183,59 @@ a:-webkit-any-link{
 	background: #ffffff;
 }
 
-#menu > li > a:after {content: '';display: block;position: absolute; width: auto;height: 2px;left: 50%;right: 50%;bottom: 1px;background: #ab0101;-webkit-transition: all 200ms;transition: all 200ms;}
+#menu > li > a:after {content: '';display: block;position: absolute; width: auto;height: 3px;left: 50%;right: 50%;bottom: 1px;background: #ab0101;-webkit-transition: all 200ms;transition: all 200ms;z-index: 151;}
 #menu > li:hover > a:after {left: 0;right: 0;-webkit-transition: all .3s;transition: all .3s;}
+
+#menu .submenu-fulldown {
+	display: none;
+	position: absolute;
+	left: 0;
+	top : 85px;
+	height: 0px;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid #777777;
+	opacity: 0;
+}
+
+#menu .submenu-fulldown.focus {
+	height: 50px;
+	opacity: 1;
+	-webkit-transition: all 200ms;
+	transition: all 200ms;
+}
+
+#menu .submenu-fulldown .submenu-list a {
+	color:#ab0101;
+	-webkit-transition: all 200ms;
+	transition: all 200ms;
+}
+
+#menu_overlay {opacity:0;visibility:hidden;position: fixed;top: 0;left: 0;bottom: 0;right: 0;background: #000;background: rgba(0, 0, 0, .6);z-index: 150; -webkit-transition: opacity .3s,visibility .3s;transition: opacity .3s,visibility .3s;}
+body.menu_open #menu_overlay {opacity:1;visibility:visible;}
+
+#header #menu .submenu-list{
+	-webkit-transition: all 200ms;
+	transition: all 200ms;
+}
+
+#header #menu .submenu-list li{
+	display: inline-block;
+}
+
+#header #menu .submenu-list li a{
+	display: block;
+    line-height: 1.7;
+	
+	padding: 11px 19px 27px;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+    color: #222;
+    position: relative;
+	
+}
+
+#header #menu .submenu-list li a:hover{
+	color:#ab0101;
+}

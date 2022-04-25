@@ -1,6 +1,32 @@
 $(window).on('load', function() {
     //menu_hover_effect();
+    submenu_init();
 });
+
+function submenu_init(){
+    var $menu = $('#menu');
+
+    $menu.find('> li').hover(function(){
+        $("body").addClass("menu_open");
+        $("#menu .submenu-fulldown").removeClass("focus");
+
+
+        $(this).find(".submenu-fulldown").addClass("focus");
+        $(this).find(".submenu-fulldown").css("display", "block");
+        
+        $(this).find(".submenu-list").css("padding-left", ($(this).position().left-($(this).width()/2))+"px");
+
+    }, function() {
+        $(this).find(".submenu-fulldown").css("display", "none");
+        $("#menu .submenu-fulldown").removeClass("focus");
+        $("body").removeClass("menu_open");
+    });
+   
+    $menu.find('> li').each(function(index, item){
+        $(this).find(".submenu-list").css("padding-left", ($(item).position().left-($(item).width()/2))+"px");
+    });
+    
+}
 
 // gnb menu hover setting 메뉴 위치로 bar 이동시킴. 쓰지는 않더라.
 function menu_hover_effect(){
