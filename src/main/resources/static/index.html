@@ -4,39 +4,273 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Seoul Christian High School</title>
-    
-    <link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
-	<link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 </head>
-<body>
-    <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
-	<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
-	<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+<body class="home">
+	<header id="header" class="black">
+		<div class="header_wrap">
+			<h1 id="header-logo">
+				<a href="#">
+					<img src="imgs/header_logo.svg" alt="SCHS LOGO"/>
+					<span class="en">SCHS</span>
+					<span class="kr">서울크리스찬중고등학교</span>
+				</a>
+			</h1>
+			<nav class="menu_container">
+				<ul id="menu" class="menu">
+					<li>
+						<a href="#">
+							<span>학교소개</span>
+						</a>
+						<div class="submenu-fulldown">
+							<div class="submenu-list">
+								<ul>
+									<li>
+										<a href="#">
+											<span>학교소개</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>학교특징</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>교직원소개</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>오시는길</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>시설안내</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<span>교육과정</span>
+						</a>
+						<div class="submenu-fulldown">
+							<div class="submenu-list">
+								<ul>
+									<li>
+										<a href="#">
+											<span>교육목표</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>초등과정</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>중고등과정</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<span>학교생활</span>
+						</a>
+						<div class="submenu-fulldown">
+							<div class="submenu-list">
+								<ul>
+									<li>
+										<a href="#">
+											<span>신앙교육</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>인성교육</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>지성교육</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<span>입학안내</span>
+						</a>
+						<!-- 서브메뉴없음 -->
+					</li>
+					<li>
+						<a href="#">
+							<span>학교소식</span>
+						</a>
+						<div class="submenu-fulldown">
+							<div class="submenu-list">
+								<ul>
+									<li>
+										<a href="#">
+											<span>공지사항</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>갤러리</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>학적관리</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="menu_overlay"></div>
 
-
-    <div id="transform" data-500="transform:scale(0) rotate(0deg);" data-1000="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-1700="transform:scale(5) rotate(3240deg);opacity:0;">
-		<h2>transform</h2>
-		<p>scale, skew and rotate the sh** out of any element</p>
+	<div id="fullpage">		
+		<div id="main-slide" class="section">
+			<div class="slide bg bg1">
+				<div class="slide-textcontents-wrap">
+					<h1>신실한 믿음의 그리스도인 인재를 양성합니다</h1>
+					<p>서울크리스찬중고등학교 학생들은 하나님을 첫째로 사랑하고 두려워하며 그리스도를 시인하는 인재들입니다.</p>
+				</div>
+			</div>
+			<div class="slide bg bg2">
+				<div class="slide-textcontents-wrap">
+					<h1>뛰어난 실력의 그리스도인 인재 양성</h1>
+					<p>IT기술 활용, 글로벌 시대에 맞춘 언어능력과 창의적 사고능력을 배양하는 교육을 하며 명문대 진학을 위한 자율학습을 지원합니다.</p>
+				</div>
+			</div>
+			<div class="slide bg bg5">
+				<div class="slide-textcontents-wrap">
+					<h1>복음을 전하는 예수 그리스도의 군사</h1>
+					<p>그리스도를 시인하는 담대함을 갖추고 거리에서 설교하고 혼들을 그리스도께로 이겨오는 학생을 기릅니다. 여러분의 자녀를 어디에 맡기시겠습니까?</p>
+				</div>
+			</div>
+		</div>
+		<div id="teaching-coaching" class="section">
+			<div>
+				<div class="slide-textcontents-wrap">
+					<h1>"저도 제가 이럴줄은..."</h1>
+					<p>인터뷰수기 인용 -홍길동 학생-</p>
+				</div>
+			</div>
+		</div>
+		<div id="core-capacities" class="section">
+			<div>
+			</div>
+		</div>
+		<div id="our-videos" class="section">
+			<div>
+			</div>
+		</div>
+		<div id="contact" class="section">
+			<div>
+				<h1>오시는길</h1>
+			</div>
+		</div>
+		<div id="footer" class="footer-section section fp-auto-height">
+			<div>
+				<footer>
+					<div class="inner">
+						<div class="logo-wrapper">
+							<a href="#">
+								<img id="footer-logo" src="imgs/footer_logo.svg" alt="SCHS logo"/>
+							</a>
+						</div>
+						<div class="footer-body">
+							<div>
+								<span class="link-leading">SHORT CUT</span>
+								<div class="links">
+									<a href="#">학교소개</a>
+									<a href="#">교육목표</a>
+									<a href="#">신앙교육</a>
+									<a href="#">입학안내</a>
+								</div>
+							</div>
+							<address class="infos">
+								<p>
+									<span class="info-item address">경기 김포시 고촌읍 장곡로 39 성경침례교회</span>
+									<span>tel: </span><span class="info-item call-number">02-2665-3744</span>
+									<span class="info-item email">email: aaa@aaa.com</span>
+								</p>
+							</address>
+							<div class="copyright-wrapper">
+								<p class="copyright">Copyright 2022 SeoulChristianHighSchool All Rights Reserved.</p>
+							</div>
+						</div>
+						<div class="footer-links">
+							<a href="#">
+								<img src="imgs/footer_youtube.png" alt="go to youtube"/>
+							</a>
+							<a href="#">
+								<img src="imgs/footer_site.png" alt="go to bible baptist church site"/>
+							</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
 	</div>
 
-
-	<script type="text/javascript" src="js/skrollr.min.js"></script>
-
-	<!--[if lt IE 9]>
-	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
-	<![endif]-->
+   
+	<script type="text/javascript" src="js/fullpage.min.js"></script>
 
 	<script type="text/javascript">
-	var s = skrollr.init({
-		edgeStrategy: 'set',
-		easing: {
-			WTF: Math.random,
-			inverted: function(p) {
-				return 1-p;
-			}
-		}
-	});
-	</script>
+		var myFullpage = new fullpage('#fullpage', {
+			licenseKey: null,
+			//anchors: ['firstPage', 'secondPage', '3rdPage']
+			navigation: true,
+        	navigationPosition: 'right',
+			beforeLeave:function(origin, destination, direction, trigger){
+				//console.log();
+				$("#header").removeClass("black");
+				$("#header").removeClass("white");
 
+				let destId = $(".section").eq(destination.index).attr("id");
+				
+				if(destId == "contact" ||
+				   destId == "footer"){
+					$("#header").addClass("white");
+				}else{
+					$("#header").addClass("black");
+				}
+
+
+				if(origin.index == 0){
+					$("#schs-logo").removeClass("l-show");
+					$("#schs-logo").addClass("l-hide");
+				}else if(destination.index == 0){
+					$("#schs-logo").addClass("l-show");
+					$("#schs-logo").removeClass("l-hide");
+				}
+			}
+		});
+	</script>
 </body>
 </html>
