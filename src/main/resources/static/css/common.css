@@ -7,15 +7,17 @@ body{
 	letter-spacing: -0.01em!important;
 }
 
-span, p, a, span {
+span, p, a {
 	font-family: 'Noto Sans KR', sans-serif!important;
 	margin: 0px;
+	cursor: default;
 }
 	
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Noto Sans KR', sans-serif!important;
 	font-weight: 400!important;	
 	letter-spacing: -0.01em!important;
+	margin: 0px;
 }
 
 ul, ol{
@@ -101,7 +103,7 @@ a:-webkit-any-link{
 	display: block;
 	transition: all .3s;
 	left: 420px;
-	top: 9px;
+	top: 0px;
 	margin: 0;
 }
 
@@ -119,7 +121,7 @@ a:-webkit-any-link{
 	font-size: 24px;
 	letter-spacing: 2.4px;
 	font-weight: bold;
-	top: 0px;
+	top: 9px;
     margin-left: 4px;
     position: absolute;
 }
@@ -128,7 +130,7 @@ a:-webkit-any-link{
 	display: block;
 	font-size: 12px;
 	letter-spacing: -0.3px;
-    top: 44px;
+    top: 53px;
     position: absolute;
 }
 

@@ -50,6 +50,96 @@
 	background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../imgs/bg5.png) no-repeat center center fixed;
 }
 
+.home .type-center{
+	text-align: center;
+	width: 100%;
+}
+
+.home p.type-center{
+	font-family: 'Noto Sans KR', sans-serif!important;
+	font-size: 20px;
+	font-weight: 400!important;	
+	margin-top: 20px;
+}
+
+h1{
+	font-family: 'Noto Serif KR', sans-serif!important;
+	font-weight: 700!important;
+	color: #242424;
+	font-size: 45px;
+}
+
+#school-board{
+	background-color: #F2F2F2;
+	
+}
+
+#school-board .board-table{
+	width:100%;
+	border-top: #707070 1px solid;
+	margin-top: 60px;
+}
+
+#school-board tr{
+	height:124px;
+}
+
+#school-board td{
+	font-size: 18px;
+	color: #707070;
+	letter-spacing: -0.45px;
+	border-bottom: #707070 1px solid;
+}
+
+#school-board .row-wrap-body{
+	float: left;
+}
+
+#school-board .row-wrap-body .row-head{
+	font-size: 24px;
+	letter-spacing: -0.6px;
+	color: #242424;
+    font-weight: 700;
+}
+
+#school-board .row-wrap-body .row-body{
+	margin-top: 10px;
+	font-size: 16px;
+	letter-spacing: -0.4px;
+	color: #242424;
+    font-weight: 500;
+}
+
+#school-board .row-wrap-tail{
+	float: left;
+}
+
+#school-board .row-wrap-tail a.board-go-btn{
+	display: inline-block;
+	width: 47px;
+	height: 47px;
+	background: url(../imgs/board_go_btn.png) no-repeat center center fixed;
+    background-size: 47px 47px;
+}
+
+#school-board .row-wrap-tail a.board-go-btn:hover{
+	background: url(../imgs/board_go_btn_hover.png) no-repeat center center fixed;
+	background-size: 47px 47px;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+}
+
+
+.home .section-body{
+	position: relative;
+    margin: 0 auto;
+    width: 1200px;
+	height: 100%;
+    zoom: 1;
+	padding-top : 150px;
+}
+
+
 /*
 .home #schs-logo{
 	width: 200px;
