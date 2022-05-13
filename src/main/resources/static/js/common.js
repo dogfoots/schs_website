@@ -100,3 +100,8 @@ function menu_hover_effect(){
     }
 
 }
+
+
+function notAvailableService(){
+    alert("준비중입니다.");
+}
