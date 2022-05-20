@@ -62,6 +62,39 @@
 	margin-top: 20px;
 }
 
+
+
+.home .section-body{
+	position: relative;
+    margin: 0 auto;
+    width: 1200px;
+	height: 100%;
+    zoom: 1;
+	padding-top : 130px;
+}
+
+
+/*
+.home #schs-logo{
+	width: 200px;
+	height:240px;
+	z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.home #schs-logo > img{
+	display: block; margin: 0px auto;
+}*/
+
+.home .footer-section{
+	height : 320px;
+	background-color: #F2F2F2;
+}
+
+
 h1{
 	font-family: 'Noto Serif KR', sans-serif!important;
 	font-weight: 700!important;
@@ -69,10 +102,80 @@ h1{
 	font-size: 45px;
 }
 
+h2{
+	font-family: 'Noto Serif KR', sans-serif!important;
+	font-weight: 500!important;
+	color: #242424;
+	font-size: 32px;
+}
+
+
+#core-capacities .section-body{
+	width: 100%;
+}
+
+
+#our-videos .play-box{
+	margin-top: 60px;
+	margin-left:120px;
+	border: 1px solid #707070;
+    height: 540px;
+    width: 960px;
+}
+
+#our-videos .out-vid-tab-menu{
+	margin: 0px 0px 0px 120px;
+	padding: 0px;
+	width: 960px;
+	height: 61px;
+	border: 1px solid #707070;
+}
+
+#our-videos .out-vid-tab-menu li{
+	float : left;
+	position:relative;
+	width:239px;
+	border: 0;
+	height:60px;
+}
+
+#our-videos .out-vid-tab-menu li:not(:last-child){
+	border-right: 1px solid #707070;
+}
+
+#our-videos .out-vid-tab-menu li a{
+	color: #707070;
+	display: block;
+	height: 61px;
+	text-align: center;
+	font-size: 17px;
+	font-weight: 400;
+    line-height: 57px;
+}
+
+#our-videos .out-vid-tab-menu li.active a{
+	background-color: #ab0101;
+	color: #ffffff;
+}
+
 #school-board{
-	background-color: #F2F2F2;
+	background-color: #FCFAF5;
 	
 }
+
+#school-board .section-body::before{
+	content: "";
+    position: absolute;
+	/*background: url(../imgs/footer_logo.svg) no-repeat center center fixed;*/
+}
+
+#school-board .section-body::after{
+	content: "";
+    position: absolute;
+	/*background: url(../imgs/footer_logo.svg) no-repeat center center fixed;*/
+}
+
+
 
 #school-board .board-table{
 	width:100%;
@@ -134,32 +237,132 @@ h1{
 	transition: background-image 0.2s ease-in-out;
 }
 
-.home .section-body{
-	position: relative;
-    margin: 0 auto;
-    width: 1200px;
-	height: 100%;
-    zoom: 1;
-	padding-top : 130px;
-}
-
-
 /*
-.home #schs-logo{
-	width: 200px;
-	height:240px;
-	z-index: 1;
+#contact .overview-fac-wrap::before{
+	content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-	transform: translate(-50%, -50%);
+	background: url(../imgs/contact_2.png) no-repeat center center fixed;
+	width:1920px;
+	height:770px;
+}
+*/
+#contact .section-body{
+	width:100%;
+	background: url(../imgs/contact_2.png) no-repeat center 304px fixed;
+	background-size: 100% 635px;
 }
 
-.home #schs-logo > img{
-	display: block; margin: 0px auto;
-}*/
-
-.home .footer-section{
-	height : 320px;
-	background-color: #F2F2F2;
+#contact .overview-fac-wrap{
+	margin-top: 60px;	
 }
+
+#contact .overview-fac{
+	background: url(../imgs/contact_1.png) no-repeat center center fixed;
+	width: 1024px;
+    height: 564px;
+    margin: 0px auto;
+    margin-top: 96px;
+}
+
+#contact .contact-body{
+	margin: 0px auto;
+	width: 1200px;
+	height : 354px;
+	padding-top: 100px;
+	padding-left : 88px;
+	font-weight: 400;
+	font-size: 16px;
+	color: #6D6D6D;
+	letter-spacing: -0.4px;
+}
+
+#contact .contact-body .info-box{
+	display: block;
+	overflow: hidden;
+}
+
+#contact .contact-body .info-box .title{
+	font-weight: 500;
+	color: #242424;
+	font-size: 18px;
+	letter-spacing: -0.45px;
+	width : 120px;
+	margin : 0;
+	padding : 0;
+	float: left;
+}
+
+#contact .contact-body .info-box .info{
+	margin : 0;
+	padding : 0;
+	float: left;
+}
+
+#contact .contact-body .address-info, #contact .contact-body .directions{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#contact .contact-body .address-info{	
+	margin: 0px 0px;
+	padding: 0px 0px;
+	width:400px;
+	float: left;
+	display: inline-block;
+	padding-left: 54px;
+	padding-right: 40px;
+}
+
+#contact .contact-body .address-info .info-box{
+	height:50px;
+}
+
+#contact .contact-body .directions{
+	margin: 0px 0px;
+	padding: 0px 0px;
+	width:575px;
+	float: left;
+	display: inline-block;
+}
+
+#contact .contact-body .directions .info-box .title{
+	height: 120px;
+	padding-left: 75px;
+}
+
+#contact .contact-body .directions:before{
+	content: "";
+    position: absolute;
+	width : 1px;
+	height : 128px;
+	background-color: #6D6D6D;
+}
+
+
+#contact .contact-body .directions .info-box span.title-num{
+	float: left;
+    width: 22px;
+}
+
+#contact .contact-body .directions .info-box span:nth-child(2){
+	height: 71px;
+}
+
+#contact .contact-body .directions .info-box span:nth-child(4){
+	height: 30px;
+}
+
+    
+#contact .contact-body .directions .info-box li{
+	padding-bottom: 10px;
+}
+
+#contact #go-top-btn{
+	float: right;
+    position: relative;
+    top: -139px;
+    left: -334px;
+}
+
+

@@ -184,13 +184,28 @@
 			</div>
 		</div>
 		<div id="core-capacities" class="section">
-			<div>
-				<h1>5대 핵심역량</h1>
+			<div class="section-body">
+				<h2 class="type-center">학생들이 배양하는</h2>
+				<h1 class="type-center">5대 핵심역량</h1>
 			</div>
 		</div>
 		<div id="our-videos" class="section">
-			<div>
-				<h1>youtube</h1>
+			<div class="section-body">
+				<h1 class="type-center">학교생활 Youtube</h1>
+				<p class="type-center">서울크리스찬중고등학교 학생들의 활동을 담은 영상들입니다.</p>
+				<div class="play-box">
+					<iframe id="youtube_iframe" width="960" height="540" 
+					src="https://www.youtube.com/embed/H2GurRDX-DY?rel=0&amp;wmode=opaque"
+					frameborder="0" 
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen=""></iframe>
+				</div>
+				<ul class="out-vid-tab-menu">
+					<li class="active" data-yotube-id="H2GurRDX-DY"><a href="#">SCHS 홍보영상</a></li>
+					<li data-yotube-id="O4kPNM__8pI"><a href="#">독서 심화반 "대항해 시대"</a></li>
+					<li data-yotube-id="dqKP5OL9izA"><a href="#">NIE 2021 2학기 마무리</a></li>
+					<li data-yotube-id="-34T03qDgvs"><a href="#">제17회 정기연주회</a></li>
+				</ul>
 			</div>
 		</div>
 		<div id="school-board" class="section">
@@ -265,7 +280,45 @@
 		</div>
 		<div id="contact" class="section">
 			<div class="section-body">
-				<h1 class="type-center">오시는길</h1>
+				<h1 class="type-center">CONTACT</h1>
+				<p class="type-center">찾아오시는 길과 문의처 안내드립니다.</p>
+				<div class="overview-fac-wrap">
+					<div class="overview-fac">&nbsp;</div>
+				</div>
+				<div class="contact-body">
+					<div class="address-info">
+						<div class="info-box">
+							<span class="title">주소</span>
+							<span class="info">경기 김포시 고촌읍 장곡로 39 성경침례교회</span>
+						</div>
+						<div class="info-box">
+							<span class="title">e-mail 문의</span>
+							<span class="info">asd123@naver.com</span>
+						</div>
+						<div class="info-box">
+							<span class="title">전화 문의</span>
+							<span class="info">031-1234-5679</span>
+						</div>
+					</div>
+					<div class="directions">
+						<div class="info-box">
+							<span class="title">오시는 길</span>
+							<span class="title-num">1.</span>
+							<ul>
+								<li>5, 9호선 김포공항역 김포골드라인 환승</li>
+								<li>고촌역 1번출구 SK주유소 방향 100m 이동</li>
+								<li>고촌역 버스정류장 60, 88, 1002번 탑승 -> 장곡 하차</li>
+							</ul>
+							<span class="title-num">2.</span>
+							<ul>
+								<li>송정역 버스정류장 60, 88, 1002번 탑승 -> 장곡 하차</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a id="go-top-btn" href="javascript:fullpage_api.moveTo(1)">
+					<img src="imgs/top_btn.png" alt="go to top button" width="56px" height="56px"/>
+				</a>
 			</div>
 		</div>
 		<div id="footer" class="footer-section section fp-auto-height">
@@ -336,6 +389,18 @@
 
 			}
 		});
+
+		$(document).ready(function(){
+			$(".out-vid-tab-menu li").each(function(){
+				$(this).on("click",function(){
+					$(".out-vid-tab-menu li").removeClass("active");
+					$(this).addClass("active");
+					var yId = $(this).data("yotube-id");
+					$("#youtube_iframe").prop("src","https://www.youtube.com/embed/"+yId+"?rel=0&wmode=opaque&enablejsapi=1");
+				});
+			});
+		});
+		
 	</script>
 </body>
 </html>

@@ -5,12 +5,20 @@ body{
 	font-family: 'Noto Sans KR', sans-serif!important;
 	font-weight: 100!important;
 	letter-spacing: -0.01em!important;
+	margin: 0px;
 }
 
-span, p, a {
+span, p, a, dl {
 	font-family: 'Noto Sans KR', sans-serif!important;
-	margin: 0px;
+	margin: 0;
+	padding: 0;
 	cursor: default;
+}
+
+dl, dt, dd{
+	list-style-type: none; 
+	margin: 0;
+	vertical-align: baseline; outline: 0; padding: 0; margin: 0; border: 0;
 }
 	
 h1, h2, h3, h4, h5, h6{
@@ -22,6 +30,8 @@ h1, h2, h3, h4, h5, h6{
 
 ul, ol{
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 a{
@@ -141,7 +151,7 @@ a:-webkit-any-link{
 
 #menu{
 	width: 100%;
-    padding-left: 662px;
+    padding-left: 650px;
     padding-right: 281px;
     vertical-align: top;
     position: relative;
@@ -196,7 +206,7 @@ a:-webkit-any-link{
     margin-right: 27px;
     position: relative;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 400;
 	display: block;
     line-height: 1.2;
     -webkit-transition: all .3s;

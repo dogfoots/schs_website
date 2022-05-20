@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:fragment="mainHead">
+    
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>::SCHS 믿음과 실력을 겸비한 인재 양성의 요람::</title>
+	<link rel="icon" href="imgs/header_logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	
+	
+    <th:block th:include="fragments/common/c_head"></th:block>
+
+    <link rel="stylesheet" th:href="@{/lib/AdminLTE-2.4.2/css/AdminLTE.min.css}" />
+    <link rel="stylesheet" th:href="@{/lib/AdminLTE-2.4.2/css/skins/_all-skins.css}" />
+
+    <link rel="stylesheet" th:href="@{/css/common/common_main.css}" />
+
+    //Custom or page css
+    <th:block layout:fragment="custom_css"></th:block>
+
+</head>
+</html>
