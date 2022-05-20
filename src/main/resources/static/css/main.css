@@ -114,6 +114,31 @@ h2{
 	width: 100%;
 }
 
+#core-capacities .icon-box{
+	width: 750px;
+	margin: 65px auto 0px;
+	overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#core-capacities .icon-box .core-icon{
+	float: left;
+	margin : 0px auto;
+}
+
+#core-capacities .icon-box .core-icon .core-text-wrapper{
+	padding: 21px 0px 0px 0px;
+	text-align: center;
+}
+
+#core-capacities .icon-box .core-icon .core-text-wrapper .core-text{
+	width: 72px;
+	letter-spacing: -0.5px;
+	font-weight: 400;
+	font-size: 20px;
+}
 
 #our-videos .play-box{
 	margin-top: 60px;

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="73.457" height="73.457" viewBox="0 0 73.457 73.457">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="SVGID" cx="35.928" cy="35.928" r="35.928" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_18654" data-name="그룹 18654" transform="translate(0.8 0.8)">
+    <g id="그룹_18569" data-name="그룹 18569">
+      <g id="그룹_18568" data-name="그룹 18568" clip-path="url(#clip-path)">
+        <g id="그룹_18567" data-name="그룹 18567" transform="translate(5.342 8.57)">
+          <rect id="사각형_23938" data-name="사각형 23938" width="36.777" height="52.8" transform="translate(11.228 2.057)" fill="#e3e3e3" stroke="#898989" stroke-width="1.6"/>
+          <rect id="사각형_23939" data-name="사각형 23939" width="31.14" height="46.08" transform="translate(14.046 5.418)" fill="#fff"/>
+          <path id="패스_7790" data-name="패스 7790" d="M75.661,68.57H70.77a2.021,2.021,0,0,0-4.042,0H61.836a.827.827,0,0,0-.824.824v2.341a.827.827,0,0,0,.824.824H75.661a.827.827,0,0,0,.824-.824V69.395A.827.827,0,0,0,75.661,68.57Z" transform="translate(-39.132 -66.549)" fill="#e3e3e3" stroke="#898989" stroke-width="1.6"/>
+          <rect id="사각형_23940" data-name="사각형 23940" width="5.147" height="5.147" transform="translate(18.012 11.592)" fill="#e3e3e3" stroke="#898989" stroke-width="0.554"/>
+          <rect id="사각형_23941" data-name="사각형 23941" width="5.147" height="5.147" transform="translate(18.012 21.526)" fill="#e3e3e3" stroke="#898989" stroke-width="0.554"/>
+          <rect id="사각형_23942" data-name="사각형 23942" width="5.147" height="5.147" transform="translate(18.012 31.46)" fill="#e3e3e3" stroke="#898989" stroke-width="0.554"/>
+          <rect id="사각형_23943" data-name="사각형 23943" width="5.147" height="5.147" transform="translate(18.012 41.394)" fill="#e3e3e3" stroke="#898989" stroke-width="0.554"/>
+          <path id="패스_7791" data-name="패스 7791" d="M43.177,112.468s.009.205,0,.977a2.885,2.885,0,0,1-1.29,2.625,23.793,23.793,0,0,1-2.648,1.346,11.5,11.5,0,0,0-2.177,1.656A6.575,6.575,0,0,0,35,123.756c0,.211-.022,2.741-.022,2.741h19.66s-.018-2.53-.022-2.741a6.575,6.575,0,0,0-2.062-4.684,11.47,11.47,0,0,0-2.177-1.656,23.867,23.867,0,0,1-2.648-1.346,2.885,2.885,0,0,1-1.29-2.625c-.009-.771,0-.977,0-.977s-.009-.206,0-.977a2.885,2.885,0,0,1,1.29-2.625,23.867,23.867,0,0,1,2.648-1.346,11.47,11.47,0,0,0,2.177-1.656,6.575,6.575,0,0,0,2.062-4.684c0-.211.022-2.741.022-2.741H34.977s.018,2.53.022,2.741a6.575,6.575,0,0,0,2.062,4.684,11.5,11.5,0,0,0,2.177,1.656,23.793,23.793,0,0,1,2.648,1.346,2.885,2.885,0,0,1,1.29,2.625C43.186,112.262,43.177,112.468,43.177,112.468Z" transform="translate(-34.977 -71.639)" fill="#fff" stroke="#898989" stroke-width="1.6"/>
+          <path id="패스_7792" data-name="패스 7792" d="M49.846,123a6.113,6.113,0,0,1-4.683-4.252A6.111,6.111,0,0,1,40.481,123a4.253,4.253,0,0,0-3.2,5.031h15.77A4.253,4.253,0,0,0,49.846,123Z" transform="translate(-35.333 -74.88)" fill="#898989"/>
+          <path id="패스_7793" data-name="패스 7793" d="M42.464,107.084A6.015,6.015,0,0,1,46,111.036a6.017,6.017,0,0,1,3.538-3.952Z" transform="translate(-36.172 -73.019)" fill="#898989"/>
+          <line id="선_46" data-name="선 46" x2="16.77" transform="translate(25.567 12.534)" fill="none" stroke="#e3e3e3" stroke-width="1.868"/>
+          <line id="선_47" data-name="선 47" x2="16.77" transform="translate(25.567 15.44)" fill="none" stroke="#e3e3e3" stroke-width="1.868"/>
+          <line id="선_48" data-name="선 48" x2="16.77" transform="translate(25.567 22.579)" fill="none" stroke="#e3e3e3" stroke-width="1.868"/>
+          <line id="선_49" data-name="선 49" x2="16.77" transform="translate(25.567 25.485)" fill="none" stroke="#e3e3e3" stroke-width="1.868"/>
+          <line id="선_50" data-name="선 50" x2="16.77" transform="translate(25.567 32.625)" fill="none" stroke="#e3e3e3" stroke-width="1.868"/>
+          <line id="선_51" data-name="선 51" x2="16.77" transform="translate(25.567 35.53)" fill="none" stroke="#e3e3e3" stroke-width="1.868"/>
+          <line id="선_52" data-name="선 52" x2="16.77" transform="translate(25.567 42.67)" fill="none" stroke="#e3e3e3" stroke-width="1.868"/>
+          <line id="선_53" data-name="선 53" x2="16.77" transform="translate(25.567 45.576)" fill="none" stroke="#e3e3e3" stroke-width="1.868"/>
+        </g>
+      </g>
+    </g>
+    <circle id="타원_62" data-name="타원 62" cx="35.928" cy="35.928" r="35.928" fill="none" stroke="#898989" stroke-width="1.6"/>
+  </g>
+</svg>
