@@ -31,14 +31,17 @@
 
 .home .bg1 {
 	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg1.png) no-repeat center center fixed;
+	background-size: cover;
 }
 
 .home .bg2 {
 	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg2.png) no-repeat center center fixed;
+	background-size: cover;
 }
 
 .home .bg3 {
 	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg3.png) no-repeat center center fixed;
+	background-size: cover;
 }
 
 
@@ -115,7 +118,7 @@
     -webkit-transition: all .3s;
     transition: all .3s;
 	margin : 0;
-	border: #242424 1px solid;
+	border: #707070 1px solid;
 }
 
 #fp-nav ul li a.active:hover span, #fp-nav ul li a:hover span{
@@ -226,6 +229,7 @@ h2{
 
 #teaching-coaching{
 	background: url(../imgs/teach_coach_bg.png) no-repeat center center fixed;
+	background-size: cover;
 }
 
 #teaching-coaching .section-body{
