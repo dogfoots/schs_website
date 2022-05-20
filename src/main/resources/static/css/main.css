@@ -228,7 +228,7 @@ h2{
 
 
 #teaching-coaching{
-	background: url(../imgs/teach_coach_bg.png) no-repeat center center fixed;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/teach_coach_bg.png) no-repeat center center fixed;
 	background-size: cover;
 }
 
