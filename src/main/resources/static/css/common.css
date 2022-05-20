@@ -23,8 +23,6 @@ dl, dt, dd{
 	
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Noto Sans KR', sans-serif!important;
-	font-weight: 400!important;	
-	letter-spacing: -0.01em!important;
 	margin: 0px;
 }
 
@@ -151,13 +149,18 @@ a:-webkit-any-link{
 
 #menu{
 	width: 100%;
-    padding-left: 650px;
+    padding-left: 638px;
     padding-right: 281px;
     vertical-align: top;
     position: relative;
     z-index: 500;
 }
 
+.circle {
+	margin: 0 auto;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+}
 
 
 @media (max-width: 1380px){
