@@ -105,3 +105,8 @@ function menu_hover_effect(){
 function notAvailableService(){
     alert("준비중입니다.");
 }
+
+
+function goTop(){
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
+}

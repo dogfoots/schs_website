@@ -17,6 +17,10 @@
 	font-weight: 400;
 }
 
+.board-table a:hover{
+	cursor: default;
+}
+
 .board-table .row-wrap-body{
 	float: left;
 	height : 124px;
@@ -39,16 +43,20 @@
     font-weight: 500;
 }
 
-.board-table-ctrl-wrapper ul{
+.board-table-ctrl-wrapper ul, .board-content-ctrl-wrapper .controls{
 	margin: 40px 0 40px;
 	text-align: center;
 }
+.board-content-ctrl-wrapper .controls{
+	display : flex;
+	flex-direction: row;
+}
 
-.board-table-ctrl-wrapper ul li {
+.board-table-ctrl-wrapper ul li{
 	display: inline-block;
 }
 
-.board-table-ctrl-wrapper ul li a.circle-btn{
+.board-table-ctrl-wrapper ul li a.circle-btn, .board-content-ctrl-wrapper .controls a.circle-btn{
 	height: 50px;
     width: 50px;
 	display: inline-block;
@@ -67,3 +75,44 @@
     margin-bottom: 60px;
 }
 
+.submenu-contents span.date{
+	letter-spacing: -0.5px;
+	color: #242424;
+	font-size: 20px;
+	font-weight: 400;
+	margin-top : 28px;
+	display: block;
+}
+
+
+.board-content-wrap{
+	width:100%;
+	border-top: #707070 2px solid;
+	border-bottom: #707070 2px solid;
+	margin-top: 30px;
+	padding : 55px 0px 55px 0px;
+	letter-spacing: -0.4px;
+}
+
+.board-content-wrap p{
+	color: #242424;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.rect-btn{
+	border: 1px solid #707070;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: -0.5px;
+	color: #707070;
+	display: inline-block;
+}
+
+.go-to-list-btn{
+	width: 180px;
+	height: 61px;
+	text-align: center;
+    line-height: 58px;
+    margin: 0px auto;
+}
