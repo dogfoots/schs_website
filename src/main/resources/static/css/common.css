@@ -196,7 +196,7 @@ a:-webkit-any-link{
 }
 
 #header.white #header-logo a, #header #menu li a{
-	color: #888888;
+	color: #242424;
 }
 
 #menu > li{
@@ -221,7 +221,7 @@ a:-webkit-any-link{
 }
 
 #header.white #menu > li > a{
-	color: #888888;
+	color: #242424;
 }
 
 #header #menu > li.on > a{
@@ -326,10 +326,17 @@ body.menu_open #menu_overlay {opacity:1;visibility:visible;}
 
 
 #path{
-	padding: 20px 0 46px;
+	padding: 30px 0 46px;
+	letter-spacing: -0.3px;
     font-size: 0.84rem;
     float: right;
-    color: #737373;
+    color: #707070;
+}
+
+#path > a{
+	color: #707070;
+	font-size : 12px;
+	font-weight: 400;
 }
 
 #path>* {
@@ -337,9 +344,11 @@ body.menu_open #menu_overlay {opacity:1;visibility:visible;}
 }
 
 #path span{
-    width: 3px;
-    height: 5px;
-    margin: 0px 9px 13px 4px;
+	width: 3px;
+    height: 7px;
+    margin: 0px 13px 0px 9px;
+    top: -2px;
+    position: relative;
 }
 
 .submenu-container{
@@ -350,6 +359,22 @@ body.menu_open #menu_overlay {opacity:1;visibility:visible;}
 	background-color: #FFFFFF;
     margin-top: 90px;
 	min-height: 512px;
+}
+
+.submenu-container h1{
+    font-weight: 400;
+    letter-spacing: -1.25px;
+    font-size: 50px;
+	color: #242424;
+}
+
+.submenu-container p{
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	color: #242424;
+	opacity: 1;
+	font-size: 20px;
+	margin-top : 8px;
 }
 
 .side-navi{
@@ -398,9 +423,9 @@ body.menu_open #menu_overlay {opacity:1;visibility:visible;}
 	position: relative;
     clear: right;
     overflow: hidden;
-    width: 900px;
+    width: 1200px;
     max-width: 100%;
-    margin: 35px 0 0 0px;
+    margin: 91px 0 0 0px;
 }
 
 footer{
@@ -480,6 +505,27 @@ footer .footer-links{
 	top : 52px;
     position: relative;
 }
+
 footer .footer-links a:not(:last-child){
 	margin-right: 16px;
+}
+
+
+.circle-btn{
+	height: 60px;
+    width: 60px;
+    margin: 0 10px 0px 10px;
+    border: 1px solid #777777;
+    border-radius: 50%;
+}
+
+
+.prev-btn{
+	background:url(../imgs/left_arrow_grey.svg) no-repeat center center fixed;
+	transform: scaleX(-1); 
+}
+
+.next-btn{
+	background:url(../imgs/left_arrow_grey.svg) no-repeat center center fixed;
+    transform: scaleX(1);
 }
