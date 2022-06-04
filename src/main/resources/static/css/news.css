@@ -40,7 +40,7 @@
 }
 
 .board-table-ctrl-wrapper ul{
-	margin: 40px 0 155px;
+	margin: 40px 0 40px;
 	text-align: center;
 }
 
@@ -58,5 +58,12 @@
 	font-weight: 400;	
 	letter-spacing: -0.5px;
 	color: #707070;
+}
+
+
+#go-top-btn{
+	float: right;
+    position: relative;
+    margin-bottom: 60px;
 }
 
