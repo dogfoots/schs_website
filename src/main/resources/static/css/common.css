@@ -521,11 +521,11 @@ footer .footer-links a:not(:last-child){
 
 
 .prev-btn{
-	background:url(../imgs/left_arrow_grey.svg) no-repeat center center fixed;
+	background:url(../imgs/left_arrow_grey.svg) no-repeat center center;
 	transform: scaleX(-1); 
 }
 
 .next-btn{
-	background:url(../imgs/left_arrow_grey.svg) no-repeat center center fixed;
+	background:url(../imgs/left_arrow_grey.svg) no-repeat center center;
     transform: scaleX(1);
 }

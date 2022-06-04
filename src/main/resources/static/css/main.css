@@ -30,17 +30,17 @@
 }
 
 .home .bg1 {
-	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg1.png) no-repeat center center fixed;
+	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg1.png) no-repeat center center;
 	background-size: cover;
 }
 
 .home .bg2 {
-	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg2.png) no-repeat center center fixed;
+	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg2.png) no-repeat center center;
 	background-size: cover;
 }
 
 .home .bg3 {
-	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg3.png) no-repeat center center fixed;
+	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg3.png) no-repeat center center;
 	background-size: cover;
 }
 
@@ -100,14 +100,31 @@
 }
 
 .home .fp-prev{
-	background:url(../imgs/left_arrow.svg) no-repeat center center fixed;
+	/*background:url(../imgs/left_arrow.svg) no-repeat center center fixed;*/
+	background-color: transparent;
+	background-image: url(../imgs/left_arrow.svg);
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size : auto;
+   -ms-background-size: auto;
+   -o-background-size: auto;
+   -moz-background-size: auto;
+   -webkit-background-size: auto;
 	transform: scaleX(-1); 
 	left : 200px;
 }
 
 
 .home .fp-next{
-	background:url(../imgs/left_arrow.svg) no-repeat center center fixed;
+	background-color: transparent;
+	background-image: url(../imgs/left_arrow.svg);
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size : auto;
+   -ms-background-size: auto;
+   -o-background-size: auto;
+   -moz-background-size: auto;
+   -webkit-background-size: auto;
 	right : 200px;
 }
 
@@ -228,8 +245,12 @@ h2{
 
 
 #teaching-coaching{
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/teach_coach_bg.png) no-repeat center center fixed;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/teach_coach_bg.png) no-repeat center center;
 	background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
 }
 
 #teaching-coaching .section-body{
@@ -261,7 +282,7 @@ h2{
 #core-capacities .section-body{
 	width: 100%;
 	height: auto;
-	background:url(../imgs/core_flower_bg2.svg) no-repeat left 1214px fixed;
+	background:url(../imgs/core_flower_bg2.svg) no-repeat left 1214px;
 }
 
 #core-capacities .icon-box{
@@ -355,9 +376,9 @@ h2{
 }*/
 
 #core-capacities .fear-of-God{
-	background: url(../imgs/core_flower_bg1.svg) no-repeat left 336px fixed, 
-				url(../imgs/core_flower_bg3.svg) no-repeat right 298px fixed,
-				url(../imgs/core_flower_bg2.svg) no-repeat left -138px fixed;
+	background: url(../imgs/core_flower_bg1.svg) no-repeat left 336px , 
+				url(../imgs/core_flower_bg3.svg) no-repeat right 298px ,
+				url(../imgs/core_flower_bg2.svg) no-repeat left -138px ;
 	background-color: #FCFAF5;
 	width: 100%;
 	height : 598px;
@@ -379,7 +400,7 @@ h2{
 #core-capacities .fear-of-God .words-quote .quote-box{
 	width: 559px;
 	height: 142px;
-	background: url(../imgs/fear_bg.svg) no-repeat center center fixed, url(../imgs/quotation1.PNG) no-repeat 64px center fixed , url(../imgs/quotation2.PNG) no-repeat 454px center fixed;
+	background: url(../imgs/fear_bg.svg) no-repeat center center, url(../imgs/quotation1.PNG) no-repeat 64px center, url(../imgs/quotation2.PNG) no-repeat 454px center;
 	text-align: center;
 }
 /*
@@ -451,7 +472,7 @@ h2{
 
 
 #our-videos{
-	background: url(../imgs/core_flower_bg1.svg) no-repeat left -258px fixed, url(../imgs/core_flower_bg3.svg) no-repeat right -301px fixed;
+	background: url(../imgs/core_flower_bg1.svg) no-repeat left -258px, url(../imgs/core_flower_bg3.svg) no-repeat right -301px;
 }
 
 
@@ -566,13 +587,13 @@ h2{
 	display: inline-block;
 	width: 47px;
 	height: 47px;
-	background: url(../imgs/board_go_btn.png) no-repeat center center fixed;
+	background: url(../imgs/board_go_btn.png) no-repeat center center;
     background-size: 47px 47px;
 	margin-top: 34px;
 }
 
 #school-board .row-wrap-tail a.board-go-btn:hover{
-	background: url(../imgs/board_go_btn_hover.png) no-repeat center center fixed;
+	background: url(../imgs/board_go_btn_hover.png) no-repeat center center;
 	background-size: 47px 47px;
 	-webkit-transition: background-image 0.2s ease-in-out;
 	transition: background-image 0.2s ease-in-out;
@@ -589,7 +610,7 @@ h2{
 */
 #contact .section-body{
 	width:100%;
-	background: url(../imgs/contact_2.png) no-repeat center 304px fixed;
+	background: url(../imgs/contact_2.png) no-repeat center 304px;
 	background-size: 100% 635px;
 }
 
@@ -598,7 +619,7 @@ h2{
 }
 
 #contact .overview-fac{
-	background: url(../imgs/contact_1.png) no-repeat center center fixed;
+	background: url(../imgs/contact_1.png) no-repeat center center;
 	width: 1024px;
     height: 564px;
     margin: 0px auto;
