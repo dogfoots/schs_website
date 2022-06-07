@@ -157,27 +157,27 @@
 		<div id="path">
 			<a href="./index.html">HOME</a><span><img src="imgs/path_arrow.svg"></span><a href="./bd_main.html">학교소식</a><span><img src="imgs/path_arrow.svg"></span><a href="./gallery_main.html"><strong>갤러리</strong></a>
 		</div>
-		<!-- snb 빼고 갈듯
-		<div class="side-navi">
-			<h2>학교소식</h2>
-			<ul>
-				<li class="on">
-					<a href="./bd_main.html" >공지사항<span></span></a>
-				</li>
-				<li>
-					<a href="#" >갤러리<span></span></a>
-				</li>
-				<li>
-					<a href="javascript:void();"  onclick="notAvailableService()">학적관리<span></span></a>
-				</li>
-			</ul>
-		</div>-->
 		<div class="submenu-contents">
 			<h1>학교 갤러리</h1>
 			<p>서울크리스찬중고등학교 학생들의 아름다운 추억들을 담은 갤러리입니다.</p>
-			
-			
+			<div class="gallery-wrap">
+				<div class="large-box">
+					<div class="title-box">
+						<span class="title"></span>
+						<span class="date"></span>
+					</div>
+				</div>
+				<div class="thumbs-box">
+					<!--갤러리 사진 데이터베이스 구현 필요-->
+					<a href="javascript:void()" class="thumb-item" data-date="2022.06.07" data-title="가을 소풍1" data-thmbimg-path="imgs/dummies/thmbs/1.jpg" data-img-path="imgs/dummies/org/1.jpg">&nbsp;</a>
+					<a href="javascript:void()" class="thumb-item" data-date="2022.06.17" data-title="가을 소풍2" data-thmbimg-path="imgs/dummies/thmbs/6.jpg" data-img-path="imgs/dummies/org/6.jpg">&nbsp;</a>
+					<a href="javascript:void()" class="thumb-item" data-date="2022.06.27" data-title="가을 소풍3" data-thmbimg-path="imgs/dummies/thmbs/7.jpg" data-img-path="imgs/dummies/org/7.jpg">&nbsp;</a>
+					<a href="javascript:void()" class="thumb-item" data-date="2022.06.07" data-title="가을 소풍4" data-thmbimg-path="imgs/dummies/thmbs/9.jpg" data-img-path="imgs/dummies/org/9.jpg">&nbsp;</a>
+					<a href="javascript:void()" class="thumb-item" data-date="2022.06.17" data-title="가을 소풍5" data-thmbimg-path="imgs/dummies/thmbs/5.jpg" data-img-path="imgs/dummies/org/5.jpg">&nbsp;</a>
+				</div>
+			</div>
 			<div class="board-table-ctrl-wrapper">
+				<!--pagenation 구현 필요-->
 				<ul>
 					<li>
 						<a class="circle-btn prev-btn" href="#">&nbsp;</a>
@@ -250,9 +250,43 @@
 
    
 	<script type="text/javascript">
-		var api;
+		
+		function focusImage(imgFilePath, title, date){
+			$(".gallery-wrap .large-box").css("background", "url("+imgFilePath+") no-repeat center center");
+			$(".gallery-wrap .large-box").css("background-size", "auto 881px");
+			$(".gallery-wrap .large-box").css("-ms-background-size", "auto 881px");
+			$(".gallery-wrap .large-box").css("-o-background-size", "auto 881px");
+			$(".gallery-wrap .large-box").css("-moz-background-size", "auto 881px");
+			$(".gallery-wrap .large-box").css("-webkit-background-size", "auto 881px");
+			$(".gallery-wrap .large-box span.title").html(title);
+			$(".gallery-wrap .large-box span.date").html(date);
+		}
+
+		function initThumbsBox(){
+			$(".thumbs-box .thumb-item").each(function(){
+				$(this).on("click", function(){
+					focusImage($(this).data("img-path"),
+					$(this).data("title"), 
+					$(this).data("date"));
+				});
+
+				$(this).css("background", "url("+$(this).data("thmbimg-path")+") no-repeat center center");
+				$(this).css("background-size", "auto 152px");
+				$(this).css("-ms-background-size", "auto 152px");
+				$(this).css("-o-background-size", "auto 152px");
+				$(this).css("-moz-background-size", "auto 152px");
+				$(this).css("-webkit-background-size", "auto 152px");
+
+			});
+
+			$item = $(".thumbs-box .thumb-item").eq(0);
+			focusImage($item.data("img-path"),
+						$item.data("title"), 
+						$item.data("date"));
+		}
+
 		$(document).ready(function(){
-			
+			initThumbsBox();
 		});
 	</script>
 </body>

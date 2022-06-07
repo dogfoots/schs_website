@@ -589,12 +589,20 @@ h2{
 	height: 47px;
 	background: url(../imgs/board_go_btn.png) no-repeat center center;
     background-size: 47px 47px;
+	-o-background-size: 47px 47px;
+	-ms-background-size: 47px 47px;
+	-moz-background-size: 47px 47px;
+	-webkit-background-size: 47px 47px;
 	margin-top: 34px;
 }
 
 #school-board .row-wrap-tail a.board-go-btn:hover{
 	background: url(../imgs/board_go_btn_hover.png) no-repeat center center;
 	background-size: 47px 47px;
+	-o-background-size: 47px 47px;
+	-ms-background-size: 47px 47px;
+	-moz-background-size: 47px 47px;
+	-webkit-background-size: 47px 47px;
 	-webkit-transition: background-image 0.2s ease-in-out;
 	transition: background-image 0.2s ease-in-out;
 }
