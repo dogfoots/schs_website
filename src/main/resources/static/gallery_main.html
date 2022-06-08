@@ -169,11 +169,11 @@
 				</div>
 				<div class="thumbs-box">
 					<!--갤러리 사진 데이터베이스 구현 필요-->
-					<a href="javascript:void()" class="thumb-item" data-date="2022.06.07" data-title="가을 소풍1" data-thmbimg-path="imgs/dummies/thmbs/1.jpg" data-img-path="imgs/dummies/org/1.jpg">&nbsp;</a>
-					<a href="javascript:void()" class="thumb-item" data-date="2022.06.17" data-title="가을 소풍2" data-thmbimg-path="imgs/dummies/thmbs/6.jpg" data-img-path="imgs/dummies/org/6.jpg">&nbsp;</a>
-					<a href="javascript:void()" class="thumb-item" data-date="2022.06.27" data-title="가을 소풍3" data-thmbimg-path="imgs/dummies/thmbs/7.jpg" data-img-path="imgs/dummies/org/7.jpg">&nbsp;</a>
-					<a href="javascript:void()" class="thumb-item" data-date="2022.06.07" data-title="가을 소풍4" data-thmbimg-path="imgs/dummies/thmbs/9.jpg" data-img-path="imgs/dummies/org/9.jpg">&nbsp;</a>
-					<a href="javascript:void()" class="thumb-item" data-date="2022.06.17" data-title="가을 소풍5" data-thmbimg-path="imgs/dummies/thmbs/5.jpg" data-img-path="imgs/dummies/org/5.jpg">&nbsp;</a>
+					<a href="javascript:void(0);" class="thumb-item" data-date="2022.06.07" data-title="가을 소풍1" data-thmbimg-path="./imgs/dummies/thmbs/1.jpg" data-img-path="./imgs/dummies/org/1.jpg">&nbsp;</a>
+					<a href="javascript:void(0);" class="thumb-item" data-date="2022.06.17" data-title="가을 소풍2" data-thmbimg-path="./imgs/dummies/thmbs/6.jpg" data-img-path="./imgs/dummies/org/6.jpg">&nbsp;</a>
+					<a href="javascript:void(0);" class="thumb-item" data-date="2022.06.27" data-title="가을 소풍3" data-thmbimg-path="./imgs/dummies/thmbs/7.jpg" data-img-path="./imgs/dummies/org/7.jpg">&nbsp;</a>
+					<a href="javascript:void(0);" class="thumb-item" data-date="2022.06.07" data-title="가을 소풍4" data-thmbimg-path="./imgs/dummies/thmbs/9.jpg" data-img-path="./imgs/dummies/org/9.jpg">&nbsp;</a>
+					<a href="javascript:void(0);" class="thumb-item" data-date="2022.06.17" data-title="가을 소풍5" data-thmbimg-path="./imgs/dummies/thmbs/5.jpg" data-img-path="./imgs/dummies/org/5.jpg">&nbsp;</a>
 				</div>
 			</div>
 			<div class="board-table-ctrl-wrapper">
@@ -264,7 +264,12 @@
 
 		function initThumbsBox(){
 			$(".thumbs-box .thumb-item").each(function(){
-				$(this).on("click", function(){
+				/*$(this).on("click", function(){
+					focusImage($(this).data("img-path"),
+					$(this).data("title"), 
+					$(this).data("date"));
+				});*/
+				$(this).click(function(){
 					focusImage($(this).data("img-path"),
 					$(this).data("title"), 
 					$(this).data("date"));
