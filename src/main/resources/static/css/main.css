@@ -631,7 +631,25 @@ h2{
 	width: 1024px;
     height: 564px;
     margin: 0px auto;
+    margin-top: 96px;	
+	transition: all 0.25s linear;
+}
+
+#contact .overview-map{
+	width: 1024px;
+    height: 564px;
+    margin: 0px auto;
     margin-top: 96px;
+	transition: all 0.25s linear;
+}
+
+.overview-fac a, .overview-map a{
+	color: white;
+    font-size: 14px;
+    position: absolute;
+    display: inline-block;
+    top: 851px;
+    margin-left: 1062px;
 }
 
 #contact .contact-body{
@@ -734,5 +752,4 @@ h2{
     top: -139px;
     left: -334px;
 }
-
 

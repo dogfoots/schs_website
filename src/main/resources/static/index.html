@@ -380,7 +380,17 @@
 				<h1 class="type-center">CONTACT</h1>
 				<p class="type-center">찾아오시는 길과 문의처 안내드립니다.</p>
 				<div class="overview-fac-wrap">
-					<div class="overview-fac">&nbsp;</div>
+					<div class="overview-fac">
+						<a href="#">
+							<span class="map-link">-&nbsp;map</span>
+						</a>
+					</div>
+					<div class="overview-map">
+						<a href="#">
+							<span class="map-link">-&nbsp;overview</span>
+						</a>
+						<div id="map" style="width:1024px;height:564px;"></div>
+					</div>
 				</div>
 				<div class="contact-body">
 					<div class="address-info">
@@ -508,7 +518,46 @@
 					$("#youtube_iframe").prop("src","https://www.youtube.com/embed/"+yId+"?rel=0&wmode=opaque&enablejsapi=1");
 				});
 			});
+
+			initContactMap();
 		});
+		
+	</script>
+	<!--appkey 학교 것으로 변경 요망. kakao map api-->
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=866c2b9cdf75ee33ceb4f84861288ab6"></script>
+	<script>
+
+		function initContactMap(){
+			$(".overview-fac a").click(function(){
+				$(".overview-map").show();
+				$(".overview-fac").hide();
+			});
+
+			$(".overview-map a").click(function(){
+				$(".overview-map").hide();
+				$(".overview-fac").show();
+			});
+
+			$(".overview-map").hide();
+		}
+
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.606360, 126.7509058),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+
+		var marker = new kakao.maps.Marker({ 
+			position: map.getCenter() 
+		}); 
+		marker.setMap(map);
+
+		var mapTypeControl = new kakao.maps.MapTypeControl();
+		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+		var zoomControl = new kakao.maps.ZoomControl();
+		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 		
 	</script>
 </body>
