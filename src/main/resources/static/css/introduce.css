@@ -1,0 +1,112 @@
+/*학교소개*/
+.contact{
+	background: url(../imgs/contact_2.png) no-repeat center 352px;
+	background-size: 100% 635px;
+}
+
+.contact .submenu-container, .contact .submenu-contents{
+	background: transparent;
+}
+
+.overview-fac-wrap{
+	margin-top : 96px;
+}
+
+.overview-fac-wrap .overview-map{
+	width: 1200px;
+	margin: 0px auto;	
+}
+
+.contact-body{
+	margin: 0px auto;
+	width: 1200px;
+	height : 240px;
+	padding-top: 60px;
+	/*padding-left : 88px;*/
+	font-weight: 400;
+	font-size: 16px;
+	color: #6D6D6D;
+	letter-spacing: -0.4px;
+}
+
+.contact-body .info-box{
+	display: block;
+	overflow: hidden;
+}
+
+.contact-body .info-box .title{
+	font-weight: 500;
+	color: #242424;
+	font-size: 18px;
+	letter-spacing: -0.45px;
+	width : 120px;
+	margin : 0;
+	padding : 0;
+	float: left;
+}
+
+.contact-body .info-box .info{
+	margin : 0;
+	padding : 0;
+	float: left;
+}
+
+.contact-body .address-info,  .contact-body .directions{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.contact-body .address-info{	
+	margin: 0px 0px;
+	padding: 0px 0px;
+	width:400px;
+	float: left;
+	display: inline-block;
+	/*padding-left: 54px;*/
+	padding-right: 40px;
+}
+
+.contact-body .address-info .info-box{
+	height:50px;
+}
+
+.contact-body .directions{
+	margin: 0px 0px;
+	padding: 0px 0px;
+	width:575px;
+	float: left;
+	display: inline-block;
+}
+
+.contact-body .directions .info-box .title{
+	height: 120px;
+	padding-left: 75px;
+}
+
+.contact-body .directions:before{
+	content: "";
+    position: absolute;
+	width : 1px;
+	height : 128px;
+	background-color: #6D6D6D;
+}
+
+
+.contact-body .directions .info-box span.title-num{
+	float: left;
+    width: 22px;
+}
+
+.contact-body .directions .info-box span:nth-child(2){
+	height: 71px;
+}
+
+.contact-body .directions .info-box span:nth-child(4){
+	height: 30px;
+}
+
+    
+.contact-body .directions .info-box li{
+	padding-bottom: 10px;
+}
