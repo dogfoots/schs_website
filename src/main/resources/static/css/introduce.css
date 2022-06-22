@@ -14,7 +14,49 @@
 	display : inline-block;
 	width : 386px;
 	/*height : 473px;*/
-	height: 540px;
+	height: 587px;
+}
+
+.teachers-box .teacher-box-wrapper ul li .card-item{
+	position: relative;
+}
+
+.teachers-box .teacher-box-wrapper ul li .name{
+	text-align: center;
+}
+
+.teachers-box .teacher-box-wrapper ul li .name strong, .teachers-box .teacher-box-wrapper ul li .over .head strong{
+	font-size: 29px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+}
+
+
+.teachers-box .teacher-box-wrapper ul li .over .head{
+	margin-top: 20px;
+}
+
+.teachers-box .teacher-box-wrapper ul li .over .head strong{
+    color: #000;
+}
+
+.teachers-box .teacher-box-wrapper ul li .name span, .teachers-box .teacher-box-wrapper ul li .over .head span{   
+	font-size: 23px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+    margin-left: 4px;
+    color: #777;
+}
+
+.teachers-box .teacher-box-wrapper ul li .over .head span{
+    color: #777;
+}
+
+.teachers-box .teacher-box-wrapper ul li .over .body p{    
+	margin-top: 30px;
+	color: #000;
+    font-family: 'NanumSaRangHaeADeur'!important;
+    font-size: 30px;
 }
 
 .teachers-box .teacher-box-wrapper ul li .over{
@@ -23,12 +65,27 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: #1c5c6b;
     padding: 43px 30px 20px 30px;
-    color: #000;
+    color: #fff;
     opacity: 0;
+	background: url(../imgs/card-over-bg.png) no-repeat center center;
     transition: all 0.3s ease;
+	border: #777 solid 1px;
 }
+
+.teachers-box .teacher-box-wrapper ul li .over:hover{
+    opacity: 1;
+}
+
+.teaching-qualification{    
+	margin: 40px 0px 40px 0px;
+	text-align: right;
+}
+
+.teaching-qualification span{
+	font-size: 24px;
+}
+
 
 
 .contact{
