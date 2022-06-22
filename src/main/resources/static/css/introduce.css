@@ -13,7 +13,6 @@
 .teachers-box .teacher-box-wrapper ul li{
 	display : inline-block;
 	width : 386px;
-	/*height : 473px;*/
 	height: 587px;
 }
 
@@ -23,6 +22,7 @@
 
 .teachers-box .teacher-box-wrapper ul li .name{
 	text-align: center;
+	margin-top: 10px;
 }
 
 .teachers-box .teacher-box-wrapper ul li .name strong, .teachers-box .teacher-box-wrapper ul li .over .head strong{
@@ -31,6 +31,24 @@
     font-family: 'Noto Sans KR';
 }
 
+
+.teachers-box .teacher-box-wrapper ul li .over{
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 43px 30px 20px 30px;
+    color: #fff;
+    opacity: 0;
+	background: url(../imgs/card-over-bg.png) no-repeat center center;
+    transition: all 0.3s ease;
+	border: #777 solid 1px;
+}
+
+.teachers-box .teacher-box-wrapper ul li .over:hover{
+    opacity: 1;
+}
 
 .teachers-box .teacher-box-wrapper ul li .over .head{
 	margin-top: 20px;
@@ -59,23 +77,6 @@
     font-size: 30px;
 }
 
-.teachers-box .teacher-box-wrapper ul li .over{
-	position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 43px 30px 20px 30px;
-    color: #fff;
-    opacity: 0;
-	background: url(../imgs/card-over-bg.png) no-repeat center center;
-    transition: all 0.3s ease;
-	border: #777 solid 1px;
-}
-
-.teachers-box .teacher-box-wrapper ul li .over:hover{
-    opacity: 1;
-}
 
 .teaching-qualification{    
 	margin: 40px 0px 40px 0px;
