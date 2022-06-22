@@ -1,4 +1,8 @@
 /*학교소개*/
+.teachers-box{	
+	margin-top: 60px;
+}
+
 
 .teachers-box .teacher-box-wrapper ul{
 	display: flex;
@@ -11,6 +15,19 @@
 	width : 386px;
 	/*height : 473px;*/
 	height: 540px;
+}
+
+.teachers-box .teacher-box-wrapper ul li .over{
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #1c5c6b;
+    padding: 43px 30px 20px 30px;
+    color: #000;
+    opacity: 0;
+    transition: all 0.3s ease;
 }
 
 
