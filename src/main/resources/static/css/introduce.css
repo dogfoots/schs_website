@@ -200,3 +200,244 @@
 .contact-body .directions .info-box li{
 	padding-bottom: 10px;
 }
+
+
+.fac-box{
+	margin-top: 30px;
+	background: url(../imgs/facility_bg.png) no-repeat center center;
+	background-size: 1132px 644px;
+	width:100%;
+	height: 730px;
+}
+
+.fac-box .area{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #f2f2f2;
+	border: #a6a6a6 solid 1px;
+	border-radius: 25px;	
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.fac-box .area:hover:not(.no-pic){
+	background-color: #ffffff;
+}
+
+.fac-box .area span{
+	font-family: 'Noto Sans KR', sans-serif!important;
+	font-weight: 400;
+	font-size: 19px;
+	color: #000;
+    transition: all 0.3s ease;
+}
+
+.fac-box .area:hover:not(.no-pic) span{
+	font-size: 23px;
+}
+
+.fac-box .area.f301{
+    left: 191px;
+    top: 251px;
+    width: 640px;
+    height: 159px;
+    border-radius: 8px;
+    line-height: 152px;
+}
+
+.fac-box .area.f301 span{
+	font-size: 40px;
+}
+.fac-box .area.f301:hover:not(.no-pic) span{
+	font-size: 43px;
+}
+
+.fac-box .area.f302{
+	left: 837px;
+    top: 251px;
+    width: 186px;
+    height: 58px;
+    border-radius: 5px;
+    line-height: 55px;
+}
+
+.fac-box .area.f303{
+    left: 837px;
+    top: 315px;
+    width: 186px;
+    height: 95px;
+    border-radius: 4px;
+    line-height: 88px;
+}
+
+.fac-box .area.f201{
+    left: 350px;
+    top: 418px;
+    width: 185px;
+    height: 92px;
+    border-radius: 8px;
+    line-height: 85px;
+}
+
+.fac-box .area.f202{    
+	left: 541px;
+    top: 418px;
+    width: 334px;
+    height: 92px;
+    border-radius: 8px;
+    line-height: 85px;
+}
+
+.fac-box .area.f203{
+	left: 881px;
+    top: 418px;
+    width: 142px;
+    height: 92px;
+    border-radius: 7px;
+    line-height: 85px;
+}
+
+.fac-box .area.f204{
+	left: 191px;
+    top: 418px;
+    width: 153px;
+    height: 92px;
+    border-radius: 8px;
+    line-height: 85px;
+}
+
+.fac-box .area.f101{
+	left: 191px;
+    top: 517px;
+    width: 200px;
+    height: 99px;
+    border-radius: 7px;
+    line-height: 93px;
+}
+
+.fac-box .area.f102{
+	left: 557px;
+    top: 517px;
+    width: 224px;
+    height: 99px;
+    border-radius: 8px;
+    line-height: 93px;
+}
+
+.fac-box .area.f103{
+    left: 398px;
+    top: 517px;
+    width: 153px;
+    height: 99px;
+    border-radius: 8px;
+    line-height: 93px;
+}
+
+.fac-box .area.f104{
+	left: 787px;
+    top: 517px;
+    width: 236px;
+    height: 99px;
+    border-radius: 8px;
+    line-height: 93px;
+}
+
+
+.fac-box .area.fb101{
+	left: 191px;
+    top: 633px;
+    width: 368px;
+    height: 66px;
+    border-radius: 8px;
+    line-height: 61px;
+}
+
+.fac-box .area.fb102{
+	left: 566px;
+    top: 633px;
+    width: 164px;
+    height: 66px;
+    border-radius: 8px;
+    line-height: 61px;
+}
+
+.fac-box .area.fb103{    
+	left: 737px;
+    top: 633px;
+    width: 127px;
+    height: 66px;
+    border-radius: 8px;
+    line-height: 61px;
+}
+
+.fac-box .area.fb104{    
+    left: 871px;
+    top: 633px;
+    width: 152px;
+    height: 66px;
+    border-radius: 8px;
+    line-height: 61px;
+}
+
+.fac-box .area.fb201{
+	left: 191px;
+    top: 720px;
+    width: 832px;
+    height: 84px;
+    border-radius: 8px;
+    line-height: 76px;
+}
+
+.fac-box .floor{
+	position: absolute;
+	font-family: 'Noto Sans KR', sans-serif!important;
+	font-weight: 400;
+	font-size: 31px;
+}
+
+.fac-box .floor.f3{	
+    left: 96px;
+    top: 303px;
+}
+
+.fac-box .floor.f2{	
+    left: 96px;
+    top: 444px;
+}
+
+.fac-box .floor.f1{	
+    left: 96px;
+    top: 544px;
+}
+
+.fac-box .floor.f101{	
+    left: 1036px;
+    top: 553px;
+    font-size: 17px;
+}
+
+
+
+.fac-box .floor.fb1{	
+    left: 86px;
+    top: 642px;
+}
+
+.fac-box .floor.fb2{	
+    left: 65px;
+    top: 733px;
+}
+
+.fac-box .floor.tf{
+	text-align: center;
+    left: 825px;
+    top: 198px;
+    font-size: 22px;
+    transition: all 0.3s ease;
+    width: 182px;
+}
+
+.fac-box .floor.tf:hover:not(.no-pic){	
+    font-size: 25px;
+}

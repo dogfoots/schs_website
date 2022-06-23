@@ -15,7 +15,7 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 </head>
-<body class="contact">
+<body class="facility">
 	<header id="header" class="white">
 		<div class="header_wrap">
 			<h1 id="header-logo">
@@ -155,46 +155,35 @@
 	
 	<div class="submenu-container">
 		<div id="path">
-			<a href="./index.html">HOME</a><span><img src="imgs/path_arrow.svg"></span><a href="./introduct.html">학교소개</a><span><img src="imgs/path_arrow.svg"></span><a href="./contact.html"><strong>오시는길</strong></a>
+			<a href="./index.html">HOME</a><span><img src="imgs/path_arrow.svg"></span><a href="./introduct.html">학교소개</a><span><img src="imgs/path_arrow.svg"></span><a href="./facility.html"><strong>시설안내</strong></a>
 		</div>
 		<div class="submenu-contents">
-			<h1>오시는 길</h1>
-			<p>서울크리스찬중고등학교로 오시는 길을 안내드립니다.</p>
-			<div class="overview-fac-wrap">
-				<div class="overview-map">
-					<div id="map" style="width:1200px;height:564px;"></div>
-				</div>
-			</div>
-			<div class="contact-body">
-				<div class="address-info">
-					<div class="info-box">
-						<span class="title">주소</span>
-						<span class="info">경기 김포시 고촌읍 장곡로 39 성경침례교회</span>
-					</div>
-					<div class="info-box">
-						<span class="title">e-mail 문의</span>
-						<span class="info">asd123@naver.com</span>
-					</div>
-					<div class="info-box">
-						<span class="title">전화 문의</span>
-						<span class="info">031-1234-5679</span>
-					</div>
-				</div>
-				<div class="directions">
-					<div class="info-box">
-						<span class="title">오시는 길</span>
-						<span class="title-num">1.</span>
-						<ul>
-							<li>5, 9호선 김포공항역 김포골드라인 환승</li>
-							<li>고촌역 1번출구 SK주유소 방향 100m 이동</li>
-							<li>고촌역 버스정류장 60, 88, 1002번 탑승 -> 장곡 하차</li>
-						</ul>
-						<span class="title-num">2.</span>
-						<ul>
-							<li>송정역 버스정류장 60, 88, 1002번 탑승 -> 장곡 하차</li>
-						</ul>
-					</div>
-				</div>
+			<h1>시설안내</h1>
+			<p>선하신 하나님께서 우리에게 주신 학교시설을 소개합니다.</p>
+			<div class="fac-box">
+				<span class="floor f3">3F</span>
+				<span class="floor f2">2F</span>
+				<span class="floor f1">1F</span>
+				<span class="floor fb1">B1F</span>
+				<span class="floor fb2">B2~3F</span>
+				<span class="floor f101">1F 서쪽 출입문</span>
+				<div class="floor tf"><span>4F 옥상 운동장</span></div>
+				<div class="area f301"><span>예배실</span></div>
+				<div class="area f302"><span>숙직실</span></div>
+				<div class="area f303"><span>3F 홀</span></div>
+				<div class="area f204"><span>도서관</span></div>
+				<div class="area f201"><span>중고등학교 교무실</span></div>
+				<div class="area f202"><span>중고등학교 교실</span></div>
+				<div class="area f203"><span>여자 기숙사</span></div>
+				<div class="area f101"><span>초등학교 교무실</span></div>
+				<div class="area f102"><span>초등학교 교실</span></div>
+				<div class="area f103"><span>소강당</span></div>
+				<div class="area f104"><span>1F 홀 및 카페</span></div>
+				<div class="area fb101"><span>식당</span></div>
+				<div class="area fb102"><span>남자 기숙사</span></div>
+				<div class="area fb103"><span>의무실</span></div>
+				<div class="area fb104"><span>미술실</span></div>
+				<div class="area fb201 no-pic"><span>지하 주차장</span></div>
 			</div>
 		</div>
 	</div>
@@ -238,27 +227,6 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=866c2b9cdf75ee33ceb4f84861288ab6"></script>
-	<script>
-
-		var container = document.getElementById('map');
-		var options = {
-			center: new kakao.maps.LatLng(37.606360, 126.7509058),
-			level: 3
-		};
-
-		var map = new kakao.maps.Map(container, options);
-
-		var marker = new kakao.maps.Marker({ 
-			position: map.getCenter() 
-		}); 
-		marker.setMap(map);
-
-		var mapTypeControl = new kakao.maps.MapTypeControl();
-		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-		var zoomControl = new kakao.maps.ZoomControl();
-		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-		
-	</script>
+	
 </body>
 </html>
