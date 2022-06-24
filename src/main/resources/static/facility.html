@@ -189,7 +189,9 @@
 			</div>
 		</div>
 	</div>
+	<div class="overlay-areas no-show" style="display: none;">
 
+	</div>
 	
 	<footer>
 		<div class="inner">
@@ -233,6 +235,31 @@
 	<script src="js/aos.js"></script>
 	<script>
 		AOS.init();
+
+		function showFacilityDetail(){
+			$(".overlay-areas").show();
+			$(".overlay-areas").removeClass("no-show");
+			$("body").css("overflow","hidden");
+		}
+
+		function transitionendHandler(){
+			$(".overlay-areas").hide();
+			$("body").css("overflow","");
+			$(".overlay-areas").removeClass("no-showing");
+			$(".overlay-areas").addClass("no-show");
+			console.log("endup");
+		}
+
+		function hideFacilityDetail(){
+			$(".overlay-areas").addClass("no-showing");
+			const transition = document.querySelector('.no-showing');
+			transition.addEventListener('transitionend', transitionendHandler);
+		}
+
+		$(document).ready(function(){
+			
+		});
+
 	</script>
 </body>
 </html>
