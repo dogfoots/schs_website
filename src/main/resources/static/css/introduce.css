@@ -464,7 +464,7 @@
 .facility .overlay-areas .areas-detail{
     background-color: #ffffff;
     width: 1200px;
-    height: 1186px;
+    height:  825px;
     margin: auto;
     padding: 0px 20px 0px 20px;
 }
@@ -495,7 +495,7 @@
 
 .facility .overlay-areas .areas-detail .areas-focus-img-wrap{
     width: 1200px;
-	height : 881px;
+	height : 520px;
 }
 
 .facility .overlay-areas .areas-detail .areas-card-box{
@@ -524,12 +524,12 @@
 
 .facility .overlay-areas .areas-detail .areas-focus-img-wrap a.prev-btn{
     position: relative;
-    top: 410px;
+    top: 211px;
     float: left;
 }
 
 .facility .overlay-areas .areas-detail .areas-focus-img-wrap a.next-btn{
     position: relative;
-    top: 410px;
+    top: 211px;
     float: right;
 }
