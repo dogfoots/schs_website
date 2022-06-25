@@ -171,23 +171,23 @@
 				<span class="floor fb1">B1F</span>
 				<span class="floor fb2">B2~3F</span>
 				<span class="floor f101">1F 서쪽 출입문</span>
-				<div class="floor tf"><span>4F 옥상 운동장</span></div>
+				<div class="floor tf" data-area-title="4F 옥상 운동장" ><span>4F 옥상 운동장</span></div>
 				<!-- 이미지 폴더에서 해당 이미지들을 찾습니다. 경로자체를 수정 원하시는 경우는 ###1, ###2에 해당하는 소스코드의 경로를 수정해서 사용하시면 됩니다. -->
-				<div class="area f301" data-img-fnms="contact_1.png,contact_2.png"><span>예배실</span></div>
+				<div class="area f301" data-area-title="3F 예배실" data-img-fnms="contact_1.png,contact_2.png"><span>예배실</span></div>
 				<div class="area f302"><span>숙직실</span></div>
-				<div class="area f303"><span>3F 홀</span></div>
-				<div class="area f204"><span>도서관</span></div>
-				<div class="area f201"><span>중고등학교 교무실</span></div>
-				<div class="area f202"><span>중고등학교 교실</span></div>
-				<div class="area f203"><span>여자 기숙사</span></div>
-				<div class="area f101"><span>초등학교 교무실</span></div>
-				<div class="area f102"><span>초등학교 교실</span></div>
-				<div class="area f103"><span>소강당</span></div>
-				<div class="area f104"><span>1F 홀 및 카페</span></div>
-				<div class="area fb101"><span>식당</span></div>
-				<div class="area fb102"><span>남자 기숙사</span></div>
-				<div class="area fb103"><span>의무실</span></div>
-				<div class="area fb104"><span>미술실</span></div>
+				<div class="area f303" data-area-title="3F 홀"><span>3F 홀</span></div>
+				<div class="area f204" data-area-title="2F 도서관"><span>도서관</span></div>
+				<div class="area f201" data-area-title="2F 중고등학교 교무실"><span>중고등학교 교무실</span></div>
+				<div class="area f202" data-area-title="2F 중고등학교 교실"><span>중고등학교 교실</span></div>
+				<div class="area f203" data-area-title="2F 여자 기숙사"><span>여자 기숙사</span></div>
+				<div class="area f101" data-area-title="1F 초등학교 교무실"><span>초등학교 교무실</span></div>
+				<div class="area f102" data-area-title="1F 초등학교 교실"><span>초등학교 교실</span></div>
+				<div class="area f103" data-area-title="1F 소강당"><span>소강당</span></div>
+				<div class="area f104" data-area-title="1F 홀 및 카페"><span>1F 홀 및 카페</span></div>
+				<div class="area fb101" data-area-title="B1F 식당"><span>식당</span></div>
+				<div class="area fb102" data-area-title="B1F 남자 기숙사"><span>남자 기숙사</span></div>
+				<div class="area fb103" data-area-title="B1F 의무실"><span>의무실</span></div>
+				<div class="area fb104" data-area-title="B1F 미술실"><span>미술실</span></div>
 				<div class="area fb201 no-pic"><span>지하 주차장</span></div>
 			</div>
 		</div>
@@ -286,7 +286,7 @@
 			focusImage(g_index);
 		}
 
-		function showFacilityDetail(fnms){
+		function showFacilityDetail(fnms, areaTitle){
 			$(".overlay-areas").show();
 			$(".overlay-areas").addClass("show");
 			$("body").css("overflow","hidden");
@@ -311,6 +311,7 @@
 			g_index=0;
 
 			focusImage(g_index);
+			$(".area-title h1").html(areaTitle);
 		}
 
 		function hideFacilityDetail(){
@@ -346,8 +347,9 @@
 			$(".floor .tf,.area:not(.no-pic)").on("click", function(){
 				var fnms = $(this).data("img-fnms");
 				if(fnms == null) return;
+				var areaTitle = $(this).data("area-title");
 
-				showFacilityDetail(fnms.split(","));
+				showFacilityDetail(fnms.split(","), areaTitle);
 			});
 
 		});
