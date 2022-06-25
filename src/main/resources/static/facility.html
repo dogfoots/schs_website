@@ -12,8 +12,10 @@
 
     <link rel="stylesheet" type="text/css" href="css/common.css" />
 	<link rel="stylesheet" type="text/css" href="css/introduce.css" />
+	<link rel="stylesheet" type="text/css" href="css/splide-core.min.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/splide.min.js"></script>
 	<!--시설안내 추가 css-->
 	<link rel="stylesheet" href="css/aos.css" />
 </head>
@@ -170,7 +172,8 @@
 				<span class="floor fb2">B2~3F</span>
 				<span class="floor f101">1F 서쪽 출입문</span>
 				<div class="floor tf"><span>4F 옥상 운동장</span></div>
-				<div class="area f301"><span>예배실</span></div>
+				<!-- 이미지 폴더에서 해당 이미지들을 찾습니다. 경로자체를 수정 원하시는 경우는 ###1, ###2에 해당하는 소스코드의 경로를 수정해서 사용하시면 됩니다. -->
+				<div class="area f301" data-img-fnms="contact_1.png,contact_2.png"><span>예배실</span></div>
 				<div class="area f302"><span>숙직실</span></div>
 				<div class="area f303"><span>3F 홀</span></div>
 				<div class="area f204"><span>도서관</span></div>
@@ -189,10 +192,35 @@
 			</div>
 		</div>
 	</div>
-	<div class="overlay-areas no-show" style="display: none;">
-
+	<div class="overlay-areas" style="display: none;">
+		<div class="areas-detail">
+			<div class="area-title">
+				<h1>3F 예배실</h1>
+				<div class="close-btn"><a href="javascript:void(0);" onclick="hideFacilityDetail();"><span>X</span></a></div>
+			</div>
+			<div class="areas-focus-img-wrap">
+				<a class="circle-btn prev-btn" href="javascript:void(0);" onclick="prevBtn();">&nbsp;</a>
+				<a class="circle-btn next-btn" href="javascript:void(0);" onclick="nextBtn();">&nbsp;</a>
+			</div>
+			<div class="splide areas-card-box">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<!--
+						<li class="splide__slide">
+							<a href="javascript:void(0);" class="area-card" 
+							style='background: url("./imgs/contact_1.png") center center / auto 152px no-repeat;' 
+							onclick='focusImage("./imgs/contact_1.png");'>&nbsp;</a>
+						</li>
+						<li class="splide__slide">
+							<a href="javascript:void(0);" class="area-card" 
+							style='background: url("./imgs/contact_2.png") center center / auto 152px no-repeat;' 
+							onclick='focusImage("./imgs/contact_2.png");'>&nbsp;</a>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
-	
 	<footer>
 		<div class="inner">
 			<div class="logo-wrapper">
@@ -236,30 +264,95 @@
 	<script>
 		AOS.init();
 
-		function showFacilityDetail(){
-			$(".overlay-areas").show();
-			$(".overlay-areas").removeClass("no-show");
-			$("body").css("overflow","hidden");
+		var g_splide=null;
+		var g_index=-1;
+		var g_slide_fnms=[];
+
+		function prevBtn(){
+			if(g_index == 0 ){
+				g_index = g_slide_fnms.length-1;
+			}else{
+				g_index--;
+			}
+			focusImage(g_index);
 		}
 
-		function transitionendHandler(){
-			$(".overlay-areas").hide();
-			$("body").css("overflow","");
-			$(".overlay-areas").removeClass("no-showing");
-			$(".overlay-areas").addClass("no-show");
-			console.log("endup");
+		function nextBtn(){
+			if(g_index == g_slide_fnms.length-1 ){
+				g_index = 0;
+			}else{
+				g_index++;
+			}
+			focusImage(g_index);
+		}
+
+		function showFacilityDetail(fnms){
+			$(".overlay-areas").show();
+			$(".overlay-areas").addClass("show");
+			$("body").css("overflow","hidden");
+
+			$("ul.splide__list").find("li").remove();
+
+			g_slide_fnms = fnms;
+			for(var i=0; i < fnms.length; i++){
+				//###1
+				$("ul.splide__list").append('<li class="splide__slide"><a href="javascript:void(0);" class="area-card" style=\'background: url("./imgs/'+fnms[i]+'") center center / auto 152px no-repeat;\' onclick=\'focusImage('+i+');\'>&nbsp;</a></li>');
+			}
+
+			g_splide = new Splide( '.splide', {
+			type   : 'loop',
+			perPage: 5,
+			perMove: 1,
+			arrows : false,
+			pagination : false
+			} );
+
+			g_splide.mount();
+			g_index=0;
+
+			focusImage(g_index);
 		}
 
 		function hideFacilityDetail(){
-			$(".overlay-areas").addClass("no-showing");
-			const transition = document.querySelector('.no-showing');
-			transition.addEventListener('transitionend', transitionendHandler);
+			$(".overlay-areas").removeClass("show");
+			if(g_splide != null){
+				g_splide.destroy();
+				g_splide = null;
+			}
+			
 		}
 
+		function focusImage(idx){
+			//###2
+			var imgFilePath = "./imgs/"+g_slide_fnms[idx];
+			$(".areas-focus-img-wrap").css("background", "url("+imgFilePath+") no-repeat center center");
+			$(".areas-focus-img-wrap").css("background-size", "auto 881px");
+			$(".areas-focus-img-wrap").css("-ms-background-size", "auto 881px");
+			$(".areas-focus-img-wrap").css("-o-background-size", "auto 881px");
+			$(".areas-focus-img-wrap").css("-moz-background-size", "auto 881px");
+			$(".areas-focus-img-wrap").css("-webkit-background-size", "auto 881px");
+
+		}
+		
 		$(document).ready(function(){
-			
+			const transition = document.querySelector('.overlay-areas');
+			transition.addEventListener('transitionend', ()=>{
+				if(!$('.overlay-areas').hasClass("show")){
+					$('.overlay-areas').hide();
+					$("body").css("overflow","");
+				}
+			});
+
+			$(".floor .tf,.area:not(.no-pic)").on("click", function(){
+				var fnms = $(this).data("img-fnms");
+				if(fnms == null) return;
+
+				showFacilityDetail(fnms.split(","));
+			});
+
 		});
 
+		
 	</script>
 </body>
 </html>
