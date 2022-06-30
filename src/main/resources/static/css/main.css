@@ -35,7 +35,7 @@
 }
 
 .home .bg2 {
-	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg2.png) no-repeat center center;
+	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg2_01.png) no-repeat center center;
 	background-size: cover;
 }
 
