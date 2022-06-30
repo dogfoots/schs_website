@@ -199,6 +199,17 @@
 				</div>-->
 			</div>
 		</div>
+		<div id="pure-ways" class="section">
+			<div class="section-body">
+				<div class="descripts">
+					<h2 class="gone">서울크리스찬중고등학교는<br/>고민만 있고 해결은 없는<br/>세상 학교와 다릅니다.</h2>
+					<p class="gone">하나님께서 영감으로 기록하시고 섭리로 보존하신<br/><strong>한글킹제임스성경</strong>을 최종권위로하여<br/>모든 교육과정을 구성하기 때문입니다.</p>
+				</div>
+				<div class="words-quote gone">
+					<p>“청년이 무엇으로 자기 길을 정결케 하리이까?<br/>주의 말씀을 따라 조심할 것이니이다.”<br/>(시 119:9)</p>
+				</div>
+			</div>
+		</div>
 		<div id="teaching-coaching" class="section">
 			<div class="section-body">
 				<div class="vert-center-contents">
@@ -503,6 +514,9 @@
 	<script type="text/javascript" src="js/fullpage.min.js"></script>
 
 	<script type="text/javascript">
+		
+		var g_splide=null;
+
 		var myFullpage = new fullpage('#fullpage', {
 			licenseKey: null,
 			//anchors: ['firstPage', 'secondPage', '3rdPage']
@@ -518,6 +532,7 @@
 				
 				if(destId == "main-slide" ||
 				destId == "iniquities" ||
+				destId == "pure-ways" ||
 				destId == "teaching-coaching"){
 					$("#header").addClass("black");
 				}else{
@@ -526,12 +541,20 @@
 
 				if(orgId == "iniquities"){
 					$("#iniquities .vert-center-contents").addClass("gone");
+				}else if(orgId == "pure-ways"){
+					$("#pure-ways .descripts h2").addClass("gone");
+					$("#pure-ways .descripts p").addClass("gone");
+					$("#pure-ways .words-quote").addClass("gone");
 				}
 			},
 			afterLoad : function(origin, destination, direction, trigger){
 				let destId = $(".section").eq(destination.index).attr("id");
 				if(destId == "iniquities"){
 					$("#iniquities .vert-center-contents").removeClass("gone");
+				}else if(destId == "pure-ways"){
+					$("#pure-ways .descripts h2").removeClass("gone");
+					$("#pure-ways .descripts p").removeClass("gone");
+					$("#pure-ways .words-quote").removeClass("gone");
 				}
 			},
 			afterRender: function(){
@@ -560,7 +583,6 @@
 			}
 		});
 
-		var g_splide=null;
 		$(document).ready(function(){
 			
 		});
