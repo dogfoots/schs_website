@@ -243,6 +243,159 @@ h2{
 }
 
 
+#iniquities{
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/iniq_bg.png) no-repeat center center;
+	background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+
+}
+
+#iniquities .vert-center-contents {
+	margin: 85px auto 0px;
+    transition: all 1.0s ease;
+	opacity: 100%;
+    z-index: 502;
+}
+
+#iniquities .vert-center-contents.gone {
+	margin: 50px auto 0px;
+	opacity: 0%;
+}
+
+#iniquities .vert-center-contents h1{
+	font-size: 62px;
+    font-weight: 200;
+    z-index: 502;
+}
+
+#iniquities .student-wrapper{
+    height: 0px;
+}
+
+#iniquities .student{
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto auto 0;
+	opacity: 94%;
+	transform: scale(1);
+    transition: all 5.0s ease;
+    z-index: 500;
+}
+
+#iniquities .student.fade{
+	opacity: 74%;
+	transform: scale(1.05);
+}
+
+#iniquities .iniq-item{
+    display: inline-block;
+	position: relative;
+    z-index: 400;
+}
+
+#iniquities .iniq-item.arc1{
+    animation: drawArc1 15s linear infinite;
+    -webkit-animation: drawArc1 15s linear infinite;
+	top: 368px;
+    left: 342px;
+}
+
+#iniquities .iniq-item.arc2{
+    animation: drawArc2 12s linear infinite;
+    -webkit-animation: drawArc2 12s linear infinite;
+	top: 435px;
+    left: 47px;
+}
+
+#iniquities .iniq-item.arc3{
+    animation: drawArc3 16s linear infinite;
+    -webkit-animation: drawArc3 16s linear infinite;    
+	top: 529px;
+    left: -183px;
+}
+
+#iniquities .iniq-item.arc4{
+    animation: drawArc4 14s linear infinite;
+    -webkit-animation: drawArc4 14s linear infinite;
+    top: 625px;
+    left: -441px;
+}
+
+#iniquities .iniq-item.arc5{
+    animation: drawArc3 14s linear infinite;
+    -webkit-animation: drawArc3 14s linear infinite;
+    top: 376px;
+    left: -160px;
+}
+
+#iniquities .iniq-item.arc6{
+    animation: drawArc2 13s linear infinite;
+    -webkit-animation: drawArc2 13s linear infinite;    
+	top: 528px;
+    left: -264px;
+}
+
+#iniquities .iniq-item.arc7{
+    animation: drawArc1 12s linear infinite;
+    -webkit-animation: drawArc1 12s linear infinite;    
+	top: 524px;
+    left: 843px;
+}
+
+#iniquities .iniq-item.arc8{
+    animation: drawArc1 10s linear infinite;
+    -webkit-animation: drawArc1 10s linear infinite;
+    top: 609px;
+    left: 710px;
+}
+
+@keyframes drawArc1 {
+    0% { transform: rotate(0deg) translateX(15px) rotate(0deg) ;}
+    100%{ transform: rotate(-360deg) translateX(15px) rotate(360deg);  }
+}
+@-webkit-keyframes drawArc1 {
+    0% { -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg) ;}
+    100%{ -webkit-transform: rotate(-360deg) translateX(15px) rotate(360deg);  }
+}
+
+@keyframes drawArc4 {
+    0% { transform: rotate(0deg) translateX(10px) rotate(0deg) ;}
+    100%{ transform: rotate(-360deg) translateX(10px) rotate(360deg);  }
+}
+@-webkit-keyframes drawArc4 {
+    0% { -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg) ;}
+    100%{ -webkit-transform: rotate(-360deg) translateX(10px) rotate(360deg);  }
+}
+
+
+@keyframes drawArc2 {
+    0% { transform: rotate(0deg) translateX(-10px) rotate(0deg) ;}
+    100%{ transform: rotate(360deg) translateX(-10px) rotate(-360deg);  }
+}
+@-webkit-keyframes drawArc2 {
+    0% { -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg) ;}
+    100%{ -webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg);  }
+}
+
+
+@keyframes drawArc3 {
+    0% { transform: rotate(0deg) translateX(-5px) rotate(0deg) ;}
+    100%{ transform: rotate(360deg) translateX(-5px) rotate(-360deg);  }
+}
+@-webkit-keyframes drawArc3 {
+    0% { -webkit-transform: rotate(0deg) translateX(5px) rotate(0deg) ;}
+    100%{ -webkit-transform: rotate(360deg) translateX(5px) rotate(-360deg);  }
+}
 
 #teaching-coaching{
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/teach_coach_bg.png) no-repeat center center;
@@ -261,8 +414,8 @@ h2{
 
 
 #teaching-coaching .section-body .vert-center-contents p{
-    padding-top: 49px;
-    padding-bottom: 135px;
+    padding-top: 0ox;
+    padding-bottom: 59px;
 }
 
 #teaching-coaching .section-body .vert-center-contents .edu-more{
@@ -283,6 +436,10 @@ h2{
 	width: 100%;
 	height: auto;
 	background:url(../imgs/core_flower_bg2.svg) no-repeat left 1214px;
+}
+
+#core-capacities .section-body .vert-center-contents p{
+	color: #242424;
 }
 
 #core-capacities .icon-box{
