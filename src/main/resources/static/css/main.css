@@ -40,7 +40,7 @@
 }
 
 .home .bg3 {
-	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg3.png) no-repeat center center;
+	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imgs/bg3.png) no-repeat center center;
 	background-size: cover;
 }
 
@@ -514,7 +514,7 @@ h2{
 #core-capacities .section-body{
 	width: 100%;
 	height: auto;
-	background:url(../imgs/core_flower_bg2.svg) no-repeat left 1214px;
+	background:url(../imgs/core_flower_bg2.svg) no-repeat left 1225px;
 }
 
 #core-capacities .section-body .vert-center-contents p{
@@ -527,12 +527,18 @@ h2{
 	overflow: hidden;
     display: flex;
     flex-direction: row;
-
+    padding: 10px;
 }
 
 #core-capacities .icon-box .core-icon{
 	float: left;
 	margin : 0px auto;
+	transform: scaleX(1.0) scaleY(1.0);
+    transition: all 0.3s ease;
+}
+
+#core-capacities .icon-box .core-icon:hover{
+	transform: scaleX(1.1) scaleY(1.1);
 }
 
 #core-capacities .icon-box .core-icon .core-text-wrapper{
@@ -620,6 +626,17 @@ h2{
 	height : 598px;
 }
 
+#fear-of-God-title{
+	padding-top: 20px;
+    transition: all 0.5s ease;
+	opacity: 0%;
+}
+
+#fear-of-God-title.show{
+	padding-top: 0px;
+	opacity: 100%;
+}
+
 #core-capacities .fear-of-God h1{
 	display: inline-block;
 	margin-top : 107px;
@@ -631,6 +648,12 @@ h2{
 	height:142px;
 	margin: 0px auto;
 	margin-top: 80px;
+	opacity: 0%;
+    transition: all 0.5s ease;
+}
+
+#core-capacities .fear-of-God .words-quote.show{
+	opacity: 100%;
 }
 
 #core-capacities .fear-of-God .words-quote .quote-box{
