@@ -240,6 +240,13 @@ h2{
 
 #main-slide .vert-center-contents p{
     padding-top: 49px;
+	opacity: 100%;
+    transition: all 0.5s ease;
+}
+
+#main-slide .vert-center-contents p.gone{
+    padding-top: 30px;
+	opacity: 0%;
 }
 
 
@@ -360,41 +367,41 @@ h2{
 }
 
 @keyframes drawArc1 {
-    0% { transform: rotate(0deg) translateX(15px) rotate(0deg) ;}
-    100%{ transform: rotate(-360deg) translateX(15px) rotate(360deg);  }
+    0% { transform: rotate(0deg) translateX(15px) rotate(0deg) scaleX(1.05);}
+    100%{ transform: rotate(-360deg) translateX(15px) rotate(360deg) scaleX(1.05);  }
 }
 @-webkit-keyframes drawArc1 {
-    0% { -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg) ;}
-    100%{ -webkit-transform: rotate(-360deg) translateX(15px) rotate(360deg);  }
+    0% { -webkit-transform: rotate(0deg) translateX(15px) rotate(0deg) scaleX(1.05);}
+    100%{ -webkit-transform: rotate(-360deg) translateX(15px) rotate(360deg) scaleX(1.05);  }
 }
 
 @keyframes drawArc4 {
-    0% { transform: rotate(0deg) translateX(10px) rotate(0deg) ;}
-    100%{ transform: rotate(-360deg) translateX(10px) rotate(360deg);  }
+    0% { transform: rotate(0deg) translateX(10px) rotate(0deg) scaleX(1.05);}
+    100%{ transform: rotate(-360deg) translateX(10px) rotate(360deg) scaleX(1.05);  }
 }
 @-webkit-keyframes drawArc4 {
-    0% { -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg) ;}
-    100%{ -webkit-transform: rotate(-360deg) translateX(10px) rotate(360deg);  }
+    0% { -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg) scaleX(1.05);}
+    100%{ -webkit-transform: rotate(-360deg) translateX(10px) rotate(360deg) scaleX(1.05);  }
 }
 
 
 @keyframes drawArc2 {
-    0% { transform: rotate(0deg) translateX(-10px) rotate(0deg) ;}
-    100%{ transform: rotate(360deg) translateX(-10px) rotate(-360deg);  }
+    0% { transform: rotate(0deg) translateX(-10px) rotate(0deg) scaleX(0.95);}
+    100%{ transform: rotate(360deg) translateX(-10px) rotate(-360deg) scaleX(0.95);  }
 }
 @-webkit-keyframes drawArc2 {
-    0% { -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg) ;}
-    100%{ -webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg);  }
+    0% { -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg) scaleX(0.95);}
+    100%{ -webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg) scaleX(0.95);  }
 }
 
 
 @keyframes drawArc3 {
-    0% { transform: rotate(0deg) translateX(-5px) rotate(0deg) ;}
-    100%{ transform: rotate(360deg) translateX(-5px) rotate(-360deg);  }
+    0% { transform: rotate(0deg) translateX(-5px) rotate(0deg) scaleX(1.00);}
+    100%{ transform: rotate(360deg) translateX(-5px) rotate(-360deg) scaleX(1.00);  }
 }
 @-webkit-keyframes drawArc3 {
-    0% { -webkit-transform: rotate(0deg) translateX(5px) rotate(0deg) ;}
-    100%{ -webkit-transform: rotate(360deg) translateX(5px) rotate(-360deg);  }
+    0% { -webkit-transform: rotate(0deg) translateX(5px) rotate(0deg) scaleX(1.05);}
+    100%{ -webkit-transform: rotate(360deg) translateX(5px) rotate(-360deg) scaleX(1.05);  }
 }
 
 

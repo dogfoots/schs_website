@@ -161,19 +161,19 @@
 			<div class="slide bg bg1">
 				<div class="vert-center-contents">
 					<h1>"진짜" 그리스도인 인재를 양성합니다.</h1>
-					<p>서울크리스찬중고등학교는<br>성경적 가치관에 부합하지 않는 모든 교육으로부터 성별된 교육을 제공합니다.</p>
+					<p class="gone">서울크리스찬중고등학교는<br>성경적 가치관에 부합하지 않는 모든 교육으로부터 성별된 교육을 제공합니다.</p>
 				</div>
 			</div>
 			<div class="slide bg bg2">
 				<div class="vert-center-contents">
 					<h1>"진짜" 그리스도인 인재를 양성합니다.</h1>
-					<p>서울크리스찬중고등학교는<br>자발적으로 주 예수 그리스도를 시인하는 학생들을 길러냅니다.</p>
-				</div>
+					<p class="gone">서울크리스찬중고등학교는<br>자발적으로 주 예수 그리스도를 시인하는 학생들을 길러냅니다.</p>
+				</div >
 			</div>
 			<div class="slide bg bg3">
 				<div class="vert-center-contents">
 					<h1>"진짜" 그리스도인 인재를 양성합니다.</h1>
-					<p>서울크리스찬중고등학교는<br>섬기고자 하는 작은 마음이라도 존중 기회를 제공합니다.</p>
+					<p class="gone">서울크리스찬중고등학교는<br>섬기고자 하는 작은 마음이라도 존중하여 섬김의 기회를 제공합니다.</p>
 				</div>
 			</div>
 		</div>
@@ -519,9 +519,19 @@
 
 		var myFullpage = new fullpage('#fullpage', {
 			licenseKey: null,
-			//anchors: ['firstPage', 'secondPage', '3rdPage']
+			//anchors: ['main-section'],
 			navigation: true,
         	navigationPosition: 'right',
+			afterSlideLoad:function (section, origin, destination, direction, trigger){
+				if(section.index == 0 ){
+					$("#main-slide .slide").eq(destination.index).find(".vert-center-contents > p").removeClass("gone")
+				}
+			},
+			onSlideLeave :function (section, origin, destination, direction, trigger){	
+				if(section.index == 0 ){
+					$("#main-slide .slide").eq(origin.index).find(".vert-center-contents > p").addClass("gone")
+				}
+			},
 			beforeLeave:function(origin, destination, direction, trigger){
 				//console.log();
 				$("#header").removeClass("black");
@@ -580,6 +590,8 @@
 				initContactMap();
 
 				setInterval(() => $('#iniquities .student').toggleClass("fade"), 10000);
+				setTimeout(()=> $("#main-slide .slide").eq(0).find(".vert-center-contents > p").removeClass("gone"), 500);
+				
 			}
 		});
 
