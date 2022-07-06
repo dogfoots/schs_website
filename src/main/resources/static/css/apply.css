@@ -1,0 +1,113 @@
+/*
+ddd
+*/
+.apply{
+	background: url(../imgs/apply_bg.png) no-repeat center 315px;
+	background-size: 100% 598px;
+}
+
+.submenu-container{
+	height: 1930px;
+}
+
+.submenu-container, .submenu-container .submenu-contents{
+	background: transparent;
+}
+
+.submenu-container .submenu-contents .subject-copy{
+	width: 1200px;
+	margin-top: 60px;
+	text-align: center;
+	height: 598px;
+}
+
+.submenu-container .submenu-contents .subject-copy h2{
+	display: inline-block;
+	color: white;
+	font-size: 80px;
+	font-weight: 200!important;
+	font-family: 'Noto Serif KR', sans-serif!important;
+	margin-top: 89px;
+}
+
+.submenu-container .submenu-contents .subject-copy p{
+	display: inline-block;
+	color: white;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 60px;
+}
+
+.submenu-container .submenu-contents .subject-copy p.lower{
+    margin-top: 40px;
+}
+
+.submenu-container .submenu-contents .apply-inform{
+	width: 1200px;
+	text-align: center;
+    height: 1047px;
+}
+
+
+.submenu-container .submenu-contents .apply-inform h2{
+	display: inline-block;
+	color: black;
+	font-size: 45px;
+	font-weight: 500!important;
+	font-family: 'Noto Serif KR', sans-serif!important;
+	margin-top: 150px;
+}
+
+.submenu-container .submenu-contents .apply-inform p{
+	display: block;
+	color: black;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 65px;
+}
+
+.submenu-container .submenu-contents .apply-inform .apply-inform-contents{
+    text-align: left;
+	padding-top: 80px;
+}
+
+.submenu-container .submenu-contents .apply-inform .apply-inform-contents h3{
+	font-weight: 500!important;
+    font-size: 20px;
+}
+
+.submenu-container .submenu-contents .apply-inform .apply-inform-contents ul.qualify{
+	margin-top: 31px;
+	font-weight: 400!important;
+    font-size: 20px;
+	color: #242424;
+}
+
+.submenu-container .submenu-contents .apply-inform .apply-inform-contents ul li{
+	margin-bottom: 12px;
+}
+
+.submenu-container .submenu-contents .apply-inform .apply-inform-contents ul.submits{
+	margin-top: 50px;
+	font-weight: 400!important;
+    font-size: 20px;
+	color: #242424;
+}
+
+.submenu-container .submenu-contents .schedule{
+	width: 1200px;
+}
+
+.submenu-container .submenu-contents .schedule h3{
+	display: inline-block;
+	color: black;
+	font-weight: 500!important;
+    font-size: 20px;
+}
+
+.charts{    
+	width: 1300px;
+    text-align: center;
+    margin: 0px auto;
+    height: 430px;
+}

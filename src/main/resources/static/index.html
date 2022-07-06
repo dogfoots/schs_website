@@ -120,7 +120,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">
+						<a href="./apply.html">
 							<span>입학안내</span>
 						</a>
 						<!-- 서브메뉴없음 -->
@@ -215,13 +215,13 @@
 			<div class="section-body">
 				<div class="vert-center-contents">
 					<!--<h1>Teaching에서 Coaching으로</h1>-->
-					<p>하나님께서 각자에게 주신 은사의 분량에 따라 섬기는 일꾼을 길러내려면<br>획일화된 교육이 아닌 개인의 특성에 맞는 교육을 제공해야합니다.</p>
-					<p>서울크리스찬중고등학교는 티칭수업을 최소화하고<br>코칭수업을 통해 학생들 각자에게 맞춤 교육을 제공합니다.</p>
-					<div>
+					<p class="gone">하나님께서 각자에게 주신 은사의 분량에 따라 섬기는 일꾼을 길러내려면<br>획일화된 교육이 아닌 개인의 특성에 맞는 교육을 제공해야합니다.</p>
+					<p class="gone">서울크리스찬중고등학교는 티칭수업을 최소화하고<br>코칭수업을 통해 학생들 각자에게 맞춤 교육을 제공합니다.</p>
+					<!--<div>
 						<a class="edu-more" href="#">
 							<span>교육소개 더보기</span>
 						</a>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</div>
@@ -556,7 +556,10 @@
 					$("#pure-ways .descripts h2").addClass("gone");
 					$("#pure-ways .descripts p").addClass("gone");
 					$("#pure-ways .words-quote").addClass("gone");
+				}else if(orgId == "teaching-coaching"){
+					$("#teaching-coaching .vert-center-contents p").addClass("gone");
 				}
+				
 			},
 			afterLoad : function(origin, destination, direction, trigger){
 				let destId = $(".section").eq(destination.index).attr("id");
@@ -566,6 +569,8 @@
 					$("#pure-ways .descripts h2").removeClass("gone");
 					$("#pure-ways .descripts p").removeClass("gone");
 					$("#pure-ways .words-quote").removeClass("gone");
+				}else if(destId == "teaching-coaching"){
+					$("#teaching-coaching .vert-center-contents p").removeClass("gone");
 				}
 			},
 			afterRender: function(){

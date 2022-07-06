@@ -30,7 +30,7 @@
 }
 
 .home .bg1 {
-	background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bg1.png) no-repeat center center;
+	background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../imgs/bg1_1.png) no-repeat center center;
 	background-size: cover;
 }
 
@@ -406,7 +406,7 @@ h2{
 
 
 #pure-ways{
-	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../imgs/pure_bg.png) no-repeat center center;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../imgs/pure_bg_1.png) no-repeat center center;
 	background-size: cover;
 	-ms-background-size: cover;
 	-o-background-size: cover;
@@ -421,7 +421,7 @@ h2{
 #pure-ways .descripts h2{
 	font-family: 'Noto Sans KR', sans-serif!important;
 	font-size: 50px!important;
-	color: #2D4635;
+	color: #ffffff;
 	letter-spacing: -1.25px;
     transition: all 0.5s ease;
 	opacity: 100%;
@@ -438,7 +438,7 @@ h2{
 	font-family: 'Noto Sans KR', sans-serif!important;
 	font-size: 20px!important;
 	font-weight: 400;
-	color: #2D4635;
+	color: #ffffff;
 	letter-spacing: -0.5px;
 	margin-top: 40px;
     transition: all 1.0s ease;
@@ -455,8 +455,8 @@ h2{
 #pure-ways .words-quote{
 	margin-top: 40px;
     padding: 20px 0px 20px 0px;
-    border-bottom: #2D4635 2px solid;
-    border-top: #2D4635 2px solid;
+    border-bottom: #ffffff 2px solid;
+    border-top: #ffffff 2px solid;
 	width: 394px;
     transition: all 1.0s ease;
 	transition-delay: 700ms;
@@ -473,11 +473,11 @@ h2{
 	font-weight: 400;
 	font-size: 20px!important;
 	letter-spacing: -0.5px;
-	color: #2D4635;
+	color: #ffffff;
 }
 
 #teaching-coaching{
-	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../imgs/teach_coach_bg.png) no-repeat center center;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../imgs/teach_coach_bg_1.png) no-repeat center center;
 	background-size: cover;
 	-ms-background-size: cover;
 	-o-background-size: cover;

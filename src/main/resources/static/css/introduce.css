@@ -18,7 +18,7 @@
 .teachers-box .teacher-box-wrapper ul li{
 	display : inline-block;
 	width : 386px;
-	height: 587px;
+    height: 580px;
 }
 
 .teachers-box .teacher-box-wrapper ul li .card-item{
@@ -37,18 +37,25 @@
 }
 
 
-.teachers-box .teacher-box-wrapper ul li .over{
+.teachers-box .teacher-box-wrapper ul li .over:not(.no-greet){
 	position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    padding: 43px 30px 20px 30px;
+    width: 384px;
+    height: 473px;
+    /*padding: 43px 30px 20px 30px;*/
     color: #fff;
     opacity: 0;
 	background: url(../imgs/card-over-bg.png) no-repeat center center;
     transition: all 0.3s ease;
-	border: #777 solid 1px;
+	/*border: #777 solid 1px;*/
+}
+
+
+.teachers-box .teacher-box-wrapper ul li .over.no-greet{
+    display: none;
 }
 
 .teachers-box .teacher-box-wrapper ul li .over:hover{
@@ -56,14 +63,15 @@
 }
 
 .teachers-box .teacher-box-wrapper ul li .over .head{
-	margin-top: 20px;
+	margin-top: 37px;
+    margin-left: 38px;
 }
 
 .teachers-box .teacher-box-wrapper ul li .over .head strong{
     color: #000;
 }
 
-.teachers-box .teacher-box-wrapper ul li .name span, .teachers-box .teacher-box-wrapper ul li .over .head span{   
+.teachers-box .teacher-box-wrapper ul li .name span{   
 	font-size: 23px;
     font-weight: 400;
     font-family: 'Noto Sans KR';
@@ -71,15 +79,30 @@
     color: #777;
 }
 
-.teachers-box .teacher-box-wrapper ul li .over .head span{
-    color: #777;
+.teachers-box .teacher-box-wrapper ul li .over .head strong{   
+	font-size: 35px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR';
+    letter-spacing: -0.6px;
+    color: #242424;
+}
+
+
+.teachers-box .teacher-box-wrapper ul li .over .body{
+    margin-left: 38px;
 }
 
 .teachers-box .teacher-box-wrapper ul li .over .body p{    
 	margin-top: 30px;
 	color: #000;
-    font-family: 'NanumSaRangHaeADeur'!important;
-    font-size: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    color: #242424;
+    opacity: 1;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 38px;
 }
 
 
@@ -228,6 +251,10 @@
 
 .fac-box .area:hover:not(.no-pic){
 	background-color: #ffffff;
+}
+
+.fac-box .no-pic span{
+	color: #999!important;
 }
 
 .fac-box .area span{
