@@ -30,7 +30,7 @@
 }
 
 .home .bg1 {
-	background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(../imgs/bg1_1.png) no-repeat center center;
+	background:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../imgs/bg1_1.png) no-repeat center center;
 	background-size: cover;
 }
 
@@ -222,6 +222,16 @@ h2{
     /* left: 50%; */
     top: 50%;
 }
+
+/*
+.vert-center-contents.main-copy{
+	background: url(../imgs/main_copy_bg.png) no-repeat center center;
+	background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}*/
 
 .vert-center-contents h1{
 	font-family: 'Noto Serif KR', sans-serif;
