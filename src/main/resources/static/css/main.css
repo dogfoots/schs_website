@@ -507,6 +507,20 @@ h2{
     padding-bottom: 59px;
 }
 
+
+
+#teaching-coaching .vert-center-contents p{
+    padding-top: 49px;
+	opacity: 100%;
+    transition: all 0.5s ease;
+}
+
+#teaching-coaching .vert-center-contents p.gone{
+    padding-top: 0px;
+	opacity: 0%;
+}
+
+
 #teaching-coaching .section-body .vert-center-contents .edu-more{
 	display: block;
 	font-weight: 500;
