@@ -500,15 +500,14 @@ h2{
 	height: auto;
 	display: flex;
 }
-
-
+/*
 #teaching-coaching .section-body .vert-center-contents p{
     padding-top: 0ox;
     padding-bottom: 59px;
 }
+*/
 
-
-
+/*
 #teaching-coaching .vert-center-contents p{
     padding-top: 49px;
 	opacity: 100%;
@@ -516,6 +515,36 @@ h2{
 }
 
 #teaching-coaching .vert-center-contents p.gone{
+    padding-top: 0px;
+	opacity: 0%;
+}
+*/
+#teaching-coaching .section-body h1{
+	opacity: 100%;
+    transition: all 0.5s ease;
+}
+
+#teaching-coaching .section-body h1.gone{
+	opacity: 0%;
+}
+
+
+#teaching-coaching .section-body .vert-center-contents p.higher-p{
+	padding-top: 100px;
+	opacity: 100%;
+    transition: all 0.5s ease;
+	transition-delay: 100ms;
+}
+
+#teaching-coaching .section-body .vert-center-contents p.lower-p{
+	padding-top: 30px;
+	opacity: 100%;
+    transition: all 0.5s ease;
+	transition-delay: 150ms;
+}
+
+#teaching-coaching .section-body .vert-center-contents p.higher-p.gone,
+#teaching-coaching .section-body .vert-center-contents p.lower-p.gone{
     padding-top: 0px;
 	opacity: 0%;
 }
@@ -538,10 +567,16 @@ h2{
 #core-capacities .section-body{
 	width: 100%;
 	height: auto;
-	background:url(../imgs/core_flower_bg2.svg) no-repeat left 1225px;
+	background:url(../imgs/core_flower_bg2.svg) no-repeat left 878px;
+}
+
+
+#core-capacities .section-body h2.type-center{
+	margin-top: 20px;
 }
 
 #core-capacities .section-body .vert-center-contents p{
+	margin-top: 30px;
 	color: #242424;
 }
 
@@ -755,7 +790,7 @@ h2{
 
 
 #our-videos{
-	background: url(../imgs/core_flower_bg1.svg) no-repeat left -258px, url(../imgs/core_flower_bg3.svg) no-repeat right -301px;
+	background: url(../imgs/core_flower_bg1.svg) no-repeat left -258px, url(../imgs/core_flower_bg3.svg) no-repeat right -27px;
 }
 
 
