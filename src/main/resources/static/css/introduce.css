@@ -249,6 +249,17 @@
     transition: all 0.3s ease;
 }
 
+.fac-box .area:not(.no-pic) span::after,.fac-box .floor.tf span::after{
+    display: inline-block;
+    content: "";
+    left: 0;
+    margin: 0px 5px 0px 5px;
+    width: 15px;
+    height: 15px;
+    background: url(../imgs/click_mouse.svg) no-repeat center center;
+    background-size: 15px 15px;
+}
+
 .fac-box .area:hover:not(.no-pic){
 	background-color: #ffffff;
 }
