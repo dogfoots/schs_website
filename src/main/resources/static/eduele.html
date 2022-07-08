@@ -9,13 +9,17 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+	<link href="https://hangeul.pstatic.net/hangeul_static/css/NanumSaRangHaeADeur.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/common.css" />
-	<link rel="stylesheet" type="text/css" href="css/news.css" />
+	<link rel="stylesheet" type="text/css" href="css/edu.css" />
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+
+	<!--교직원 소개 추가 css-->
+	<link rel="stylesheet" href="css/aos.css" />
 </head>
-<body class="board">
+<body class="introduce" data-aos-easing="ease" data-aos-duration="1000">
 	<header id="header" class="white">
 		<div class="header_wrap">
 			<h1 id="header-logo">
@@ -63,7 +67,7 @@
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="on">
 						<a href="#">
 							<span>교육과정</span>
 						</a>
@@ -121,7 +125,7 @@
 						</a>
 						<!-- 서브메뉴없음 -->
 					</li>
-					<li class="on">
+					<li>
 						<a href="#">
 							<span>학교소식</span>
 						</a>
@@ -155,25 +159,15 @@
 	
 	<div class="submenu-container">
 		<div id="path">
-			<a href="./index.html">HOME</a><span><img src="imgs/path_arrow.svg"></span><a href="./bd_main.html">학교소식</a><span><img src="imgs/path_arrow.svg"></span><a href="./bd_main.html"><strong>공지사항</strong></a>
+			<a href="./index.html">HOME</a><span><img src="imgs/path_arrow.svg"></span><a href="./introduct.html">학교소개</a><span><img src="imgs/path_arrow.svg"></span><a href="./introduct.html"><strong>교직원소개</strong></a>
 		</div>
 		<div class="submenu-contents">
-			<h1>2022학년도 수학능력시험 수험생 유의사항 안내</h1>
-			<span class="date">2022.05.12</span>			
-			
-			<div class="board-content-wrap">
-				<p>2022학년도 대학수학능력시험에서 좋은 결과가 있기를 기원합니다. <br><br>코로나 확산 방지 및 수험생 보호 차원에서 올해는 예비소집일에 수험표 및 수험생 유의사항 책자를 워킹스루 방식으로 나누어 드립니다.  시험장 반입금지물품을 소지하거나, 4교시 부정행위 등으로 인하여 당해 시험이 무효가 되는 안타까운 상황이 매년 발생하고 있습니다.<br> 수험생은 수능 당일 시험에 임하기 전에 배부해드린 ‘수험생 유의사항’ 책자를 반드시 읽어 보시길 부탁드립니다. 또한 수능 시험 전까지 외출을 자제하고, 밀집된 장소를 피하며, 생활방역수칙을 준수하기를 당부드립니다.  아래에 수험생 유의사항관련 자료가 탑재되어 있는 사이트를 안내해드리니, 반드시 시청하여 수능 시험장에서 불이익을 받지 않도록 당부드립니다. </p>
-				<p>efefefefefef</p>
-			</div>
-			<div class="board-content-ctrl-wrapper">
-				<div class="controls">
-					<a class="circle-btn prev-btn" href="#">&nbsp;</a>
-					<a class="rect-btn go-to-list-btn" href="./bd_main.html"><span>목록으로</span></a>
-					<a class="circle-btn next-btn" href="#">&nbsp;</a>
-				</div>
-				<a id="go-top-btn" href="javascript:goTop()">
-					<img src="imgs/top_btn.png" alt="go to top button" width="56px" height="56px"/>
-				</a>
+			<h1>초등과정</h1>
+			<p></p>
+			<div class="na-notice-wrap">
+				<img src="./imgs/repair_icon.svg" width="165px" height="151px"/>
+				<p class="na-notice-title"><strong>페이지 준비중</strong>입니다.</p>
+				<p class="na-notice-p">보다 나은 서비스 제공을 위하여 페이지 준비중에 있습니다.<br/>빠른 시일내에 준비하여 찾아뵙겠습니다.</p>
 			</div>
 		</div>
 	</div>
@@ -217,9 +211,9 @@
 			</div>
 		</div>
 	</footer>
-
-   
-	<script type="text/javascript">
+	<script src="js/aos.js"></script>
+	<script>
+		AOS.init();
 	</script>
 </body>
 </html>

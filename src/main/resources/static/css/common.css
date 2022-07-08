@@ -529,3 +529,24 @@ footer .footer-links a:not(:last-child){
 	background:url(../imgs/left_arrow_grey.svg) no-repeat center center;
     transform: scaleX(1);
 }
+
+
+.na-notice-wrap{
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.na-notice-wrap .na-notice-title{
+	margin-top: 40px;
+    color: #707070;
+	letter-spacing: -1.25px;
+	font-size: 50px;
+}
+
+.na-notice-wrap .na-notice-p{
+	margin-top: 20px;
+    color: #707070;
+	font-size: 20px;
+	letter-spacing: -0.5px;
+}
