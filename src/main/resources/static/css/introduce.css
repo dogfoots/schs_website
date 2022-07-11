@@ -1,8 +1,131 @@
 /*학교소개*/
 
+.introduce .intro-symbols{
+    width: 1200px;
+    text-align: center;
+    margin:auto 0px;
+    margin-top: 64px;
+}
+
+.introduce .intro-symbols h2{
+    font-family: 'Noto Serif KR', sans-serif!important;
+	font-weight: 700!important;
+	font-size: 45px;
+	color: #242424;    
+}
+
+.introduce .intro-symbols .logo{
+	background: url(../imgs/logo-bg.svg) no-repeat center center;
+    width: 268px;
+    height: 268px;
+    margin: 70px auto 0px;
+}
+
+.introduce .intro-symbols .logo img{
+    margin-top: 30px;
+}
+
+.introduce .intro-symbols .dot{
+    position: relative;
+    top: -10px;
+}
+
+.introduce .intro-symbols .symbols{
+    margin-top: 10px;
+}
+
+.introduce .intro-symbols .intro-etc-box{
+    width: 1200px;
+    height: 270px;
+    text-align: center;
+}
+
+.introduce .intro-symbols .intro-etc-box .song-down-wrap{
+    display: inline-block;
+    margin-top: 63px;
+    width: 362px;
+    height: 61px;
+    border: #707070 1px solid;
+}
 
 
+.introduce .intro-symbols .intro-etc-box .song-down-wrap span{
+    color: #707070;
+}
 
+.introduce .intro-symbols .intro-etc-box .song-down-wrap span{
+    width: 319px;
+    height: 44px;
+    display: block;
+    padding-top: 17px;
+    padding-left: 43px;
+}
+
+.introduce .intro-symbols .intro-etc-box .song-down-wrap span::before{
+    content: '';
+    position: absolute;
+    background: url(../imgs/fileicon.svg) no-repeat center center;
+    width: 24px;
+    height: 21px;
+    margin-top: 2px;
+    margin-left: -35px;
+}
+
+.introduce .intro-tab-wrap{
+    text-align: center;
+    width: 100%;
+    height: 1200px;
+    background: url(../imgs/intro-flower.svg) no-repeat bottom -37px left -208px, url(../imgs/intro-flower2.svg) no-repeat bottom 333px right -194px;
+}
+
+.introduce .intro-tab-wrap ul.intro-tab-ctrl{
+    display: inline-block;
+    text-align: center;
+    border: #707070 1px solid;
+    
+}
+
+.introduce .intro-tab-wrap ul.intro-tab-ctrl li{
+    display: inline-block;
+    width: 290px;
+    height: 60px;
+    background-color: #fff;
+    color: #707070;
+    letter-spacing: -0.5px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif!important;
+	font-weight: 400!important;
+    line-height: 55px;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.introduce .intro-tab-wrap ul.intro-tab-ctrl li.on{
+    background-color: #ab0101;
+    color: white;
+}
+/*
+.introduce .intro-tab-wrap ul.intro-tab-ctrl li:not(:first-child){
+    border-left: #707070 1px solid;
+}*/
+.introduce .intro-tab-wrap .tab-cont{
+    width: 100%;
+    height: 1138px;
+    display: inline-block;
+    opacity: 100%;
+}
+
+.introduce .intro-tab-wrap .tab-cont.gone{
+    opacity: 0%;
+}
+
+.introduce .intro-tab-wrap .tab-cont.greeting{
+    background: url(../imgs/pastor_park.png) no-repeat bottom 0px left 0px;
+}
+
+.introduce .intro-tab-wrap .tab-cont.foundation{
+    background: url(../imgs/pastor_lee.png) no-repeat bottom 0px right 0px;
+}
 
 .teachers-box{	
 	margin-top: 60px;
