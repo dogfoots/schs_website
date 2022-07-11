@@ -514,6 +514,44 @@
 
    
 	<script type="text/javascript" src="js/fullpage.min.js"></script>
+	<!--appkey 학교 것으로 변경 요망. kakao map api-->
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=866c2b9cdf75ee33ceb4f84861288ab6"></script>
+	<script>
+
+		function initContactMap(){
+			$(".overview-fac a").click(function(){
+				$(".overview-map").show();
+				$(".overview-fac").hide();
+			});
+
+			$(".overview-map a").click(function(){
+				$(".overview-map").hide();
+				$(".overview-fac").show();
+			});
+
+			$(".overview-map").hide();
+		}
+
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.606360, 126.7509058),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+
+		var marker = new kakao.maps.Marker({ 
+			position: map.getCenter() 
+		}); 
+		marker.setMap(map);
+
+		var mapTypeControl = new kakao.maps.MapTypeControl();
+		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+		var zoomControl = new kakao.maps.ZoomControl();
+		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+		
+	</script>
+	
 
 	<script type="text/javascript">
 		
@@ -622,46 +660,10 @@
 		});
 
 		
-		function initContactMap(){
-		}
+		/*function initContactMap(){
+		}*/
 		
 	</script>
-	<!--appkey 학교 것으로 변경 요망. kakao map api
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=866c2b9cdf75ee33ceb4f84861288ab6"></script>
-	<script>
-
-		function initContactMap(){
-			$(".overview-fac a").click(function(){
-				$(".overview-map").show();
-				$(".overview-fac").hide();
-			});
-
-			$(".overview-map a").click(function(){
-				$(".overview-map").hide();
-				$(".overview-fac").show();
-			});
-
-			$(".overview-map").hide();
-		}
-
-		var container = document.getElementById('map');
-		var options = {
-			center: new kakao.maps.LatLng(37.606360, 126.7509058),
-			level: 3
-		};
-
-		var map = new kakao.maps.Map(container, options);
-
-		var marker = new kakao.maps.Marker({ 
-			position: map.getCenter() 
-		}); 
-		marker.setMap(map);
-
-		var mapTypeControl = new kakao.maps.MapTypeControl();
-		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-		var zoomControl = new kakao.maps.ZoomControl();
-		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-		
-	</script>-->
+	
 </body>
 </html>
