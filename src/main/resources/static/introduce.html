@@ -19,7 +19,7 @@
 	<!--교직원 소개 추가 css-->
 	<link rel="stylesheet" href="css/aos.css" />
 </head>
-<body class="introduce" data-aos-easing="ease" data-aos-duration="1000">
+<body class="introduce" data-aos-easing="ease" data-aos-duration="1000" >
 	<header id="header" class="white">
 		<div class="header_wrap">
 			<h1 id="header-logo">
@@ -163,15 +163,15 @@
 		</div>
 		<div class="submenu-contents">
 			<h1>학교소개</h1>
-			<div class="intro-symbols">
+			<div class="intro-symbols" data-aos="fade-in" data-aos-duration="1000">
 				<h2>믿음과 실력을 겸비한 인재양성의 요람</h2>
-				<div class="logo">
+				<div class="logo" data-aos="fade-in" data-aos-delay="300">
 					<img src="imgs/schs-logo-intro.png" width="207px" height="207px"/>
 				</div>
 				<div class="dot">
 					<img src="imgs/logo-dot.svg"/>
 				</div>
-				<div class="symbols">
+				<div class="symbols" data-aos="fade-down">
 					<img src="imgs/edu-symbols.svg"/>
 				</div>
 				<div class="intro-etc-box">
@@ -186,15 +186,42 @@
 	<div class="intro-tab-wrap">
 		<div>
 			<ul class="intro-tab-ctrl">
-				<li class="on">학교장 인사말</li>
-				<li>설립이념</li>
+				<li class="on" data-tab-class="greeting">학교장 인사말</li>
+				<li data-tab-class="foundation">설립이념</li>
 			</ul>
 		</div>
 		<div class="tab-cont greeting">
-
+			<div class="text-wrapper" >
+				<h2>학교장 인사말</h2>
+			</div>
 		</div>
 		<div class="tab-cont foundation gone">
-
+			<div class="text-wrapper">
+				<h2>설립이념</h2>
+				<p class="body-text first">이 시대의 학교는 제도만 갖춰 있을 뿐 입시 위주의 주입식 교육과 획일화된 교육으로 학생들의 인격을 함양 시키고, 인성을 변화시키는 데는 실패하였습니다.<br/>
+					TV와 인터넷, 저질 만화와 영화로 인한 도덕적 해이의 연령이 날이갈수록 낮아 지는 현실을 우리가 목도하고 있습니다.<br/>
+					뿐만 아니라 학교 폭력, 흡연, 음주, 거짓말, 도둑질, 음행, 교사를 존경하지 않는 풍조 등은 개탄할 수준에 이르렀습니다.<br/><br/>
+					그런 환경 속에서 자녀 교육을 학교에 맡길 수 없다고 판단한 부모들은 자녀들을 해외로 내보내기도 하지만 과연 그곳들이 안전하겠습니까?<br/>
+					언어의 장벽, 인종과 문화의 차이, 부모와 헤어져 있는 문제, 자녀들의 탈선은 또 하나의 사회악을 낳고 있습니다. 외국도 또 다른 이름의 세상일 뿐입니다.<br/>
+					교육은 사람을 변화시키지 못해도 성경적으로 하는 교육은 사람을 변화시킬 수 있습니다.<br/><br/>
+					중고등학교는 대학을 가기 위한 예비과정도 되지만 한 사람의 생애에서 인격을 도야하는 시기인 것입니다.</p>
+				<h3>우리 서울크리스찬중고등학교는 공교육이 실패한 원인과<br/>상황을 알기 때문에 그에 대한 대안을 제시하고자 탄생했습니다.</h3>
+				<p class="body-text second">우리는 학생들을 우리에 넣어 놓고 공부하라고 강요하지 않고 오히려 질서 속에서 자유롭게 공부하라고 권면합니다.<br/>
+					또 학생들이 학교 다니는 기간 중에 자신 안에 있는 재능을 최대한 개발하도록 인도합니다.<br/>
+					학교는 수용소가 아니며 하나님의 말씀에 기조하여 인격을 다지고 그 위에 지식을 쌓는 성경적 선도를 펼치는 곳입니다.<br/><br/>
+					성경침례교회와 서울크리스찬중고등학교를 신뢰하시고 귀댁의 자녀들을 맡겨 주십시오.<br/><br/>그러면 후회 없는 진전을 보여드리겠습니다.</p>
+			</div>
+			<div class="signature">
+				<div class="name">
+					<div class="name-box">
+						<span class="higher">서울크리스찬중고등학교 설립자</span>
+						<span class="lower">신학박사 이송오 목사</span>
+					</div>
+					<div class="sign-img">
+						<img src="imgs/sign-img.png" width="192px" height="97px"/>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -240,6 +267,17 @@
 	<script src="js/aos.js"></script>
 	<script>
 		AOS.init();
+
+		$(document).ready(function(){
+			$(".intro-tab-ctrl li").on("click", function(){
+				var cls = $(this).data("tab-class");
+				$(".tab-cont").removeClass("gone");
+				$(".tab-cont:not(."+cls+")").addClass("gone");
+
+				$(".intro-tab-ctrl li").removeClass("on");
+				$(this).addClass("on");
+			});
+		});
 	</script>
 </body>
 </html>

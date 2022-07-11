@@ -40,7 +40,7 @@
 }
 
 .home .bg3 {
-	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imgs/bg3.png) no-repeat center center;
+	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imgs/bg3_01.jpg) no-repeat center center;
 	background-size: cover;
 }
 
@@ -560,6 +560,10 @@ h2{
 	border: #ffffff88 1px solid;
 }
 
+#teaching-coaching .section-body .vert-center-contents .edu-more-wrapper.gone{
+	opacity: 0%;
+}
+
 #teaching-coaching .section-body .vert-center-contents .edu-more{
 	display: block;
 	font-weight: 500;
@@ -570,7 +574,7 @@ h2{
 	/*border: #ffffff 1px solid;*/
 	color: #ffffff;
     margin: 0px auto;
-    line-height: 54px;
+    line-height: 56px;
 }
 
 #teaching-coaching .section-body .vert-center-contents a.edu-more::before, 
