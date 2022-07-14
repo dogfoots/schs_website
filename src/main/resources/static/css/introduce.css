@@ -221,6 +221,7 @@
 
 .distinction{
     background: url(../imgs/distinct_bg.png) no-repeat center 294px;
+    background-repeat: repeat-x;
 }
 
 .distinction .submenu-container{
@@ -386,7 +387,7 @@
 }
 
 .distinction .submenu-container .submenu-contents .dist-card.card6.active .body::before{
-    width: 295px;
+    width: 355px;
 }
 
 .distinction .submenu-container .submenu-contents .dist-card.card7{
