@@ -10,16 +10,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
 	<link href="https://hangeul.pstatic.net/hangeul_static/css/NanumSaRangHaeADeur.css" rel="stylesheet">
-
+	
     <link rel="stylesheet" type="text/css" href="css/common.css" />
 	<link rel="stylesheet" type="text/css" href="css/introduce.css" />
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 
-	<!--교직원 소개 추가 css-->
-	<link rel="stylesheet" href="css/aos.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="js/ScrollTrigger.min.js"></script>
+	
 </head>
-<body class="introduce" data-aos-easing="ease" data-aos-duration="1000">
+<body class="distinction">
 	<header id="header" class="white">
 		<div class="header_wrap">
 			<h1 id="header-logo">
@@ -163,12 +164,64 @@
 		</div>
 		<div class="submenu-contents">
 			<h1>학교특징</h1>
+			<div class="main-img-area">
+				<h2 id="introducing-line">서울크리스찬중고등학교를 소개합니다</h2>
+			</div>
+			
+			<div class="dist-card img-only card1">&nbsp;</div>
+
+			<div class="dist-card card2">
+				<h3 class="title"><strong>하나!</strong>&nbsp;전교생이 복음을 전하는 학교<br>(거리설교 및 개인구령)</h3>
+				<ul class="body">
+					<li><span class="num">①</span>주 1회 전교생이 지정된 장소에 나가 거리설교와 개인구령으로 복음을 전합니다.</li>
+					<li><span class="num">②</span>학생들이 자발적으로 모임을 결성하여 사거리나 공원에서 복음을 전합니다.</li>
+				</ul>
+			</div>
+			<div class="dist-card img-only card3">&nbsp;</div>
+			<div class="dist-card img-only card4">&nbsp;</div>
+			<div class="dist-card card5">
+				<h3 class="title"><strong>둘!</strong>&nbsp;초밀착 학습코칭 & 자체 개발<br>공부법 시행(부설 교육연구소 개발)</h3>
+				<ul class="body">
+					<li><span class="num">①</span>전문 코칭 교사의 밀착 관리</li>
+					<li><span class="num">②</span>전 교사 한국코칭학회 코치인증 자격</li>
+					<li><span class="num">③</span>학교 코칭프로세스에 따른 일대일 코칭, 개별학습, 개별진도,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개별평가</li>
+					<li><span class="num">④</span>1등급을 향하여! - 학습코칭과 맞춤형 자기주도학습으로 성적<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수직상승!</li>
+				</ul>
+			</div>
+			<div class="dist-card card6">
+				<h3 class="title"><strong>셋!</strong>&nbsp;전교생 저자되기 프로젝트</h3>
+				<ul class="body">
+					<li><span class="num">①</span>심화 독서에서 출간까지(책쓰기 전문 코칭 교사의 지도)</li>
+					<li><span class="num">②</span>독서 이력제-자체 개발 독서 • 융합 프로그램 운영</li>
+				</ul>
+			</div>
+			<div class="dist-card img-only card7">&nbsp;</div>
+			<div class="dist-card card8">
+				<h3 class="title"><strong>넷!</strong>&nbsp;진로를 잡(Job)아라!</h3>
+				<ul class="body">
+					<li><span class="num">①</span>청소년 심리 상담 전문 교사의 개인별 맞춤형 진로지도</li>
+					<li><span class="num">②</span>검사 & 상담 자격을 갖춘 교사에 의한 성격유형, 진로적성 검사 및 상담</li>
+					<li><span class="num">③</span>'김포시 학교 밖 청소년 센터'와의 업무 협약을 통한 진로체험</li>
+				</ul>
+			</div>
+			<div class="dist-card img-only card9">&nbsp;</div>
+			<div class="dist-card card10">
+				<h3 class="title"><strong>다섯!</strong>&nbsp;대안학교 최초의 무상교육을 꿈꾸다!</h3>
+				<ul class="body">
+					<li><span class="num">①</span>현재 입학금 면제</li>
+					<li><span class="num">②</span>현재 동일 수준의 대안학교 대비 약 30%의 등록금 실현</li>
+					<li><span class="num">③</span>학교 재단설립을 통한 점진적인 무상교육 추진 중</li>
+				</ul>
+			</div>
+
+			<div class="dist-diagram img-only">&nbsp;</div>
+			<!--
 			<p></p>
 			<div class="na-notice-wrap">
 				<img src="./imgs/repair_icon.svg" width="165px" height="151px"/>
 				<p class="na-notice-title"><strong>페이지 준비중</strong>입니다.</p>
 				<p class="na-notice-p">보다 나은 서비스 제공을 위하여 페이지 준비중에 있습니다.<br/>빠른 시일내에 준비하여 찾아뵙겠습니다.</p>
-			</div>
+			</div>-->
 		</div>
 	</div>
 
@@ -211,9 +264,51 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/aos.js"></script>
 	<script>
-		AOS.init();
+		$(document).ready(function(){
+
+			gsap.to("#introducing-line", {duration: 1, opacity: 1});
+			gsap.registerPlugin(ScrollTrigger);
+
+			gsap.utils.toArray(".dist-card").forEach((panel, i)=>{
+				ScrollTrigger.create({
+					trigger : panel,
+					start : "top 70%",
+					end: "top 120px",
+					toggleClass:"active",
+					//markers: true
+				});
+			});
+
+			gsap.utils.toArray(".img-only").forEach((panel, i)=>{
+				gsap.to(panel,{
+					scrollTrigger:{
+						trigger : panel,
+						start : "top 70%",
+						end: "top 120px",
+						scrub: 1
+					},
+					y: -30,
+					ease: "none",
+					duration:3
+				});	
+			});
+
+			gsap.utils.toArray(".dist-card:not(.img-only)").forEach((panel, i)=>{
+				gsap.to(panel,{
+					scrollTrigger:{
+						trigger : panel,
+						start : "top 70%",
+						end: "top 120px",
+						scrub: 1
+					},
+					y: -15,
+					ease: "none",
+					duration:3
+				});	
+			});
+			
+		});
 	</script>
 </body>
 </html>
