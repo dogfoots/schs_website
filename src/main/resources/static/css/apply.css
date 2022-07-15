@@ -7,7 +7,7 @@ ddd
 }
 
 .submenu-container{
-	height: 1930px;
+	height: 2010px;
 }
 
 .submenu-container, .submenu-container .submenu-contents{
@@ -45,7 +45,7 @@ ddd
 .submenu-container .submenu-contents .apply-inform{
 	width: 1200px;
 	text-align: center;
-    height: 1047px;
+    height: 1120px;
 }
 
 
@@ -110,4 +110,39 @@ ddd
     text-align: center;
     margin: 0px auto;
     height: 430px;
+}
+
+
+.submit-etc-box .down-wrap{
+    display: inline-block;
+    width: 318px;
+    height: 61px;
+    border: #707070 1px solid;
+}
+
+.submit-etc-box{
+	margin-top:20px;
+}
+
+.down-wrap span{
+    color: #707070;
+}
+
+.down-wrap span{
+    width: 235px;
+    height: 44px;
+    display: block;
+    padding-top: 17px;
+    padding-left: 83px;
+	font-weight: 400!important;
+}
+
+.down-wrap span::before{
+    content: '';
+    position: absolute;
+    background: url(../imgs/fileicon.svg) no-repeat center center;
+    width: 24px;
+    height: 21px;
+    margin-top: 2px;
+    margin-left: -35px;
 }
