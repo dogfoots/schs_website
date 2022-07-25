@@ -12,7 +12,7 @@
 	<link href="https://hangeul.pstatic.net/hangeul_static/css/NanumSaRangHaeADeur.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/common.css" />
-	<link rel="stylesheet" type="text/css" href="css/introduce.css" />
+	<link rel="stylesheet" type="text/css" href="css/news.css" />
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 
@@ -167,11 +167,25 @@
 		</div>
 		<div class="submenu-contents">
 			<h1>학적관리</h1>
-			<p></p>
+			<p>학생들의 학적을 조회 할 수 있습니다.</p>
+			<!--
 			<div class="na-notice-wrap">
 				<img src="./imgs/repair_icon.svg" width="165px" height="151px"/>
 				<p class="na-notice-title"><strong>페이지 준비중</strong>입니다.</p>
 				<p class="na-notice-p">보다 나은 서비스 제공을 위하여 페이지 준비중에 있습니다.<br/>빠른 시일내에 준비하여 찾아뵙겠습니다.</p>
+			</div>-->
+			<div class="form-box">
+				<form>
+					<div class="row u-id">
+						<label for="userId" class="blind">학번</label>
+						<input type="text" id="userId" placeholder="학번 입력" class="alert-txt">
+					</div>
+					<div class="row u-pw">
+						<label for="userPasswd" class="blind">비밀번호</label>
+						<input type="password" id="userPasswd" name="userPasswd" placeholder="비밀번호" class="alert-txt">
+					</div>
+					<button type="button" class="btn-member login" onclick="fnLogin()">로그인</button>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -218,6 +232,10 @@
 	<script src="js/aos.js"></script>
 	<script>
 		AOS.init();
+
+		function fnLogin(){
+			alert("등록되지 않은 학번입니다.");
+		}
 	</script>
 </body>
 </html>
