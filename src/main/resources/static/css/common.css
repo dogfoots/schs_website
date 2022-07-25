@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'ChosunNm';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/ChosunNm/ChosunNm.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/ChosunNm/ChosunNm.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/ChosunNm/ChosunNm.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/ChosunNm/ChosunNm.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/ChosunNm/ChosunNm.ttf') format("truetype");
+    font-display: swap;
+}
 
 body{	
     overflow-x: hidden;
@@ -113,15 +124,21 @@ a:-webkit-any-link{
 	left: 366px;
 	top: 0px;
 	margin: 0;
-	width: 125px;
+	width: 177px;
     height: 82px;
     z-index: 2;
 }
 
+#header-logo .logo-span-wrap{
+	padding-left: 5px;
+    float: left;
+}
+
 #header-logo img{
-	display: inline-block;
+	display: block;
     margin-left: 3px;
-	margin-top: 10px;
+	margin-top: 20px;
+	float: left;
 }
 
 #header-logo a{
@@ -134,7 +151,7 @@ a:-webkit-any-link{
 	letter-spacing: 2.4px;
 	font-weight: bold;
 	top: 9px;
-    margin-left: 4px;
+    margin-left: 1px;
     position: absolute;
 }
 
@@ -143,13 +160,13 @@ a:-webkit-any-link{
 	font-size: 12px;
 	letter-spacing: -0.3px;
 	font-weight: 100;
-    top: 53px;
+    top: 45px;
     position: absolute;
 }
 
 #menu{
 	width: 100%;
-    padding-left: 638px;
+    padding-left: 563px;
     padding-right: 281px;
     vertical-align: top;
     position: relative;
@@ -169,7 +186,7 @@ a:-webkit-any-link{
 	}
 	
 	#menu{
-		padding-left: 662px;
+		padding-left: 563px;
 	}
 	
 	#menu > li > a{
@@ -183,7 +200,7 @@ a:-webkit-any-link{
 	}
 
 	#menu{
-		padding-left: 170px;
+		padding-left: 220px;
 	}
 
 	#menu > li > a{
@@ -290,7 +307,12 @@ a:-webkit-any-link{
 	transition: all 200ms;
 }
 
-#menu_overlay {opacity:0;visibility:hidden;position: fixed;top: 0;left: 0;bottom: 0;right: 0;background: #000;background: rgba(0, 0, 0, .6);z-index: 150; -webkit-transition: opacity .3s,visibility .3s;transition: opacity .3s,visibility .3s;}
+#menu_overlay {
+	opacity:0;
+	visibility:hidden;
+	position: fixed;
+	top: 0;left: 0;bottom: 0;right: 0;background: #000;
+	background: rgba(0, 0, 0, .6);z-index: 150; -webkit-transition: opacity .3s,visibility .3s;transition: opacity .3s,visibility .3s;}
 body.menu_open #menu_overlay {opacity:1;visibility:visible;}
 
 #header #menu .submenu-list{

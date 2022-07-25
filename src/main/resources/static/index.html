@@ -25,8 +25,10 @@
 			<h1 id="header-logo">
 				<a href="./index.html">
 					<img src="imgs/header_logo.svg" alt="SCHS LOGO"/>
-					<span class="en">SCHS</span>
-					<span class="kr">서울크리스찬중고등학교</span>
+					<div class="logo-span-wrap">
+						<span class="en">SCHS</span>
+						<span class="kr">서울크리스찬중고등학교</span>
+					</div>
 				</a>
 			</h1>
 			<nav class="menu_container">
@@ -67,6 +69,7 @@
 							</div>
 						</div>
 					</li>
+					<!--
 					<li>
 						<a href="#">
 							<span>교육과정</span>
@@ -118,7 +121,7 @@
 								</ul>
 							</div>
 						</div>
-					</li>
+					</li>-->
 					<li>
 						<a href="./apply.html">
 							<span>입학안내</span>
@@ -155,10 +158,39 @@
 			</nav>
 		</div>
 	</header>
+	<div id="main-loading">
+		<div class="center-logo">
+			<img class="gone" src="imgs/header_logo.svg" alt="SCHS LOGO"/>
+			<p class="gone">Seoul Christian High School</p>
+		</div>
+	</div>
 	<div id="menu_overlay"></div>
 
 	<div id="fullpage">		
 		<div id="main-slide" class="section">
+			<section id="image-carousel" class="splide" aria-label="Beautiful Images">
+				<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide bg bg1">
+								<!--<img src="./imgs/bg1_2.png" alt="">-->
+							</li>
+							<li class="splide__slide bg bg2">
+								<!--<img src="./imgs/bg2_02.png" alt="">-->
+							</li>
+							<li class="splide__slide bg bg3">
+								<!--<img src="./imgs/bg3_02.png" alt="">-->
+							</li>
+						</ul>
+				</div>
+				<div class="prompt-box">
+					<!--mix mode 때문에 따로 분리-->
+				</div>
+				<h1 class="title">“진짜” 그리스도인 인재를<br>양성합니다.</h1>
+				<p class="desc1">서울크리스찬중고등학교는 진화론, 인본주의와 같은 세상적인 가치관을 배격하고<br>성경적 가치관을 형성하도록 교육합니다.</p>
+				<p class="desc2 gone">서울크리스찬중고등학교는 자발적으로 주 예수 그리스도를 시인하는<br>학생들을 길러냅니다.</p>
+				<p class="desc3 gone">서울크리스찬중고등학교는 작은 것이라도 주님께 드려 섬기고자 하는<br>학생들을 길러냅니다.</p>
+			</section>
+			<!--
 			<div class="slide bg bg1">
 				<div class="vert-center-contents main-copy">
 					<h1>“진짜” 그리스도인 인재를 양성합니다.</h1>
@@ -176,7 +208,7 @@
 					<h1>“진짜” 그리스도인 인재를 양성합니다.</h1>
 					<p class="gone">서울크리스찬중고등학교는<br>작은 것이라도 주님께 드려 섬기고자 하는 학생들을 길러냅니다.</p>
 				</div>
-			</div>
+			</div>-->
 		</div>
 		<div id="iniquities" class="section">
 			<div class="section-body">
@@ -422,12 +454,12 @@
 				<div class="overview-fac-wrap">
 					<div class="overview-fac">
 						<a href="#">
-							<span class="map-link">-&nbsp;map</span>
+							<span class="map-link">-&nbsp;지도보기</span>
 						</a>
 					</div>
 					<div class="overview-map">
 						<a href="#">
-							<span class="map-link">-&nbsp;overview</span>
+							<span class="map-link">-&nbsp;전경보기</span>
 						</a>
 						<div id="map" style="width:1024px;height:564px;"></div>
 					</div>
@@ -514,8 +546,8 @@
 
    
 	<script type="text/javascript" src="js/fullpage.min.js"></script>
-	<!--appkey 학교 것으로 변경 요망. kakao map api-->
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=866c2b9cdf75ee33ceb4f84861288ab6"></script>
+	<!--appkey 학교 것으로 변경 요망. kakao map api
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=866c2b9cdf75ee33ceb4f84861288ab6"></script>-->
 	<script>
 
 		function initContactMap(){
@@ -532,7 +564,8 @@
 			$(".overview-map").hide();
 		}
 
-		var container = document.getElementById('map');
+		/*
+				var container = document.getElementById('map');
 		var options = {
 			center: new kakao.maps.LatLng(37.606360, 126.7509058),
 			level: 3
@@ -549,7 +582,7 @@
 		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 		var zoomControl = new kakao.maps.ZoomControl();
 		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-		
+		*/
 	</script>
 	
 
@@ -562,7 +595,7 @@
 			//anchors: ['main-section'],
 			navigation: true,
         	navigationPosition: 'right',
-			afterSlideLoad:function (section, origin, destination, direction, trigger){
+			/*afterSlideLoad:function (section, origin, destination, direction, trigger){
 				if(section.index == 0 ){
 					$("#main-slide .slide").eq(destination.index).find(".vert-center-contents > p").removeClass("gone")
 				}
@@ -571,7 +604,7 @@
 				if(section.index == 0 ){
 					$("#main-slide .slide").eq(origin.index).find(".vert-center-contents > p").addClass("gone")
 				}
-			},
+			},*/
 			beforeLeave:function(origin, destination, direction, trigger){
 				//console.log();
 				$("#header").removeClass("black");
@@ -617,7 +650,24 @@
 				}
 			},
 			afterRender: function(){
-				g_splide = new Splide( '.splide', {
+				var main_splide = new Splide( '#image-carousel', {
+					type   : 'loop',
+					width : '100vw',
+					height: '100vh',
+					arrows : false,
+					pagination : false
+			  	}).mount();
+
+				main_splide.on('move', function(newIndex, prevIndex, destIndex){
+					$("#image-carousel p").addClass("gone");
+					$("#image-carousel p.desc"+(newIndex+1)).removeClass("gone");
+					//console.log("dddd"+newIndex);
+					//console.log("ddd2"+prevIndex);
+					//console.log("ddd3"+destIndex);
+				});
+
+
+				g_splide = new Splide( '.splide.core-card-box', {
 				type   : 'loop',
 				perPage: 3,
 				perMove: 1,
@@ -639,8 +689,8 @@
 				initContactMap();
 
 				setInterval(() => $('#iniquities .student').toggleClass("fade"), 10000);
-				setTimeout(()=> $("#main-slide .slide").eq(0).find(".vert-center-contents > p").removeClass("gone"), 500);
-				
+				//setTimeout(()=> $("#main-slide .slide").eq(0).find(".vert-center-contents > p").removeClass("gone"), 500);
+				/*
 				const spyEls = document.querySelectorAll('#fear-of-God-title, #core-capacities .fear-of-God .words-quote')
 				spyEls.forEach(function(spyEl){
 				new ScrollMagic
@@ -651,18 +701,40 @@
 					.setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
 					.addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
 				})
-
+				*/
 			}
 		});
 
 		$(document).ready(function(){
 			
+
+			setTimeout(function(){
+				$("#main-loading p").removeClass("gone");
+			}, 500);
+
+			setTimeout(function(){
+				$("#main-loading img").removeClass("gone");
+			}, 1500);
+			
+			setTimeout(function(){
+				$("#main-loading").fadeOut(1000, function () {
+					$("#main-loading").remove();
+				});   
+			}, 2500);
 		});
 
 		
 		/*function initContactMap(){
 		}*/
 		
+		$(window).bind('resize', function(e)
+		{
+			if (window.RT) clearTimeout(window.RT);
+			window.RT = setTimeout(function()
+			{
+				this.location.reload(false); /* false to get page from cache */
+			}, 100);
+		});
 	</script>
 	
 </body>
