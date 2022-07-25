@@ -271,8 +271,8 @@
 }
 
 #fp-nav ul li a.active span{
-	height: 10px;
-    width: 10px;
+	height: 5px;
+    width: 5px;
 	background: #ffffff;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -281,14 +281,14 @@
 }
 
 #fp-nav ul li a.active:hover span, #fp-nav ul li a:hover span{
-	height: 10px;
-    width: 10px;
+	height: 5px;
+    width: 5px;
 	margin : 0;
 }
 
 #fp-nav ul li a span{
-	height: 10px;
-    width: 10px;
+	height: 5px;
+    width: 5px;
 	background:#787874;	
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -391,11 +391,6 @@ h2{
 }
 
 
-#main-slide .splide__slide img {
-	width: 100%;
-	height: auto;
-}
-
 #main-slide .prompt-box{
 	position: absolute;
     float: right;
@@ -453,6 +448,43 @@ h2{
 	opacity: 0.0;
 }
 
+.slide-arrow{
+	display: block;
+	position: absolute;
+	padding: 5px;
+}
+
+#main-slide .slide-info{
+	display: block;
+	position: absolute;
+    bottom: 97px;
+    right: 702px;
+	color: white;
+	font-family: 'Noto Sans KR', sans-serif !important;
+    font-weight: 400;
+	font-size: 17px;
+}
+
+#main-slide .auto-alide-pause, #main-slide .auto-alide-play{
+	display: block;
+	position: absolute;
+    bottom: 87px;
+    right: 792px;
+	padding: 5px;
+}
+
+#main-slide .slide-arrow.left{
+	bottom: 90px;
+    right: 882px;
+	transform: scaleX(-1); 
+}
+
+#main-slide .slide-arrow.right{
+    bottom: 90px;
+    right: 842px;
+}
+
+
 #main-slide .vert-center-contents p{
     padding-top: 49px;
 	opacity: 100%;
@@ -488,9 +520,11 @@ h2{
 }
 
 #iniquities .vert-center-contents h1{
+	font-family: 'ChosunNm', sans-serif !important;
 	font-size: 62px;
     font-weight: 200;
     z-index: 502;
+	line-height: 87px;
 }
 
 #iniquities .student-wrapper{
@@ -621,12 +655,90 @@ h2{
 
 
 #pure-ways{
+	/*
 	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../imgs/pure_bg_1.png) no-repeat center center;
 	background-size: cover;
 	-ms-background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
-	-webkit-background-size: cover;
+	-webkit-background-size: cover;*/
+	
+}
+
+
+#pure-ways .t-bg1 {
+	background:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../imgs/pure_bg_2.png) no-repeat center center;
+	background-size: cover;
+}
+
+#pure-ways .t-bg2 {
+	background:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../imgs/teach_coach_bg_2.png) no-repeat center center;
+	background-size: cover;
+}
+
+
+#pure-ways .prompt-box{
+	position: absolute;
+    float: left;
+    top: 0px;
+    left : 0px;
+    width: 834px;
+    height: 100%;
+    background: #631919E5;
+	display: table;
+    transition: all 1.0s ease;
+    -webkit-transition: all 1.0s ease;
+	opacity: 1.0;
+}
+
+#pure-ways .prompt-box.gone{
+	opacity: 0;
+}
+
+#pure-ways .prompt-box .prompt-cont{
+	width: 655px;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 90px;
+}
+
+#pure-ways .prompt-box .prompt-cont h1.title{
+	font-family: 'ChosunNm', 'Noto Serif KR', sans-serif !important;
+    font-weight: 400;
+    color: white;
+    font-size: 60px!important;
+    line-height: 82px;
+}
+
+#pure-ways .prompt-box .prompt-cont p.desc{
+	font-family: 'Noto Sans KR', sans-serif !important;
+	font-weight: 100;
+	font-size: 24px!important;
+	margin-top: 45px;
+}
+
+#pure-ways .slide-arrow.left{
+	bottom: 50px;
+    left: 720px;
+	transform: scaleX(-1); 
+}
+
+#pure-ways .slide-arrow.right{
+    bottom: 50px;
+    left: 780px;
+}
+
+
+#pure-ways .slide-info{
+	display: block;
+	position: absolute;
+    bottom: 57px;
+    left: 650px;
+	color: white;
+	font-family: 'Noto Sans KR', sans-serif !important;
+    font-weight: 400;
+	font-size: 17px;
 }
 
 #pure-ways .descripts{
@@ -1067,6 +1179,28 @@ h2{
 	background-color: #ab0101;
 	color: #ffffff;
 }
+
+#our-videos .short-cut-wrap{
+	width: 100%;
+	text-align: right;
+	margin-top: 10px;
+}
+
+#our-videos .short-cut-wrap img{
+	display: block;
+	float: right;
+}
+
+#our-videos .short-cut-wrap span{
+	display: block;
+	float: right;
+	color: #000000;
+	font-family: 'Noto Sans KR', sans-serif!important;
+	font-weight: 100!important;
+	font-size: 15px;
+	padding-top: 6px;
+}
+
 
 #school-board{
 	background-color: #FCFAF5;
