@@ -682,6 +682,30 @@
     top: 1904px;
 }
 
+.distinction .submenu-container .submenu-contents .interview .seperator{
+    position: absolute;
+    border: 1px dashed #707070;
+    opacity: 1;
+    height: 0px;
+}
+
+.distinction .submenu-container .submenu-contents .interview  .seperator1{
+    width: 485px;
+    left: 57px;
+    top: 290px;
+}
+
+.distinction .submenu-container .submenu-contents .interview  .seperator2{
+    width: 485px;
+    left: 57px;
+    top: 431px;
+}
+
+.distinction .submenu-container .submenu-contents .interview  .seperator3{
+    width: 485px;
+    left: 57px;
+    top: 351px;
+}
 
 
 .teachers-box .teacher-box-wrapper ul{
