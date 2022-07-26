@@ -115,7 +115,7 @@ ddd
 
 .submit-etc-box .down-wrap{
     display: inline-block;
-    width: 318px;
+    width: 332px;
     height: 61px;
     border: #707070 1px solid;
 }
@@ -129,12 +129,20 @@ ddd
 }
 
 .down-wrap span{
-    width: 235px;
+    width: 300px;
     height: 44px;
     display: block;
     padding-top: 17px;
-    padding-left: 83px;
+    padding-left: 68px;
 	font-weight: 400!important;
+}
+
+.down-wrap span.mid{
+	padding-left: 64px;
+}
+
+.down-wrap span.int{
+	padding-left: 90px;
 }
 
 .down-wrap span::before{

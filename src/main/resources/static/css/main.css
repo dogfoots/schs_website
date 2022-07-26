@@ -520,7 +520,7 @@ h2{
 }
 
 #iniquities .vert-center-contents h1{
-	font-family: 'ChosunNm', sans-serif !important;
+	font-family: 'ChosunNm', 'Noto Serif KR', sans-serif !important;
 	font-size: 62px;
     font-weight: 200;
     z-index: 502;

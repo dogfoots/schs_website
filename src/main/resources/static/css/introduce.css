@@ -300,7 +300,7 @@
 }
 
 .distinction .submenu-container .submenu-contents{
-    height: 3093px;
+    height: 5589px;
 }
 
 .distinction .submenu-container .submenu-contents .main-img-area{
@@ -538,6 +538,150 @@
     display: block;
     top: 2682px;
 }
+
+.distinction .submenu-container .submenu-contents .interview{
+    position: absolute;
+    top : 2871px;
+}
+
+.distinction .submenu-container .submenu-contents .interview h1{
+    margin-top: 150px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card{
+    position: absolute;
+    /*box-shadow: 0px 5px 15px #00000029;*/
+}
+
+.distinction .submenu-container .submenu-contents .interview .card::before{
+    content: '';
+    position: absolute;
+}
+
+
+.distinction .submenu-container .submenu-contents .interview .card .title{
+    margin : 50px 0px 0px 65px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card .title h3{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif!important;
+    letter-spacing: -0.55px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card .title h4{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif!important;
+    letter-spacing: -0.35px;
+    margin-top: 7px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card .desc{
+    margin : 20px 0px 0px 65px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card .desc p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif!important;
+    letter-spacing: -0.4px;
+    line-height: 30px;
+    display: block;
+    width: 478px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .picture{
+    position: absolute;
+    width: 560px;
+    height: 642px;
+    padding-top: 15px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card1{
+    left:0px;
+    top: 350px;
+    width: 600px;
+    height: 642px;
+    background: transparent url(../imgs/interview-bg1.svg) no-repeat center center;
+    background-size: 600px 642px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card1::before{
+    width: 105px;
+    height: 78px;
+    background: url(../imgs/interview-sticker-1.svg) no-repeat center center;
+    left: 475px;
+    top: 0px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card1 .child.title{
+    margin-top:60px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .picture1{
+    left : 600px;
+    top: 350px;
+}
+
+
+
+.distinction .submenu-container .submenu-contents .interview .card2{
+    left: 562px;
+    top: 1097px;
+    width: 600px;
+    height: 710px;
+    background: transparent url(../imgs/interview-bg2.svg) no-repeat center center;
+    background-size: 600px 706px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card2::before{
+    width: 124px;
+    height: 90px;
+    background: url(../imgs/interview-sticker-2.svg) no-repeat center center;
+    left: 469px;
+    top: -7px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card2 .child.title{
+    margin-top:60px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .picture2{
+    left: 37px;
+    top: 1100px;
+}
+
+
+
+
+.distinction .submenu-container .submenu-contents .interview .card3{
+    left:0px;
+    top: 1899px;
+    width: 600px;
+    height: 642px;
+    background: transparent url(../imgs/interview-bg3.svg) no-repeat center center;
+    background-size: 600px 637px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card3::before{
+    width: 124px;
+    height: 51px;
+    background: url(../imgs/interview-sticker-3.svg) no-repeat center center;
+    left: 246px;
+    top: -10px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .card3 .child.title{
+    margin-top:60px;
+}
+
+.distinction .submenu-container .submenu-contents .interview .picture3{
+    left : 600px;
+    top: 1904px;
+}
+
 
 
 .teachers-box .teacher-box-wrapper ul{
