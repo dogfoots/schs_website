@@ -165,14 +165,25 @@ function getCookie(name) {
     //obj.style.display = "none";
   }
 
-  $(document).ready(function(){
-        $("#popup-notice-wrap").on("click",function(){
-            popClose('popup-notice-wrap');
-        });
+  /* 외부영역 클릭시 팝업 닫기 */
+$(document).mouseup(function (e){
+	if($(".popup-notice").has(e.target).length === 0){
+        popClose('popup-notice-wrap');
+        //alert('aaa');
+	}else{
+        //alert('bbb');
+    }
+});
 
-        $(".popup-notice").on("click",function(){
-
-        });
-        
+  $(document).ready(function(){        
         todayPopOpen('popup-notice-wrap');
   });
+
+  $(document).keydown(function(e){
+	//keyCode 구 브라우저, which 현재 브라우저
+    var code = e.keyCode || e.which;
+ 
+    if (code == 27) { // 27은 ESC 키번호
+        popClose('popup-notice-wrap');
+    }
+});
