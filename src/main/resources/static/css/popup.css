@@ -12,14 +12,13 @@
 
 #popup-notice-wrap .popup-notice{
 	display: block;
-    width: 1200px;
-    height: auto;
+    width: 600px;
+    height: 600px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-	border : #ffffff solid 1px;
 	z-index: 1003;
 	background: #ffffff;
 }
@@ -27,21 +26,33 @@
 #popup-notice-wrap .popup-notice .close{
 	display: block;
 	position: absolute;
-	right: 0px;
-	top: 0px;
-	padding: 30px;
-	color: #000;
+	left: 300px;
+	bottom: -60px;
+	color: #242424;
 	opacity: 1;
-	font-size: 30px;
+	font-size: 20px;
+    width: 300px;
+    height: 60px;
+    background-color: #E8DCB8;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif!important;
+    line-height: 53px;
 }
 
 #popup-notice-wrap .popup-notice .today-close{
 	display: block;
 	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	padding: 30px;
-	color: #000;
+	left: 0px;
+	bottom: -60px;
+	color: #242424;
 	opacity: 1;
 	font-size: 20px;
+    width: 300px;
+    width: 300px;
+    height: 60px;
+    background-color: #E8DCB8;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif!important;
+    line-height: 53px;
+    border-right: #A79C7C solid 1px;
 }
