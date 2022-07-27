@@ -542,6 +542,7 @@
 .distinction .submenu-container .submenu-contents .interview{
     position: absolute;
     top : 2871px;
+    text-align: left;
 }
 
 .distinction .submenu-container .submenu-contents .interview h1{

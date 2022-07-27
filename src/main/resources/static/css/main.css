@@ -743,13 +743,13 @@ h2{
 
 #pure-ways .slide-instruction{
 	display: block;
-	position: absolute;
-    bottom: 22px;
-    left: 650px;
-	color: white;
-	font-family: 'Noto Sans KR', sans-serif !important;
+    position: absolute;
+    bottom: 17px;
+    left: 637px;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif !important;
     font-weight: 400;
-	font-size: 14px;
+    font-size: 17px;
 }
 
 #pure-ways .descripts{
