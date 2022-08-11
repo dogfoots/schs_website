@@ -1,1 +1,200 @@
-/**/
+
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #FAF8F1;
+}
+
+body::-webkit-scrollbar {
+    width: 0em;
+}
+
+.overlay-screen{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 85px;
+}
+/*
+@media screen and (min-aspect-ratio:16/7){ 
+    .overlay-screen{
+        padding: 2vh;
+    }
+}*/
+
+
+.overlay-screen .side-area{
+    position: absolute;
+    left: 0vw;
+    width: 24.7vw;
+    height: 100%;
+    background-color: white;
+}
+
+.overlay-screen .img-wrapper{
+    position: absolute;
+    right : 0vw;
+    top: 0vw;
+    width: 53.5vw;
+    height: 100%;
+    z-index: 50;
+}
+
+.overlay-screen .flower-wrapper{
+    position: absolute;
+    z-index: 49;
+}
+
+.overlay-screen .flower-wrapper.lower{
+    background-image:url(../imgs/life_lower_flower.svg);
+    background-size: 100% 100%;
+    left: 20.7vw;
+    bottom: -3vw;
+    width: 27vw;
+    height: 27vw;
+}
+
+.overlay-screen .flower-wrapper.higher{
+    background-image:url(../imgs/life_higher_flower.svg);
+    background-size: 100% 100%;
+    right: -3.5vw;
+    top: 1.8vw;
+    width: 18vw;
+    height: 18vw;
+}
+
+.overlay-screen .fk-img{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-54%);
+    width: 100%;
+    height: 30vw;
+    background-color: transparent;
+    background-size: 100% 100%;
+}
+
+
+.overlay-screen .main-caption-wrapper{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0vw;
+    height: 37vw;
+    width: 37vw;
+    padding-left: 7vw;
+}
+
+.overlay-screen .main-caption-wrapper .top-title span{
+    font-family: 'Noto Serif KR', sans-serif!important;
+    font-weight: 400!important;
+    font-size: 0.86vw;
+}
+
+.overlay-screen .main-caption-wrapper .top-title span.category1::after{
+    position: absolute;
+    width: 5vw;
+    height: 0px;
+    background-color: transparent;
+    border-top: #707070 1px solid;
+    content: '';
+    top:0.6vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+
+.overlay-screen .main-caption-wrapper .top-title span.category2{
+    margin-left: 6vw;
+}
+
+.overlay-screen .main-caption-wrapper p{
+    color: #000;
+    font-family: 'Noto Serif KR', sans-serif!important;
+    font-weight: 500!important;
+    font-size: 1.85vw;
+    margin-top: 2.1vw;
+}
+
+.overlay-screen .page-indicator-wrapper{
+    position: absolute;
+    bottom: 0%;
+    left: 0vw;
+    width: 24vw;
+    height: 17.5vw;
+}
+
+.overlay-screen .page-indicator-wrapper .page-indicator{
+    padding-left: 7vw;
+}
+
+.overlay-screen .page-indicator-wrapper .page-indicator span.number{
+    font-family: 'Noto Serif KR', sans-serif!important;
+    font-weight: 500!important;
+    font-size: 4vw;
+}
+
+
+.overlay-screen .page-indicator-wrapper .play-scroll{
+    padding-top: 1.2vw;
+    padding-left: 7vw;
+}
+
+.overlay-screen .page-indicator-wrapper .play-scroll span,
+.overlay-screen .page-indicator-wrapper .play-scroll p{
+    font-family: 'Noto Serif KR', sans-serif!important;
+    font-weight: 100!important;
+    font-size: 0.4vw;
+    color: #707070;
+}
+
+.overlay-screen .page-indicator-wrapper .play-scroll p{
+    letter-spacing: 0.15vw;
+    display: inline-block;
+    margin-right: 0.3vw;
+}
+.overlay-screen .page-indicator-wrapper .play-scroll span{
+    letter-spacing: 0.15vw;
+}
+.overlay-screen .page-indicator-wrapper .play-scroll span.bold{
+    font-weight: 700!important;
+}
+
+.overlay-screen .page-indicator-wrapper .play-scroll::before{
+    content: '';
+    position: absolute;
+    width: 18.6vw;
+    height: 1px;
+    background-color: transparent;
+    border-top: #707070 1px solid;
+    left: 0vw;
+    top: 6.5vw;
+}
+
+
+.overlay-screen .page-indicator-wrapper .scroll-arr{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    left: 17vw;
+    top: 5.5vw;
+}
+
+.overlay-screen .page-indicator-wrapper .scroll-arr.next-btn{
+    background-size: 0.8vw 0.8vw;
+}
+
+
+.overlay-screen .core-cap-wrapper{
+    position: absolute;
+    right: 7.5vw;
+    bottom: 6.0vw;
+    height: 5.3vw;
+    aspect-ratio: 7.22;
+    background-image: url(../imgs/core_cap_0.svg);
+    background-size: 100% 100%;
+}
