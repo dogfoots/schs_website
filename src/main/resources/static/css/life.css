@@ -66,15 +66,37 @@ body::-webkit-scrollbar {
     height: 18vw;
 }
 
-.overlay-screen .fk-img{
+.overlay-screen .img-wrapper .img-frame{
     position: absolute;
     margin: 0;
     top: 50%;
     transform: translateY(-54%);
     width: 100%;
     height: 30vw;
-    background-color: transparent;
+    overflow: hidden;
+}
+
+.overlay-screen .fk-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-size: 100% 100%;
+}
+
+.overlay-screen .fk-img.bg1{
+    background-image:url(../imgs/fkbg1.png);
+}
+
+.overlay-screen .fk-img.bg2{
+    background-image:url(../imgs/fkbg2.png);
+}
+
+.overlay-screen .fk-img.bg3{
+    background-image:url(../imgs/fkbg3.png);
+}
+
+.overlay-screen .fk-img.bg4{
+    background-image:url(../imgs/fkbg4.png);
 }
 
 
@@ -113,11 +135,13 @@ body::-webkit-scrollbar {
 }
 
 .overlay-screen .main-caption-wrapper p{
+    position: absolute;
     color: #000;
     font-family: 'Noto Serif KR', sans-serif!important;
     font-weight: 500!important;
     font-size: 1.85vw;
-    margin-top: 2.1vw;
+    left: 6vw;
+    top : 3.3vw;
 }
 
 .overlay-screen .page-indicator-wrapper{
@@ -136,7 +160,43 @@ body::-webkit-scrollbar {
     font-family: 'Noto Serif KR', sans-serif!important;
     font-weight: 500!important;
     font-size: 4vw;
+    
 }
+
+.overlay-screen .page-indicator-wrapper .page-indicator span.number.changer{
+    position: absolute!important;
+    opacity: 0;
+}
+
+.overlay-screen .page-indicator-wrapper .page-indicator span.number.changer.t1{
+    opacity: 0;
+}
+
+.overlay-screen .page-indicator-wrapper .page-indicator span.number.changer.t2{
+    opacity: 1;
+}
+
+
+.overlay-screen .page-indicator-wrapper .page-indicator span.number.in{
+    animation: number-in 1s ease;
+    -webkit-animation: number-in 1s ease;
+}
+
+.overlay-screen .page-indicator-wrapper .page-indicator span.number.out{
+    animation: number-out 1s ease;
+    -webkit-animation: number-out 1s ease;
+}
+
+@keyframes number-in {
+    0% { transform: translateY(50%); opacity:0; }
+    100%{ transform: translateY(0%); opacity:1; }
+}
+
+@keyframes number-out {
+    0% { transform: translateY(0%); opacity:1;}
+    100%{ transform: translateY(-50%); opacity:0; }
+}
+
 
 
 .overlay-screen .page-indicator-wrapper .play-scroll{
