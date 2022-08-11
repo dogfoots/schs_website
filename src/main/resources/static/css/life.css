@@ -191,10 +191,19 @@ body::-webkit-scrollbar {
 
 .overlay-screen .core-cap-wrapper{
     position: absolute;
-    right: 7.5vw;
-    bottom: 6.0vw;
-    height: 5.3vw;
+    height: calc(((100% - 85px - 85px) - 30vw) / 2);
+    /*aspect-ratio: 7.22;*/
+    width: 53.5vw;
+    bottom: 85px;
+    right: 0px;
+}
+
+.overlay-screen .core-cap-wrapper img{
+    position: absolute;
+    width: 75%;
     aspect-ratio: 7.22;
-    background-image: url(../imgs/core_cap_0.svg);
-    background-size: 100% 100%;
+    margin: 0;
+    left : 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
