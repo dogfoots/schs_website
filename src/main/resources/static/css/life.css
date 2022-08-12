@@ -83,22 +83,46 @@ body::-webkit-scrollbar {
     background-size: 100% 100%;
 }
 
-.overlay-screen .fk-img.bg1{
+.life-faith .overlay-screen .fk-img.bg1{
     background-image:url(../imgs/fkbg1.png);
 }
 
-.overlay-screen .fk-img.bg2{
+.life-faith .overlay-screen .fk-img.bg2{
     background-image:url(../imgs/fkbg2.png);
 }
 
-.overlay-screen .fk-img.bg3{
+.life-faith  .overlay-screen .fk-img.bg3{
     background-image:url(../imgs/fkbg3.png);
 }
 
-.overlay-screen .fk-img.bg4{
+.life-faith .overlay-screen .fk-img.bg4{
     background-image:url(../imgs/fkbg4.png);
 }
 
+.life-tenacity .overlay-screen .fk-img.bg1{
+    background-image:url(../imgs/fkbg5.png);
+}
+
+.life-tenacity .overlay-screen .fk-img.bg2{
+    background-image:url(../imgs/fkbg6.png);
+}
+
+.life-tenacity .overlay-screen .fk-img.bg3{
+    background-image:url(../imgs/fkbg7.png);
+}
+
+
+.life-intelli .overlay-screen .fk-img.bg1{
+    background-image:url(../imgs/fkbg8.png);
+}
+
+.life-intelli .overlay-screen .fk-img.bg2{
+    background-image:url(../imgs/fkbg9.png);
+}
+
+.life-intelli .overlay-screen .fk-img.bg3{
+    background-image:url(../imgs/fkbg10.png);
+}
 
 .overlay-screen .main-caption-wrapper{
     position: absolute;
