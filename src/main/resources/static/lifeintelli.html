@@ -160,9 +160,14 @@
 		<div class="side-area">&nbsp;</div>
 		<div class="img-wrapper">
 			<div class="img-frame">
+				<!--
 				<div class="fk-img bg1" data-0="opacity:1.0;" data-400="opacity:1.0;" data-800="opacity:1.0;"></div>
 				<div class="fk-img bg2" data-0="transform: translateX(100%) " data-750="transform: translateX(100%) " data-1150="transform: translateX(0%) "></div>
 				<div class="fk-img bg3" data-0="transform: translateX(-100%) " data-1900="transform: translateX(-100%) " data-2300="transform: translateX(0%) "></div>
+				-->
+				<div class="fk-img bg1" data-0="" data-400="" data-800=""></div>
+				<div class="fk-img bg2 gone-left" data-0="" data-750="" data-1150=""></div>
+				<div class="fk-img bg3 gone-right" data-0="" data-1900="" data-2300=""></div>
 			</div>
 		</div>
 		<div class="flower-wrapper lower">&nbsp;</div>
@@ -173,9 +178,14 @@
 				<span class="category1">학교생활</span>
 				<span class="category2">지성교육</span>
 			</div>
+			<!--
 			<p data-0="opacity:1.0;" data-400="opacity:1.0;" data-800="opacity:0.0;">서울크리스찬중고등학교 학생들은<br>스스로를 학습량을 정하고, 몰입해서 학습하는<br>방법을 배웁니다.</p>
 			<p data-0="opacity:0.0;" data-750="opacity:0.0;" data-1150="opacity:1.0;" data-1550="opacity:1.0;" data-1950="opacity:0.0;">서울크리스찬중고등학교 학생들은<br>습득한 지식들을 연결하고 재구성하여<br>독창적인 의견을 개진할 수 있습니다.</p>
 			<p data-0="opacity:0.0;" data-1900="opacity:0.0;" data-2300="opacity:1.0;" data-2700="opacity:1.0;">서울크리스찬중고등학교 학생들은<br>여러가지 수단을 활용하여 자신의 생각을<br>분명하게 전달하는 방법을 배웁니다.</p>
+			-->
+			<p class="p1" data-0="" data-400="" data-800="">서울크리스찬중고등학교 학생들은<br>스스로를 학습량을 정하고, 몰입해서 학습하는<br>방법을 배웁니다.</p>
+			<p class="p2 fade-out" data-0="" data-750="" data-1150="" data-1550="" data-1950="">서울크리스찬중고등학교 학생들은<br>습득한 지식들을 연결하고 재구성하여<br>독창적인 의견을 개진할 수 있습니다.</p>
+			<p class="p3 fade-out" data-0="" data-1900="" data-2300="" data-2700="">서울크리스찬중고등학교 학생들은<br>여러가지 수단을 활용하여 자신의 생각을<br>분명하게 전달하는 방법을 배웁니다.</p>
 		</div>
 		<div class="page-indicator-wrapper">
 			<div class="page-indicator"><span class="number">0</span><span class="number">0</span><span class="number t1 changer">1</span><span class="number t2 changer">2</span></div>
@@ -183,9 +193,15 @@
 			<a href="javascript:void();" class="scroll-arr circle-btn next-btn">&nbsp;</a>
 		</div>
 		<div class="core-cap-wrapper">
+			<!--
 			<img data-0="opacity:1.0;" data-400="opacity:1.0;" data-1150="opacity:0.0;" src="./imgs/core_cap_5.svg"/>
 			<img data-0="opacity:0.0;" data-400="opacity:0.0;" data-1150="opacity:1.0;" data-1550="opacity:1.0;" data-1950="opacity:0.0;" src="./imgs/core_cap_2.svg"/>
 			<img data-0="opacity:0.0;" data-1550="opacity:0.0;" data-1950="opacity:1.0;" src="./imgs/core_cap_2.svg"/>
+			-->
+			<img class="img1" data-0="" data-400="" data-1150="" src="./imgs/core_cap_5.svg"/>
+			<img class="img2 fade-out" data-0="" data-400="" data-1150="" data-1550="" data-1950="" src="./imgs/core_cap_2.svg"/>
+			<img class="img3 fade-out" data-0="" data-1550="" data-1950="" src="./imgs/core_cap_2.svg"/>
+
 		</div>
 	</div>
 
@@ -260,11 +276,41 @@
 				if( 0 <= data.curTop &&
 					data.curTop < 750){
 						setNum("1");
+						$(".fk-img.bg2").addClass("gone-left");
+						$(".fk-img.bg3").addClass("gone-right");
+
+						$(".main-caption-wrapper .p1").removeClass("fade-out");
+						$(".main-caption-wrapper .p2").addClass("fade-out");
+						$(".main-caption-wrapper .p3").addClass("fade-out");
+
+						
+						$(".core-cap-wrapper .img1").removeClass("fade-out");
+						$(".core-cap-wrapper .img2").addClass("fade-out");
+						$(".core-cap-wrapper .img3").addClass("fade-out");
 				}else if( 750 <= data.curTop &&
 					data.curTop < 1900){
 						setNum("2");
+						$(".fk-img.bg2").removeClass("gone-left");
+						$(".fk-img.bg3").addClass("gone-right");
+						
+						$(".main-caption-wrapper .p1").addClass("fade-out");
+						$(".main-caption-wrapper .p2").removeClass("fade-out");
+						$(".main-caption-wrapper .p3").addClass("fade-out");
+
+						$(".core-cap-wrapper .img1").addClass("fade-out");
+						$(".core-cap-wrapper .img2").removeClass("fade-out");
+						$(".core-cap-wrapper .img3").addClass("fade-out");
 				}else if( 1900 <= data.curTop){
 						setNum("3");
+						$(".fk-img.bg3").removeClass("gone-right");
+
+						$(".main-caption-wrapper .p1").addClass("fade-out");
+						$(".main-caption-wrapper .p2").addClass("fade-out");
+						$(".main-caption-wrapper .p3").removeClass("fade-out");
+						
+						$(".core-cap-wrapper .img1").addClass("fade-out");
+						$(".core-cap-wrapper .img2").addClass("fade-out");
+						$(".core-cap-wrapper .img3").removeClass("fade-out");
 				}
 			}
 		});

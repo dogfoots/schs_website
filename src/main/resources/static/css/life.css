@@ -83,6 +83,21 @@ body::-webkit-scrollbar {
     background-size: 100% 100%;
 }
 
+.overlay-screen .fk-img{
+    transform: translateX(0%);
+    transition: all 1.0s ease;
+}
+
+.overlay-screen .fk-img.gone-left{
+    transform: translateX(-100%);
+}
+
+.overlay-screen .fk-img.gone-right{
+    transform: translateX(100%);
+}
+
+
+
 .life-faith .overlay-screen .fk-img.bg1{
     background-image:url(../imgs/fkbg1.png);
 }
@@ -167,6 +182,18 @@ body::-webkit-scrollbar {
     left: 6vw;
     top : 3.3vw;
 }
+
+.overlay-screen .main-caption-wrapper p,
+.overlay-screen .core-cap-wrapper img{
+    opacity: 1.0;
+    transition: all 1.0s ease;
+}
+
+.overlay-screen .main-caption-wrapper p.fade-out,
+.overlay-screen .core-cap-wrapper img.fade-out{
+    opacity: 0.0;
+}
+
 
 .overlay-screen .page-indicator-wrapper{
     position: absolute;
@@ -291,3 +318,4 @@ body::-webkit-scrollbar {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+
