@@ -4,6 +4,7 @@
     width: 100%;
     height: 220px;
     text-align: center;
+    margin-top: 50px;
 }
 
 .eduele .infant-contents .infant-area, 
@@ -153,11 +154,17 @@
     float: left;
 }
 
-.ele-table-wrap{
+.ele-table-wrap,
+.high-table-wrap{
     width: 100%;
 }
 
-.ele-table-wrap table{
+.high-table-wrap{
+    margin-top: 80px;
+}
+
+.ele-table-wrap table,
+.high-table-wrap table{
     width: 100%;
     font-family: 'Noto Sans KR', sans-serif!important;
     font-size: 18px;
@@ -171,23 +178,32 @@
     margin-top: 100px;
 }
 
-.ele-table-wrap table th{
+.ele-table-wrap table th,
+.high-table-wrap table th{
     background-color: white;
 }
 
 .ele-table-wrap table th,
-.ele-table-wrap table td{
+.ele-table-wrap table td,
+.high-table-wrap table th,
+.high-table-wrap table td{
     border-top: #707070 1px solid;
     font-weight: 400!important;
     padding:10px;
     margin:0px;
 }
 
-.ele-table-wrap table thead tr td{
+.high-table-wrap table td{
+    border-left: #707070 1px solid;
+}
+
+.ele-table-wrap table thead tr td,
+.high-table-wrap table thead tr td{
     text-align: center;
 }
 
-.ele-table-wrap table td p{
+.ele-table-wrap table td p,
+.high-table-wrap table td p{
     font-family: 'Noto Sans KR', sans-serif!important;
     font-size: 18px;
     color: #242424;
@@ -195,7 +211,9 @@
 }
 
 .ele-table-wrap table th, 
-.ele-table-wrap table td:not(:last-child){
+.ele-table-wrap table td:not(:last-child),
+.high-table-wrap table th, 
+.high-table-wrap table td:not(:last-child){
     border-right: #707070 1px solid;
 }
 
@@ -209,12 +227,24 @@
     background-color: #F5F5F5;
 }
 
+.high-table-wrap table tbody tr:nth-child(2n-1){
+    background-color: #F5F5F5;
+}
+
 .ele-table-wrap table td.tbl-title{
     color: white;
     background-color: #AB0101;
 }
 
-.eduele .ele-bottom-wrap{
+
+.high-table-wrap table thead ,
+.high-table-wrap table thead th{
+    color: white;
+    background-color: #AB0101;
+}
+
+.eduele .ele-bottom-wrap,
+.eduhigh .high-bottom-wrap{
     margin-top : 18px;
     width: 100%;
     text-align: right;
@@ -222,18 +252,21 @@
 }
 
 
-.eduele .ele-bottom-wrap .down-wrap{
+.eduele .ele-bottom-wrap .down-wrap,
+.eduhigh .high-bottom-wrap .down-wrap{
     display: inline-block;
     width: 370px;
     height: 61px;
     border: #707070 1px solid;
 }
 
-.eduele .ele-bottom-wrap .down-wrap span{
+.eduele .ele-bottom-wrap .down-wrap span,
+.eduhigh .high-bottom-wrap .down-wrap span{
     color: #707070;
 }
 
-.eduele .ele-bottom-wrap .down-wrap span{
+.eduele .ele-bottom-wrap .down-wrap span,
+.eduhigh .high-bottom-wrap .down-wrap span{
     width: 300px;
     height: 44px;
     display: block;
@@ -242,15 +275,16 @@
 	font-weight: 400!important;
 }
 
-.eduele .ele-bottom-wrap .down-wrap span.mid{
-	padding-left: 64px;
-}
-
 .eduele .ele-bottom-wrap .down-wrap span.int{
     padding-left: 40px;
 }
 
-.eduele .ele-bottom-wrap .down-wrap span::before{
+.eduhigh .high-bottom-wrap .down-wrap span.int{
+    padding-left: 50px;
+}
+
+.eduele .ele-bottom-wrap .down-wrap span::before,
+.eduhigh .high-bottom-wrap .down-wrap span::before{
     content: '';
     position: absolute;
     background: url(../imgs/fileicon.svg) no-repeat center center;
