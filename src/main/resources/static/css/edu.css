@@ -1,5 +1,80 @@
 /**/
 
+.purpose .purpose-bg{
+    width: 100%;
+    height: 624px;
+    margin-top:236px;
+    margin-bottom: 200px;
+    background: url(../imgs/edupur_bg.png) no-repeat center center;
+    background-size: 1070px 624px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif!important;
+}
+
+.purpose .purpose-bg p{
+    color: #AB0101;
+    font-size: 32px;
+    font-weight: 700!important;
+    padding-top: 189px;
+    padding-right: 42px;
+} 
+
+.purpose .purbox{
+    text-align: center;
+    width: 424px;
+    height: 241px;
+    background: url(../imgs/purbox.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    position: absolute;
+}
+
+.purpose .purbox.purbox1{
+    left: 82px;
+    top: 150px;
+}
+
+.purpose .purbox.purbox2{
+    left: 629px;
+    top: 150px;
+}
+
+.purpose .purbox.purbox3{
+    left: 358px;
+    top: 718px;
+    background: url(../imgs/purbox2.png) no-repeat center center;
+    padding-top: 177px;
+}
+
+.purpose .purbox h1{
+    font-family: 'Noto Sans KR', sans-serif!important;
+    font-weight: 400!important;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 186px;
+    top: 313px;
+}
+
+.purpose .purbox.purbox3 h1{
+    top: -7px;
+}
+
+.purpose .purbox h2{
+    font-family: 'Noto Sans KR', sans-serif!important;
+    font-weight: 500!important;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.purpose .purbox p{
+    font-family: 'Noto Sans KR', sans-serif!important;
+    font-weight: 400!important;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
 .eduele .infant-contents{
     width: 100%;
     height: 220px;
