@@ -16,8 +16,8 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 
-	<script type="text/javascript" src="js/skrollr.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="js/ScrollTrigger.min.js"></script>
 </head>
 <body class="life">
 	<header id="header" class="white">
@@ -312,6 +312,49 @@
 				lastScrolled();
 			  });
 
+		});
+
+		$(document).ready(function(){
+			gsap.registerPlugin(ScrollTrigger);
+
+			gsap.utils.toArray(".card").forEach((panel, i)=>{
+				ScrollTrigger.create({
+					trigger : panel,
+					start : "top 70%",
+					end: "top 120px",
+					toggleClass:"active",
+					//markers: true
+				});
+			});
+
+			gsap.utils.toArray(".img-only").forEach((panel, i)=>{
+				gsap.to(panel,{
+					scrollTrigger:{
+						trigger : panel,
+						start : "top 70%",
+						end: "top 120px",
+						scrub: 1
+					},
+					y: -30,
+					ease: "none",
+					duration:3
+				});	
+			});
+
+			gsap.utils.toArray(".card:not(.img-only)").forEach((panel, i)=>{
+				gsap.to(panel,{
+					scrollTrigger:{
+						trigger : panel,
+						start : "top 70%",
+						end: "top 120px",
+						scrub: 1
+					},
+					y: -15,
+					ease: "none",
+					duration:3
+				});	
+			});
+			
 		});
 	</script>
 

@@ -67,13 +67,17 @@
 .life .life-faith .text-card1 p::before{
     content: '';
     position: absolute;
-    width: 740px;
+    width: 0px;
     height: 1px;
     background-color: transparent;
     border-top: #c2c2c2 1px solid;
     left: -200px;
     top: 54px;
     transition: all 2.0s ease;
+}
+
+.life .life-faith .text-card1.active p::before{
+    width: 740px;
 }
 
 .life .life-faith .text-card1{
@@ -95,13 +99,17 @@
 .life .life-faith .text-card2 p::before{
     content: '';
     position: absolute;
-    width: 500px;
+    width: 0px;
     height: 1px;
     background-color: transparent;
     border-top: #c2c2c2 1px solid;
     left: 0px;
     top: 54px;
     transition: all 2.0s ease;
+}
+
+.life .life-faith .text-card2.active p::before{
+    width: 500px;
 }
 
 .life .life-faith .text-card2{
@@ -123,7 +131,7 @@
 .life .life-faith .text-card3 p::before{
     content: '';
     position: absolute;
-    width: 660px;
+    width: 0px;
     height: 1px;
     background-color: transparent;
     border-top: #c2c2c2 1px solid;
@@ -131,6 +139,11 @@
     top: 54px;
     transition: all 2.0s ease;
 }
+
+.life .life-faith .text-card3.active p::before{
+    width: 660px;
+}
+
 
 .life .life-faith .text-card3{
     left : calc( var(--life-header2-width) + 490px );
@@ -150,7 +163,7 @@
 .life .life-faith .text-card4 p::before{
     content: '';
     position: absolute;
-    width: 420px;
+    width: 0px;
     height: 1px;
     background-color: transparent;
     border-top: #c2c2c2 1px solid;
@@ -158,6 +171,10 @@
     top: 64px;
     transition: all 2.0s ease;
 }
+.life .life-faith .text-card4.active p::before{
+    width: 420px;
+}
+
 
 .life .life-faith .text-card4{
     left : 100px;
@@ -181,7 +198,7 @@
 .life .life-tenacity .text-card5 p::before{
     content: '';
     position: absolute;
-    width: 610px;
+    width: 0px;
     height: 1px;
     background-color: transparent;
     border-top: #c2c2c2 1px solid;
@@ -189,6 +206,11 @@
     top: 54px;
     transition: all 2.0s ease;
 }
+
+.life .life-tenacity .text-card5.active p::before{
+    width: 610px;
+}
+
 
 .life .life-tenacity .text-card5{
     left : calc( var(--life-header2-width) + 625px );
@@ -208,7 +230,7 @@
 .life .life-tenacity .text-card6 p::before{
     content: '';
     position: absolute;
-    width: 440px;
+    width: 0px;
     height: 1px;
     background-color: transparent;
     border-top: #c2c2c2 1px solid;
@@ -216,6 +238,11 @@
     top: 64px;
     transition: all 2.0s ease;
 }
+
+.life .life-tenacity .text-card6.active p::before{
+    width: 440px;
+}
+
 
 .life .life-tenacity .text-card6{
     left : 100px;
@@ -237,7 +264,7 @@
 .life .life-tenacity .text-card7 p::before{
     content: '';
     position: absolute;
-    width: 410px;
+    width: 0px;
     height: 1px;
     background-color: transparent;
     border-top: #c2c2c2 1px solid;
@@ -245,6 +272,11 @@
     top: 74px;
     transition: all 2.0s ease;
 }
+
+.life .life-tenacity .text-card7.active p::before{
+    width: 410px;
+}
+
 
 .life .life-tenacity .text-card7{
     left : calc( var(--life-header2-width) + 527px );
@@ -267,7 +299,7 @@
 .life .life-intelli .text-card8 p::before{
     content: '';
     position: absolute;
-    width: 610px;
+    width: 0px;
     height: 1px;
     background-color: transparent;
     border-top: #c2c2c2 1px solid;
@@ -275,6 +307,11 @@
     top: 64px;
     transition: all 2.0s ease;
 }
+
+.life .life-intelli .text-card8.active p::before{
+    width: 610px;
+}
+
 
 .life .life-intelli .text-card8{
     left : 0px;
@@ -296,7 +333,7 @@
 .life .life-intelli .text-card9 p::before{
     content: '';
     position: absolute;
-    width: 440px;
+    width: 0px;
     height: 1px;
     background-color: transparent;
     border-top: #c2c2c2 1px solid;
@@ -304,6 +341,10 @@
     top: 74px;
     transition: all 2.0s ease;
 }
+.life .life-intelli .text-card9.active p::before{
+    width: 440px;
+}
+
 
 .life .life-intelli .text-card9{
     left : calc( var(--life-header2-width) + 530px );
@@ -326,7 +367,7 @@
 .life .life-intelli .text-card10 p::before{
     content: '';
     position: absolute;
-    width: 610px;
+    width: 0px;
     height: 1px;
     background-color: transparent;
     border-top: #c2c2c2 1px solid;
@@ -334,6 +375,11 @@
     top: 54px;
     transition: all 2.0s ease;
 }
+
+.life .life-intelli .text-card10.active p::before{
+    width: 610px;
+}
+
 
 .life .life-intelli .text-card10{
     left : 0px;
