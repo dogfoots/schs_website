@@ -190,7 +190,7 @@
 		<div class="page-indicator-wrapper">
 			<div class="page-indicator"><span class="number">0</span><span class="number">0</span><span class="number t1 changer">1</span><span class="number t2 changer">2</span></div>
 			<div class="play-scroll"><p>PLAY SCROLL</p><span>(</span><span id="current-pnum" class="bold">1</span><span>/</span><span>3</span><span>)</span></div>
-			<a href="javascript:void();" class="scroll-arr circle-btn next-btn">&nbsp;</a>
+			<a href="javascript:goToNext();" class="scroll-arr circle-btn next-btn">&nbsp;</a>
 		</div>
 		<div class="core-cap-wrapper">
 			<!--
@@ -314,6 +314,19 @@
 				}
 			}
 		});
+
+		
+		function goToNext(){
+			if( 0 <= window.scrollY &&
+			window.scrollY < 750){
+						$(window).scrollTop(750);
+				}else if( 750 <= window.scrollY &&
+				window.scrollY < 1900){
+						$(window).scrollTop(1900);
+				}else if( 1900 <= window.scrollY){
+					$(window).scrollTop(0);
+				}
+		}
 	</script>
 </body>
 </html>
