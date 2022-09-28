@@ -377,3 +377,82 @@
     margin-top: 2px;
     margin-left: -35px;
 }
+
+.eduhigh .core-card-box{
+    margin-top: 56px;
+    height: 177px;
+    padding-right: 141px;
+    padding-left: 141px;
+    padding-top:10px
+}
+
+.eduhigh .core-card{
+    text-align: center;
+    margin-top:50px;
+}
+
+.eduhigh .core-card img{
+    transform: scale(1.0);
+    transition: all 1.0s ;
+    -webkit-transition: all 1.0s ;
+}
+
+.eduhigh .core-card.active img{
+    transform: scale(1.5);
+}
+
+.eduhigh .core-card img{
+    box-shadow: 1px 1px 54px #6029290D;
+}
+
+.eduhigh .core-card .card-body{
+    margin-top : 26px;
+    
+}
+
+.eduhigh .core-card .card-body span{
+    font-family: 'Noto Sans KR', sans-serif!important;
+    font-size: 20px;
+    color: #242424;
+    font-weight: 400!important;
+}
+
+.eduhigh .prg-tables{
+    margin-top : 60px;
+    margin-bottom: 150px;
+    width: 100%;
+}
+
+.eduhigh .prg-tables table{
+    font-family: 'Noto Sans KR', sans-serif!important;
+    font-size: 18px;
+    color: #242424;
+    font-weight: 200!important;
+    border-collapse: collapse;
+    text-align: center;
+    width: 1024px;
+    margin: 0px auto 40px auto;
+}
+.eduhigh .prg-tables table th,
+.eduhigh .prg-tables table td{
+    padding: 8px;
+}
+
+.eduhigh .prg-tables table th{
+    background-color: #AB0101;
+    color: #FFFFFF;
+    font-weight: 400!important;
+}
+
+.eduhigh .prg-tables table td{
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.eduhigh .prg-tables table td:not(.grey):not(:last-child),
+.eduhigh .prg-tables table th:not(.grey):not(:last-child){
+    border-right: 1px solid #c2c2c2;
+}
+
+.eduhigh .prg-tables table td.grey{
+    background-color: #F5F5F5;
+}
