@@ -391,14 +391,35 @@
     margin-top:50px;
 }
 
-.eduhigh .core-card img{
+.eduhigh .core-card svg{
     transform: scale(1.0);
     transition: all 1.0s ;
     -webkit-transition: all 1.0s ;
+    
 }
 
-.eduhigh .core-card.active img{
+.eduhigh .core-card.active svg{
     transform: scale(1.5);
+    /* filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg) drop-shadow(0px 0px 3px #000000ee); */
+    /*filter :  grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);*/
+    stroke: #AB0101;
+}
+
+
+.eduhigh .core-card svg rect, 
+.eduhigh .core-card svg path,
+.eduhigh .core-card svg circle,
+.eduhigh .core-card svg line{
+    transition: all 1.0s ;
+    -webkit-transition: all 1.0s ;
+    stroke: #898989;
+}
+
+.eduhigh .core-card.active svg rect, 
+.eduhigh .core-card.active svg path,
+.eduhigh .core-card.active svg circle,
+.eduhigh .core-card.active svg line{
+    stroke: #AB0101;
 }
 
 .eduhigh .core-card img{
