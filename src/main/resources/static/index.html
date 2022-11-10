@@ -170,9 +170,19 @@
 	<div id="popup-notice-wrap" style="display: none;">
 		<div class="popup-notice">
 			<!--팝업 공지 이미지 대체-->
-			<img src="imgs/notices/2022111001.png"/>
-			<a class="close" href="javascript:popClose('popup-notice-wrap');"><span>닫기</span></a>
-			<a class="today-close" href="javascript:todayPopClose('popup-notice-wrap',1);"><span>오늘 다시 보지않기</span></a>
+			<!--2022.11.10 khc 이미지 파일만 경로 교체후, width, height 값만 맞춰주면 
+			css수정 없이 이미지 교체가능하도록 조치해놨습니다.-->
+			<!-- <img src="imgs/notices/2022072701.png" width="600px" height="600px"/> -->
+			<img src="imgs/notices/2022111001.png" width="700px" height="860px"/>
+			<div class="buttons-wrap">
+				<a class="today-close" href="javascript:todayPopClose('popup-notice-wrap',1);"><span>오늘 다시 보지않기</span></a>
+				<a class="close" href="javascript:popClose('popup-notice-wrap');"><span>닫기</span></a>
+			</div>
+			<script>
+				let root = document.documentElement;
+				root.style.setProperty('--popup-img-width', $(".popup-notice > img").width() + "px");
+			  	root.style.setProperty('--popup-img-height', $(".popup-notice > img").height() + "px");
+			</script>
 		</div>
 	</div>
 	<div id="menu_overlay"></div>
